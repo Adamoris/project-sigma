@@ -74,14 +74,14 @@ public class GenericUnit : Unit
             float growingTime = Time.time;
             while (growingTime + delay > Time.time)
             {
-                transform.localScale = Vector3.Lerp(baseScale * scaleFactor, baseScale, (growingTime + delay) - Time.time);
+                //transform.localScale = Vector3.Lerp(baseScale * scaleFactor, baseScale, (growingTime + delay) - Time.time);
                 yield return 0;
             }
 
             float shrinkingTime = Time.time;
             while (shrinkingTime + delay > Time.time)
             {
-                transform.localScale = Vector3.Lerp(baseScale, baseScale * scaleFactor, (shrinkingTime + delay) - Time.time);
+                //transform.localScale = Vector3.Lerp(baseScale, baseScale * scaleFactor, (shrinkingTime + delay) - Time.time);
                 yield return 0;
             }
 

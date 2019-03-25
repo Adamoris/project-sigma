@@ -71,7 +71,9 @@ public abstract class Unit : MonoBehaviour
     public int HitPoints;
     public int AttackRange;
     public int AttackFactor;
+    public int Speed;
     public int DefenceFactor;
+    public int Resistance;
     /// <summary>
     /// Determines how far on the grid the unit can move.
     /// </summary>
@@ -84,6 +86,7 @@ public abstract class Unit : MonoBehaviour
     /// Determines how many attacks unit can perform in one turn.
     /// </summary>
     public int ActionPoints;
+    private int CounterPoints;
 
     /// <summary>
     /// Indicates the player that the unit belongs to. 
@@ -135,7 +138,7 @@ public abstract class Unit : MonoBehaviour
     public virtual void OnTurnStart()
     {
         MovementPoints = TotalMovementPoints;
-        ActionPoints = TotalActionPoints;
+
 
         SetState(new UnitStateMarkedAsFriendly(this));
     }
@@ -150,6 +153,7 @@ public abstract class Unit : MonoBehaviour
         Buffs.ForEach(b => { b.Duration--; });
 
         SetState(new UnitStateNormal(this));
+        ActionPoints = TotalActionPoints;
     }
     /// <summary>
     /// Method is called when units HP drops below 1.
@@ -186,13 +190,14 @@ public abstract class Unit : MonoBehaviour
     /// </summary>
     public virtual bool IsUnitAttackable(Unit other, Cell sourceCell)
     {
-        if (sourceCell.GetDistance(other.Cell) <= AttackRange)
+        // Change the comparator here to '<=' if you want ranged units to attack units that are closer
+        if (sourceCell.GetDistance(other.Cell) == AttackRange)
             return true;
 
         return false;
     }
     /// <summary>
-    /// Method deals damage to unit given as parameter.
+    /// Method deals damage to unit given as parameter. (In this case the target being attacked)
     /// </summary>
     public virtual void DealDamage(Unit other)
     {
@@ -206,7 +211,8 @@ public abstract class Unit : MonoBehaviour
         MarkAsAttacking(other);
         ActionPoints--;
         other.Defend(this, AttackFactor);
-
+        //Debug.Log("attack: " + this);
+        //Debug.Log("attack: " + other);
         if (ActionPoints == 0)
         {
             SetState(new UnitStateMarkedAsFinished(this));
@@ -218,12 +224,32 @@ public abstract class Unit : MonoBehaviour
     /// </summary>
     protected virtual void Defend(Unit other, int damage)
     {
+        if (ActionPoints > 0)
+        {
+            CounterPoints++;
+        }
         MarkAsDefending(other);
+        //Debug.Log(this);
         //Damage is calculated by subtracting attack factor of attacker and defence factor of defender. 
         //If result is below 1, it is set to 1. This behaviour can be overridden in derived classes.
-        HitPoints -= Mathf.Clamp(damage - DefenceFactor, 1, damage);  
+        HitPoints -= Mathf.Clamp(damage - DefenceFactor, 1, damage);
+        //Debug.Log(this + "" + HitPoints);
         if (UnitAttacked != null)
             UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));
+            if (HitPoints > 0)
+            {
+            //Debug.Log(this + "aaa" + ActionPoints);
+                if (!IsUnitAttackable(other, Cell)) {
+                //Debug.Log("Counter!");
+                }
+                else if (CounterPoints > 0)
+                {
+                    MarkAsAttacking(other);
+                    CounterPoints--;
+                    //Debug.Log("Counter!: " + this);
+                    other.Defend(this, AttackFactor);
+                }
+            }
 
         if (HitPoints <= 0)
         {

@@ -14,6 +14,7 @@ public class SettingsMenu : MonoBehaviour
 
     void Start()
     {
+        audioMixer.SetFloat("Volume", -10);
         resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();

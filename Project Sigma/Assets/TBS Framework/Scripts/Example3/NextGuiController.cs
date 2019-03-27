@@ -33,7 +33,7 @@ public class NextGuiController : MonoBehaviour
     {
         isGameOver = true;
         _gameOverPanel = Instantiate(GameOverPanel);
-        _gameOverPanel.transform.Find("InfoText").GetComponent<Text>().text = "Player " + ((sender as CellGrid).CurrentPlayerNumber + 1) + "\nwins!";
+        _gameOverPanel.transform.Find("InfoText").GetComponent<Text>().text = "Player " + (Unit.PotentialVictor + 1) + "\nwins!";
         
         _gameOverPanel.transform.Find("DismissButton").GetComponent<Button>().onClick.AddListener(DismissPanel);
  

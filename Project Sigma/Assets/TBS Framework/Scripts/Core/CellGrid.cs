@@ -59,6 +59,7 @@ public class CellGrid : MonoBehaviour
     }
     public int CurrentPlayerNumber { get; private set; }
 
+
     /// <summary>
     /// GameObject that holds player objects.
     /// </summary>
@@ -102,7 +103,7 @@ public class CellGrid : MonoBehaviour
             if (cell != null)
                 Cells.Add(cell);
             else
-                Debug.LogError("Invalid object in cells paretn game object");
+                Debug.LogError("Invalid object in cells parent game object");
         }
 
         foreach (var cell in Cells)
@@ -149,6 +150,7 @@ public class CellGrid : MonoBehaviour
         var totalPlayersAlive = Units.Select(u => u.PlayerNumber).Distinct().ToList(); //Checking if the game is over
         if (totalPlayersAlive.Count == 1)
         {
+            Debug.Log("Game is over!");
             if(GameEnded != null)
                 GameEnded.Invoke(this, new EventArgs());
         }
@@ -168,13 +170,13 @@ public class CellGrid : MonoBehaviour
     }
 
     /// <summary>
-    /// Method is called once, at the beggining of the game.
+    /// Method is called once, at the beginning of the game.
     /// </summary>
     public void StartGame()
     {
         if(GameStarted != null)
             GameStarted.Invoke(this, new EventArgs());
-
+        Debug.Log("Current player: " + CurrentPlayerNumber);
         Units.FindAll(u => u.PlayerNumber.Equals(CurrentPlayerNumber)).ForEach(u => { u.OnTurnStart(); });
         Players.Find(p => p.PlayerNumber.Equals(CurrentPlayerNumber)).Play(this);
     }

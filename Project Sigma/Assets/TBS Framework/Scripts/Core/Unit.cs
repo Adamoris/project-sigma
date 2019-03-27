@@ -68,11 +68,17 @@ public abstract class Unit : MonoBehaviour
     /// </summary>
     public Cell Cell { get; set; }
 
+    [Tooltip("A unit is defeated if its Hit Points reach 0.")]
     public int HitPoints;
+    [Tooltip("This is the range at which a unit is able to attack.")]
     public int AttackRange;
+    [Tooltip("The higher the Attack, the more damage is inflicted on foes.")]
     public int AttackFactor;
+    [Tooltip("A unit will attack twice of its speed is at least 5 more than its foe.")]
     public int Speed;
+    [Tooltip("The higher the Defense, the less damage is taken from physical attacks.")]
     public int DefenceFactor;
+    [Tooltip("The higher the Resistance, the less damage is taken from magical attacks.")]
     public int Resistance;
     /// <summary>
     /// Determines how far on the grid the unit can move.
@@ -93,6 +99,7 @@ public abstract class Unit : MonoBehaviour
     /// Should correspoond with PlayerNumber variable on Player script.
     /// </summary>
     public int PlayerNumber;
+    public static int PotentialVictor;
 
     /// <summary>
     /// Indicates if movement animation is playing.
@@ -238,6 +245,7 @@ public abstract class Unit : MonoBehaviour
             UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));
             if (HitPoints > 0)
             {
+
             //Debug.Log(this + "aaa" + ActionPoints);
                 if (!IsUnitAttackable(other, Cell)) {
                 //Debug.Log("Counter!");
@@ -245,6 +253,8 @@ public abstract class Unit : MonoBehaviour
                 else if (CounterPoints > 0)
                 {
                     MarkAsAttacking(other);
+                    Debug.Log("Potential victor: " + PlayerNumber);
+                    PotentialVictor = PlayerNumber;
                     CounterPoints--;
                     //Debug.Log("Counter!: " + this);
                     other.Defend(this, AttackFactor);
@@ -254,6 +264,9 @@ public abstract class Unit : MonoBehaviour
         if (HitPoints <= 0)
         {
             if (UnitDestroyed != null)
+                Debug.Log("Potential victor: " + other.PlayerNumber);
+                PotentialVictor = other.PlayerNumber;
+                //Debug.Log("dead: " + PlayerNumber);
                 UnitDestroyed.Invoke(this, new AttackEventArgs(other, this, damage));
             OnDestroyed();
         }

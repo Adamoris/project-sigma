@@ -93,6 +93,7 @@ public abstract class Unit : MonoBehaviour
     /// </summary>
     public int ActionPoints;
     private int CounterPoints;
+    public static bool Attacking;
 
     /// <summary>
     /// Indicates the player that the unit belongs to. 
@@ -115,7 +116,7 @@ public abstract class Unit : MonoBehaviour
     public virtual void Initialize()
     {
         Buffs = new List<Buff>();
-
+        Debug.Log(Environment.UserName);
         UnitState = new UnitStateNormal(this);
 
         TotalHitPoints = HitPoints;
@@ -226,6 +227,14 @@ public abstract class Unit : MonoBehaviour
             MovementPoints = 0;
         }  
     }
+
+    public IEnumerator Retaliate(Unit other)
+    {
+        yield return new WaitForSeconds(0.5f);
+        MarkAsAttacking(other);
+        other.Defend(this, AttackFactor);
+    }
+
     /// <summary>
     /// Attacking unit calls Defend method on defending unit. 
     /// </summary>
@@ -252,19 +261,19 @@ public abstract class Unit : MonoBehaviour
                 }
                 else if (CounterPoints > 0)
                 {
-                    MarkAsAttacking(other);
-                    Debug.Log("Potential victor: " + PlayerNumber);
+                    
+                    //Debug.Log("Potential victor: " + PlayerNumber);
                     PotentialVictor = PlayerNumber;
                     CounterPoints--;
                     //Debug.Log("Counter!: " + this);
-                    other.Defend(this, AttackFactor);
+                    StartCoroutine(Retaliate(other));
                 }
             }
 
         if (HitPoints <= 0)
         {
             if (UnitDestroyed != null)
-                Debug.Log("Potential victor: " + other.PlayerNumber);
+                //Debug.Log("Potential victor: " + other.PlayerNumber);
                 PotentialVictor = other.PlayerNumber;
                 //Debug.Log("dead: " + PlayerNumber);
                 UnitDestroyed.Invoke(this, new AttackEventArgs(other, this, damage));
@@ -284,7 +293,9 @@ public abstract class Unit : MonoBehaviour
         if (MovementPoints < totalMovementCost)
             return;
 
-        MovementPoints -= totalMovementCost;
+        //Change this line back when adding in the full menu functionality for the combat system.
+        //MovementPoints -= totalMovementCost;
+        MovementPoints = 0;
 
         Cell.IsTaken = false;
         Cell = destinationCell;

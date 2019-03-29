@@ -176,7 +176,7 @@ public class CellGrid : MonoBehaviour
     {
         if(GameStarted != null)
             GameStarted.Invoke(this, new EventArgs());
-        Debug.Log("Current player: " + CurrentPlayerNumber);
+        //Debug.Log("Current player: " + CurrentPlayerNumber);
         Units.FindAll(u => u.PlayerNumber.Equals(CurrentPlayerNumber)).ForEach(u => { u.OnTurnStart(); });
         Players.Find(p => p.PlayerNumber.Equals(CurrentPlayerNumber)).Play(this);
     }

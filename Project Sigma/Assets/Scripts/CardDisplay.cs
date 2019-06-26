@@ -24,6 +24,7 @@ public class CardDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        artworkImage.sprite = card.artwork;
         mergeText.text = card.merge.ToString();
         nameText.text = card.name;
         hpText.text = card.HP.ToString() + "/" + card.HP.ToString();

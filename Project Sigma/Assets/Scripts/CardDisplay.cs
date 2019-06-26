@@ -11,19 +11,29 @@ public class CardDisplay : MonoBehaviour
 
     public Image artworkImage;
 
-    public Text nameText;
-    public Text hpText;
-    public Text atkText;
-    public Text spdText;
-    public Text defText;
-    public Text resText;
-    public TextMeshProUGUI newName;
+    public TextMeshProUGUI mergeText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI hpText;
+    public TextMeshProUGUI atkText;
+    public TextMeshProUGUI spdText;
+    public TextMeshProUGUI defText;
+    public TextMeshProUGUI resText;
+    public TextMeshProUGUI levelText;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        mergeText.text = card.merge.ToString();
+        nameText.text = card.name;
+        hpText.text = card.HP.ToString() + "/" + card.HP.ToString();
+        atkText.text = card.Atk.ToString();
+        spdText.text = card.Spd.ToString();
+        defText.text = card.Def.ToString();
+        resText.text = card.Res.ToString();
+        levelText.text = card.Level.ToString();
+
+
     }
 
 }

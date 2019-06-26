@@ -10,6 +10,7 @@ public class CardDisplay : MonoBehaviour
     public Card card;
 
     public Image artworkImage;
+    public Image affinityImage;
 
     public TextMeshProUGUI mergeText;
     public TextMeshProUGUI nameText;
@@ -25,6 +26,7 @@ public class CardDisplay : MonoBehaviour
     void Start()
     {
         artworkImage.sprite = card.artwork;
+        affinityImage.sprite = card.affinity;
         mergeText.text = card.merge.ToString();
         nameText.text = card.name;
         hpText.text = card.HP.ToString() + "/" + card.HP.ToString();

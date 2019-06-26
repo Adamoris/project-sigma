@@ -10,7 +10,7 @@ public class Card : ScriptableObject
     public new string name;
     public int merge;
 
-    public string affinity;
+    public Sprite affinity;
 
     public int HP;
     public int Atk;

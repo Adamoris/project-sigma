@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene("Title Screen");
+        SceneManager.LoadScene("HUB");
     }
 
     public void QuitGame()

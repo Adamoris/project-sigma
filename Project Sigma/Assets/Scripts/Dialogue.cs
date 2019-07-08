@@ -6,9 +6,11 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
+    [TextArea(3,10)]
     public string[] sentences;
     private int index;
     public float typingSpeed = 0.02f;
+    private bool complete;
 
     void Start()
     {
@@ -17,7 +19,7 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (textDisplay.text == sentences[index] && Input.GetKeyDown("Space")) ;
+        if (textDisplay.text == sentences[index] && (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0)))
         {
             NextSentence();
         }
@@ -43,6 +45,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             textDisplay.text = "";
+            complete = true;
         }
     }
 

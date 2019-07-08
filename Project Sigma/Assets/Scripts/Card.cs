@@ -5,7 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card : ScriptableObject
 {
+    public bool unlocked;
     public Sprite artwork;
+    public Sprite mapSprite;
 
     public new string name;
     public int merge;
@@ -42,7 +44,9 @@ public class Card : ScriptableObject
     // 18 = +Res/-Atk
     // 19 = +Res/-Spd
     // 20 = +Res/-Def
-
     public int IV;
+
+    public enum MoveClass { Armor, Cavalry, Flier, Infantry }
+    public MoveClass moveClass;
 }
 

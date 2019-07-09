@@ -68,6 +68,8 @@ public abstract class Unit : MonoBehaviour
     /// </summary>
     public Cell Cell { get; set; }
 
+    public Card card;
+
     [Tooltip("A unit is defeated if its Hit Points reach 0.")]
     public int HitPoints;
     [Tooltip("This is the range at which a unit is able to attack.")]

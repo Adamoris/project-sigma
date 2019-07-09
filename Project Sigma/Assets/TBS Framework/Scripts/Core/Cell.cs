@@ -19,6 +19,12 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     /// Indicates if something is occupying the cell.
     /// </summary>
     public bool IsTaken;
+    public bool IsTakenFriendly;
+
+    public bool Mountain;
+
+    public bool Forest;
+
     /// <summary>
     /// Cost of moving through the cell.
     /// </summary>

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Equipment
+[CreateAssetMenu(fileName = "New Equipment", menuName = "Equipment")]
+public class Equipment: ScriptableObject
 {
     /*
      * There are four different pieces of equipment that a unit is able to be given.
@@ -23,21 +23,12 @@ public class Equipment
      *  exclusive to this slot or otherwise serve as a duplicate for one of the other slots.
      * 
     */
-    private int HP;
-    private int Atk;
-    private int Def;
-    private int Res;
-    private int Spd;
+    //private int HP;
+    //private int Atk;
+    //private int Def;
+    //private int Res;
+    //private int Spd;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public enum Slot { A, B, C, D };
+    public Slot slot;
 }

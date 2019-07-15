@@ -118,7 +118,7 @@ public abstract class Unit : MonoBehaviour
     public virtual void Initialize()
     {
         Buffs = new List<Buff>();
-        Debug.Log(Environment.UserName);
+        //Debug.Log(Environment.UserName);
         UnitState = new UnitStateNormal(this);
 
         TotalHitPoints = HitPoints;

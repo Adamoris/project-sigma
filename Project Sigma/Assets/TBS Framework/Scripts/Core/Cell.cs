@@ -21,9 +21,8 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     public bool IsTaken;
     public bool IsTakenFriendly;
 
-    public bool Mountain;
-
-    public bool Forest;
+    public enum TerrainType { Mountain, Forest, Bridge, Shallow_Water, Deep_Water, Road, Plains};
+    public TerrainType terrainType;
 
     /// <summary>
     /// Cost of moving through the cell.

@@ -28,12 +28,10 @@ public static class SaveSystem
                 return data;
             }
 
-            
 
-        } else
-        {
-            Debug.LogError("Save file not found in " + path);
-            return null;
+
         }
+        Debug.LogError("Save file not found in " + path);
+        return null;
     }
 }

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CursorBehavior : MonoBehaviour
 {
+    public bool hideDefaultCursor;
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
+        Cursor.visible &= hideDefaultCursor != true;
+        
     }
 
     // Update is called once per frame

@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NextGuiController : MonoBehaviour
@@ -33,7 +34,7 @@ public class NextGuiController : MonoBehaviour
     {
         isGameOver = true;
         _gameOverPanel = Instantiate(GameOverPanel);
-        _gameOverPanel.transform.Find("InfoText").GetComponent<Text>().text = "Player " + (Unit.PotentialVictor + 1) + "\nwins!";
+        _gameOverPanel.transform.Find("InfoText").GetComponent<Text>().text = "Player " + ((sender as CellGrid).CurrentPlayerNumber + 1) + "\nwins!";
         
         _gameOverPanel.transform.Find("DismissButton").GetComponent<Button>().onClick.AddListener(DismissPanel);
  
@@ -98,7 +99,7 @@ public class NextGuiController : MonoBehaviour
     public void RestartLevel()
     {
         isGameOver = false;
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
 

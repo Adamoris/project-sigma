@@ -38,7 +38,7 @@ public class CellGrid : MonoBehaviour
     private CellGridState _cellGridState; //The grid delegates some of its behaviours to cellGridState object.
     public CellGridState CellGridState
     {
-        private get
+        get
         {
             return _cellGridState;
         }
@@ -58,7 +58,6 @@ public class CellGrid : MonoBehaviour
         get { return Players.Find(p => p.PlayerNumber.Equals(CurrentPlayerNumber)); }
     }
     public int CurrentPlayerNumber { get; private set; }
-
 
     /// <summary>
     /// GameObject that holds player objects.
@@ -114,11 +113,12 @@ public class CellGrid : MonoBehaviour
             cell.GetComponent<Cell>().GetNeighbours(Cells);
         }
 
+        Units = new List<Unit>();
         var unitGenerator = GetComponent<IUnitGenerator>();
         if (unitGenerator != null)
         {
-            Units = unitGenerator.SpawnUnits(Cells);
-            foreach (var unit in Units)
+            var units = unitGenerator.SpawnUnits(Cells);
+            foreach (var unit in units)
             {
                 AddUnit(unit.GetComponent<Transform>());
             }
@@ -151,7 +151,7 @@ public class CellGrid : MonoBehaviour
         if (totalPlayersAlive.Count == 1)
         {
             Debug.Log("Game is over!");
-            if(GameEnded != null)
+            if (GameEnded != null)
                 GameEnded.Invoke(this, new EventArgs());
         }
     }
@@ -162,6 +162,7 @@ public class CellGrid : MonoBehaviour
     /// <param name="unit">Unit to add</param>
     public void AddUnit(Transform unit)
     {
+        Units.Add(unit.GetComponent<Unit>());
         unit.GetComponent<Unit>().UnitClicked += OnUnitClicked;
         unit.GetComponent<Unit>().UnitDestroyed += OnUnitDestroyed;
 

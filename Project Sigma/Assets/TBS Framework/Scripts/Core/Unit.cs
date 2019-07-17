@@ -96,14 +96,12 @@ public abstract class Unit : MonoBehaviour
     public int ActionPoints;
     private int CounterPoints;
     public static bool Attacking;
-
     /// <summary>
     /// Indicates the player that the unit belongs to. 
     /// Should correspoond with PlayerNumber variable on Player script.
     /// </summary>
     public int PlayerNumber;
     public static int PotentialVictor;
-
     /// <summary>
     /// Indicates if movement animation is playing.
     /// </summary>
@@ -148,7 +146,7 @@ public abstract class Unit : MonoBehaviour
     public virtual void OnTurnStart()
     {
         MovementPoints = TotalMovementPoints;
-
+        ActionPoints = TotalActionPoints;
 
         SetState(new UnitStateMarkedAsFriendly(this));
     }
@@ -163,7 +161,6 @@ public abstract class Unit : MonoBehaviour
         Buffs.ForEach(b => { b.Duration--; });
 
         SetState(new UnitStateNormal(this));
-        ActionPoints = TotalActionPoints;
     }
     /// <summary>
     /// Method is called when units HP drops below 1.
@@ -221,7 +218,7 @@ public abstract class Unit : MonoBehaviour
         MarkAsAttacking(other);
         ActionPoints--;
         other.Defend(this, AttackFactor);
-        //Debug.Log("attack: " + this);
+        //Debug.Log("attack: " + this);		
         //Debug.Log("attack: " + other);
         if (ActionPoints == 0)
         {
@@ -256,18 +253,18 @@ public abstract class Unit : MonoBehaviour
             UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));
             if (HitPoints > 0)
             {
-
-            //Debug.Log(this + "aaa" + ActionPoints);
-                if (!IsUnitAttackable(other, Cell)) {
-                //Debug.Log("Counter!");
+                //Debug.Log(this + "aaa" + ActionPoints);		
+                if (!IsUnitAttackable(other, Cell))
+                {
+                    //Debug.Log("Counter!");		
                 }
                 else if (CounterPoints > 0)
                 {
-                    
-                    //Debug.Log("Potential victor: " + PlayerNumber);
+
+                    //Debug.Log("Potential victor: " + PlayerNumber);		
                     PotentialVictor = PlayerNumber;
                     CounterPoints--;
-                    //Debug.Log("Counter!: " + this);
+                    //Debug.Log("Counter!: " + this);		
                     StartCoroutine(Retaliate(other));
                 }
             }
@@ -275,8 +272,8 @@ public abstract class Unit : MonoBehaviour
         if (HitPoints <= 0)
         {
             if (UnitDestroyed != null)
-                //Debug.Log("Potential victor: " + other.PlayerNumber);
-                PotentialVictor = other.PlayerNumber;
+                //Debug.Log("Potential victor: " + other.PlayerNumber);		
+                PotentialVictor = other.PlayerNumber;		
                 //Debug.Log("dead: " + PlayerNumber);
                 UnitDestroyed.Invoke(this, new AttackEventArgs(other, this, damage));
             OnDestroyed();
@@ -296,7 +293,7 @@ public abstract class Unit : MonoBehaviour
             return;
 
         //Change this line back when adding in the full menu functionality for the combat system.
-        //MovementPoints -= totalMovementCost;
+        //MovementPoints -= totalMovementCost;		
         MovementPoints = 0;
 
         Cell.IsTaken = false;

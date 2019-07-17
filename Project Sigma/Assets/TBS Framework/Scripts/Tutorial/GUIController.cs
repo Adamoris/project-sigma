@@ -24,7 +24,7 @@ public class GUIController : MonoBehaviour
 
     void Update ()
     {
-        if(Input.GetKeyDown(KeyCode.N))
+        if(Input.GetKeyDown(KeyCode.N) && !(CellGrid.CellGridState is CellGridStateAiTurn))
         {
             CellGrid.EndTurn();//User ends his turn by pressing "n" on keyboard.
         }

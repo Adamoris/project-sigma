@@ -35,3 +35,15 @@ Version 1.1.1
 
 -Fixed a bug where Grid Helper faultyly displayed information about missing parameters.
 -Fixed a bug where unreachable cells might have been highlighted as reachable.
+
+Version 1.1.2
+-Added FAQ
+-Added forum thread at https://forum.unity.com/threads/turn-based-strategy-framework.704129/
+
+-Removed obsolete code for loading scenes
+
+-Fixed a bug in AddUnit method where unit was not added to Unit list
+-Fixed a bug in GUIController where pressing 'n' multiple times could interrupt AI turn
+-Fixed layers in ExampleScene4
+-Fixed GUI elements in ExampleScene5
+

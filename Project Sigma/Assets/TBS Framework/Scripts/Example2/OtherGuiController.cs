@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 class OtherGuiController : MonoBehaviour
@@ -124,7 +125,7 @@ class OtherGuiController : MonoBehaviour
     }
     public void RestartLevel()
     {
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
 

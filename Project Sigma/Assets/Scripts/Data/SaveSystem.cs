@@ -22,12 +22,13 @@ public static class SaveSystem
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
+            using (FileStream stream = new FileStream(path, FileMode.Open))
+            {
+                PlayerData data = formatter.Deserialize(stream) as PlayerData;
+                return data;
+            }
 
-            PlayerData data = formatter.Deserialize(stream) as PlayerData;
-            stream.Close();
-
-            return data;
+            
 
         } else
         {

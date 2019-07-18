@@ -21,7 +21,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     public bool IsTaken;
     public bool IsTakenFriendly;
 
-    public enum TerrainType { Mountain, Forest, Bridge, Shallow_Water, Deep_Water, Road, Plains };
+    public enum TerrainType { Plains, Mountain, Forest, Bridge, Shallow_Water, Deep_Water, Road };
     public TerrainType terrainType;
 
     /// <summary>

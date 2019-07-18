@@ -8,8 +8,11 @@ public class CursorBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible &= hideDefaultCursor != true;
-        
+        //Cursor.visible &= hideDefaultCursor != true;
+        if (hideDefaultCursor)
+        {
+            Cursor.visible = false;
+        }
     }
 
     // Update is called once per frame

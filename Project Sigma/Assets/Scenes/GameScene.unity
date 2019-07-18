@@ -3469,7 +3469,7 @@ MonoBehaviour:
   _offsetCoord: {x: 1, y: 5}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &270534275
 SpriteRenderer:
@@ -4128,7 +4128,7 @@ MonoBehaviour:
   _offsetCoord: {x: 11, y: 8}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &289072514
 SpriteRenderer:
@@ -7644,7 +7644,7 @@ MonoBehaviour:
   _offsetCoord: {x: 6, y: 8}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &561074203
 SpriteRenderer:
@@ -8177,7 +8177,7 @@ MonoBehaviour:
   _offsetCoord: {x: 14, y: 6}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &580879893
 SpriteRenderer:
@@ -8302,7 +8302,7 @@ MonoBehaviour:
   _offsetCoord: {x: 14, y: 5}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &597387163
 SpriteRenderer:
@@ -9105,7 +9105,7 @@ MonoBehaviour:
   _offsetCoord: {x: 1, y: 0}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &643112268
 SpriteRenderer:
@@ -9230,7 +9230,7 @@ MonoBehaviour:
   _offsetCoord: {x: 9, y: 6}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &650770146
 SpriteRenderer:
@@ -10189,7 +10189,7 @@ MonoBehaviour:
   _offsetCoord: {x: 13, y: 6}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &691918679
 SpriteRenderer:
@@ -10314,7 +10314,7 @@ MonoBehaviour:
   _offsetCoord: {x: 10, y: 6}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &706138913
 SpriteRenderer:
@@ -10518,7 +10518,7 @@ MonoBehaviour:
   _offsetCoord: {x: 9, y: 2}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &719163548
 SpriteRenderer:
@@ -11266,7 +11266,7 @@ MonoBehaviour:
   _offsetCoord: {x: 14, y: 3}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &741148095
 SpriteRenderer:
@@ -12168,7 +12168,7 @@ MonoBehaviour:
   _offsetCoord: {x: 5, y: 5}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &800169645
 SpriteRenderer:
@@ -13769,7 +13769,7 @@ MonoBehaviour:
   _offsetCoord: {x: 1, y: 6}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &886625141
 SpriteRenderer:
@@ -13894,7 +13894,7 @@ MonoBehaviour:
   _offsetCoord: {x: 7, y: 8}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &893754827
 SpriteRenderer:
@@ -14837,7 +14837,7 @@ MonoBehaviour:
   _offsetCoord: {x: 1, y: 4}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &961611852
 SpriteRenderer:
@@ -16331,7 +16331,7 @@ MonoBehaviour:
   _offsetCoord: {x: 15, y: 2}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 2
 --- !u!212 &1032977602
 SpriteRenderer:
@@ -18214,7 +18214,7 @@ MonoBehaviour:
   _offsetCoord: {x: 6, y: 4}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1178371780
 SpriteRenderer:
@@ -21728,7 +21728,7 @@ MonoBehaviour:
   _offsetCoord: {x: 0, y: 1}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &1387646211
 SpriteRenderer:
@@ -22669,7 +22669,7 @@ MonoBehaviour:
   _offsetCoord: {x: 0, y: 2}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1437250882
 SpriteRenderer:
@@ -23660,7 +23660,7 @@ MonoBehaviour:
   _offsetCoord: {x: 6, y: 5}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1499846778
 SpriteRenderer:
@@ -24254,7 +24254,7 @@ MonoBehaviour:
   _offsetCoord: {x: 7, y: 7}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1549245111
 SpriteRenderer:
@@ -24833,7 +24833,7 @@ MonoBehaviour:
   _offsetCoord: {x: 1, y: 1}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &1595502466
 SpriteRenderer:
@@ -24958,7 +24958,7 @@ MonoBehaviour:
   _offsetCoord: {x: 14, y: 0}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &1606569744
 SpriteRenderer:
@@ -25241,7 +25241,7 @@ MonoBehaviour:
   _offsetCoord: {x: 7, y: 0}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1622657114
 SpriteRenderer:
@@ -25366,7 +25366,7 @@ MonoBehaviour:
   _offsetCoord: {x: 9, y: 5}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &1628288014
 SpriteRenderer:
@@ -25616,7 +25616,7 @@ MonoBehaviour:
   _offsetCoord: {x: 0, y: 8}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 3
 --- !u!212 &1635549269
 SpriteRenderer:
@@ -25820,7 +25820,7 @@ MonoBehaviour:
   _offsetCoord: {x: 7, y: 1}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &1659539562
 SpriteRenderer:
@@ -26040,7 +26040,7 @@ MonoBehaviour:
   _offsetCoord: {x: 13, y: 7}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &1666896201
 SpriteRenderer:
@@ -26470,7 +26470,7 @@ MonoBehaviour:
   _offsetCoord: {x: 10, y: 2}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1687726703
 SpriteRenderer:
@@ -27309,7 +27309,7 @@ MonoBehaviour:
   _offsetCoord: {x: 6, y: 3}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1756243149
 SpriteRenderer:
@@ -27763,7 +27763,7 @@ MonoBehaviour:
   _offsetCoord: {x: 10, y: 5}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 5
   MovementCost: 3
 --- !u!212 &1767026131
 SpriteRenderer:
@@ -28097,7 +28097,7 @@ MonoBehaviour:
   _offsetCoord: {x: 15, y: 1}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1788136470
 SpriteRenderer:
@@ -29951,7 +29951,7 @@ MonoBehaviour:
   _offsetCoord: {x: 12, y: 2}
   IsTaken: 1
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 1
   MovementCost: 3
 --- !u!212 &1926785003
 SpriteRenderer:
@@ -30352,7 +30352,7 @@ MonoBehaviour:
   _offsetCoord: {x: 12, y: 4}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &1945576361
 SpriteRenderer:
@@ -31835,7 +31835,7 @@ MonoBehaviour:
   _offsetCoord: {x: 10, y: 3}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &2031230490
 SpriteRenderer:
@@ -32296,7 +32296,7 @@ MonoBehaviour:
   _offsetCoord: {x: 2, y: 0}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &2050459529
 SpriteRenderer:
@@ -34303,7 +34303,7 @@ MonoBehaviour:
   _offsetCoord: {x: 3, y: 0}
   IsTaken: 0
   IsTakenFriendly: 0
-  terrainType: 0
+  terrainType: 2
   MovementCost: 5
 --- !u!212 &2145998250
 SpriteRenderer:
@@ -34469,6 +34469,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539916559395692347, guid: 5eeb44353752e4a7ab6d26a81a8f7c3d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539916559395692347, guid: 5eeb44353752e4a7ab6d26a81a8f7c3d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539916559395692347, guid: 5eeb44353752e4a7ab6d26a81a8f7c3d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5539916559395692324, guid: 5eeb44353752e4a7ab6d26a81a8f7c3d,
         type: 3}

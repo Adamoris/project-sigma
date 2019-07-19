@@ -70,6 +70,8 @@ public abstract class Unit : MonoBehaviour
 
     public Card card;
 
+    [Tooltip("This is the unit's name.")]
+    public string UnitName;
     [Tooltip("A unit is defeated if its Hit Points reach 0.")]
     public int HitPoints;
     [Tooltip("This is the range at which a unit is able to attack.")]

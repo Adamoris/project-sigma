@@ -52,12 +52,17 @@ public class Card : ScriptableObject
     public enum Geist { Lunar, Solar }
     public Geist geist;
 
+    //This indicates the weapon typing of the unit.
+    public enum WeaponType { Sword, Axe, Lance, Dagger, Bow}
+    public WeaponType weaponType;
+
 
     [Header("Unit Art Assets")]
     //Artwork.
     public Sprite portrait;
     public Sprite mapSprite;
     public Sprite affinitySprite;
+
 
     [Header("Lvl. 1 Base Stats")]
     //These are the stats for a neutral IV unit at level 1.
@@ -72,6 +77,7 @@ public class Card : ScriptableObject
     [Rename("Res")]
     public int Res_floor;
 
+
     [Header("Lvl. 50 Base Stats")]
     //These are the stats for a neutral IV unit at level 50.
     [Rename("HP")]
@@ -85,10 +91,12 @@ public class Card : ScriptableObject
     [Rename("Res")]
     public int Res_ceiling;
 
+
     [Header("Unit's Current Power Level")]
     //This is the currently level of the unit.
     public int level;
     public int merge;
+
 
     [Header("Assist/Equipment/Special/Weapon")]
     public Assists assist;
@@ -102,6 +110,7 @@ public class Card : ScriptableObject
     public Equipment slot_D;
     public Specials special;
     public Weapon weapon;
+
 
     //These are the current stats for a neutral IV unit.
     [HideInInspector]

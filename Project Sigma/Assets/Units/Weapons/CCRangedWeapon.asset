@@ -12,10 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d854d572ef49452187015bf6ae0faba, type: 3}
   m_Name: CCRangedWeapon
   m_EditorClassIdentifier: 
+  name: CC_Generic
+  description: This is a template weapon representing a ranged weapon that is also
+    capable of hitting melee units in the enemy phase.
+  mt: 10
   Artwork: {fileID: 0}
   mapSprite: {fileID: 0}
-  name: CC_Generic
-  description: 
-  mt: 10
-  range: 1
+  weaponType: 0
+  inheritable: 0
   equipmentEffect: {fileID: 0}
+  armor: 0
+  cavalry: 0
+  flier: 0
+  infantry: 0
+  combatOrder_WEPP: 0
+  combatOrder_WEEP: 0
+  combatOrder_TEPP: 0
+  combatOrder_TEEP: 0
+  combatOrder_AEPP: 0
+  includeSelf_AEPP: 0
+  range_AEPP: 0
+  combatOrder_AEEP: 0
+  includeSelf_AEEP: 0
+  range_AEEP: 0
+  combatOrder_EEPP: 0
+  includeTarget_EEPP: 0
+  range_EEPP: 0
+  combatOrder_EEEP: 0
+  includeTarget_EEEP: 0
+  range_EEEP: 0
+  range: 1

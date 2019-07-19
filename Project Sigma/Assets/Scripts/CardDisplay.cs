@@ -25,8 +25,8 @@ public class CardDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        artworkImage.sprite = card.artwork;
-        affinityImage.sprite = card.affinity;
+        artworkImage.sprite = card.portrait;
+        affinityImage.sprite = card.affinitySprite;
         mergeText.text = card.merge.ToString();
         nameText.text = card.name;
         hpText.text = card.HP.ToString() + "/" + card.HP.ToString();
@@ -34,7 +34,7 @@ public class CardDisplay : MonoBehaviour
         spdText.text = card.Spd.ToString();
         defText.text = card.Def.ToString();
         resText.text = card.Res.ToString();
-        levelText.text = card.Level.ToString();
+        levelText.text = card.level.ToString();
 
 
     }

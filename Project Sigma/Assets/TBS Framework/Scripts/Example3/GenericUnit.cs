@@ -3,7 +3,12 @@ using UnityEngine;
 
 public class GenericUnit : Unit
 {
-    public string UnitName;
+    //public string UnitName;
+
+    private void Start()
+    {
+        UnitName = card.name;
+    }
 
     private Coroutine PulseCoroutine;
 

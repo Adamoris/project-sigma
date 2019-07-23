@@ -120,9 +120,24 @@ public abstract class Unit : MonoBehaviour
         Buffs = new List<Buff>();
         //Debug.Log(Environment.UserName);
         UnitState = new UnitStateNormal(this);
-
         TotalHitPoints = HitPoints;
-        TotalMovementPoints = MovementPoints;
+        if (card.moveClass == Card.MoveClass.Armor)
+        {
+            TotalMovementPoints = card.reference.armorMovement;
+        }
+        else if (card.moveClass == Card.MoveClass.Cavalry)
+        {
+            TotalMovementPoints = card.reference.cavalryMovement;
+        }
+        else if (card.moveClass == Card.MoveClass.Flier)
+        {
+            TotalMovementPoints = card.reference.flierMovement;
+        }
+        else if (card.moveClass == Card.MoveClass.Infantry)
+        {
+            TotalMovementPoints = card.reference.infantryMovement;
+        }
+
         TotalActionPoints = ActionPoints;
     }
 

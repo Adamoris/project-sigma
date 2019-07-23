@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card : ScriptableObject
 {
+    [Header("Abstract Details")]
+    //This SO holds information that is universal.
+    public Universal reference;
     //This is for checking if a unit is unlocked by the player.
     public bool unlocked;
 
@@ -37,23 +40,23 @@ public class Card : ScriptableObject
     public int IV;
 
     //This indicates the move type of the unit.
-    public enum MoveClass { Armor, Cavalry, Flier, Infantry }
+    public enum MoveClass { None, Armor, Cavalry, Flier, Infantry }
     public MoveClass moveClass;
 
     //This indicates the race of the unit.
-    public enum Race { Colossi, Cyren, Ent, Humans, Leviathans, Lupine, Nocturne, Quertzal, Raptors }
+    public enum Race { None, Colossi, Cyren, Ent, Humans, Leviathans, Lupine, Nocturne, Quertzal, Raptors }
     public Race race;
 
     //This indicates the unit's affinity.
-    public enum Affinity { Diamond, Club, Heart, Spade }
+    public enum Affinity { None, Diamond, Club, Heart, Spade }
     public Affinity affinity;
 
     //This indicates the unit's geist typing.
-    public enum Geist { Lunar, Solar }
+    public enum Geist { None, Lunar, Solar }
     public Geist geist;
 
     //This indicates the weapon typing of the unit.
-    public enum WeaponType { Sword, Axe, Lance, Dagger, Bow}
+    public enum WeaponType { None, Sword, Axe, Lance, Dagger, Bow, Magic, Beast}
     public WeaponType weaponType;
 
 
@@ -90,6 +93,34 @@ public class Card : ScriptableObject
     public int Def_ceiling;
     [Rename("Res")]
     public int Res_ceiling;
+
+
+    [Header("Super Boon(s)")]
+    //These are the potential superboons of the unit.
+    [Rename("HP")]
+    public bool HP_boon;
+    [Rename("Atk")]
+    public bool Atk_boon;
+    [Rename("Spd")]
+    public bool Spd_boon;
+    [Rename("Def")]
+    public bool Def_boon;
+    [Rename("Res")]
+    public bool Res_boon;
+
+
+    [Header("Super Bane(s)")]
+    //These are the potential superbanes of the unit.
+    [Rename("HP")]
+    public bool HP_bane;
+    [Rename("Atk")]
+    public bool Atk_bane;
+    [Rename("Spd")]
+    public bool Spd_bane;
+    [Rename("Def")]
+    public bool Def_bane;
+    [Rename("Res")]
+    public bool Res_bane;
 
 
     [Header("Unit's Current Power Level")]

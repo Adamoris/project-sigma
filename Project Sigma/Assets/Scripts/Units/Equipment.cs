@@ -23,12 +23,67 @@ public class Equipment: ScriptableObject
      *  exclusive to this slot or otherwise serve as a duplicate for one of the other slots.
      * 
     */
-    //private int HP;
-    //private int Atk;
-    //private int Def;
-    //private int Res;
-    //private int Spd;
 
-    public enum Slot { A, B, C, D };
+    [Header("Equipment General Information")]
+    //This is the name of the unit.
+    public new string name;
+
+    //This is the equipment slot this object occupies.
+    public enum Slot { None, A, B, C, D };
     public Slot slot;
+
+    //This is the description for what the equipment does.
+    [TextArea(3, 10)]
+    public string description;
+
+    //This indicated how much it costs for a unit to aquire a skill.
+    public int cost;
+
+    //This is for checking if a specific skill is already unlocked before this one can be learned.
+    public Equipment prerequisite;
+
+
+    [Header("Equipment Art Asset")]
+    public Sprite cardSprite;
+
+
+    [Header("Weapon Effectiveness")]
+    public bool armor;
+    public bool cavalry;
+    public bool flier;
+    public bool infantry;
+
+
+    //These enums will be used in the sections below.
+    public enum CombatOrder { None, BeforeCombat, StartOfCombat, EndOfCombat }
+
+
+    [Header("Stat Modifier Effect")]
+    [Rename("Combat Order")]
+    public CombatOrder combatOrder_statMod;
+    public int HPModifier;
+    public int atkModifier;
+    public int spdModifier;
+    public int defModifier;
+    public int resModifier;
+
+
+    [Header("Inheritability")]
+    //This is to determine if a weapon is inheritable.
+    [HideInInspector]
+    public bool inheritable;
+    [HideInInspector]
+    public bool sword;
+    [HideInInspector]
+    public bool axe;
+    [HideInInspector]
+    public bool lance;
+    [HideInInspector]
+    public bool dagger;
+    [HideInInspector]
+    public bool bow;
+    [HideInInspector]
+    public bool magic;
+    [HideInInspector]
+    public bool beast;
 }

@@ -9,10 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7b637763d13452ba92330bfa0a5a3c, type: 3}
-  m_Name: New Special
+  m_Script: {fileID: 11500000, guid: 9ef3f32af05d945b6a706b99e861f908, type: 3}
+  m_Name: Reference
   m_EditorClassIdentifier: 
-  name: Eclipse
-  effectField: 1
-  description: 
-  cd: 0
+  armorMovement: 3
+  cavalryMovement: 9
+  flierMovement: 6
+  infantryMovement: 6
+  forestCost: 0
+  mountainsCost: 0
+  plainsCost: 0
+  name: 
+  playerLevel: 0
+  premiumCurrency: 0

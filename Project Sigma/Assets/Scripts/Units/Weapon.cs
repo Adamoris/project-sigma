@@ -17,14 +17,17 @@ public class Weapon : ScriptableObject
     //This is the might value of the weapon which is added on to the unit's atk stat.
     public int mt;
 
+    //This is for checking if a specific weapon is already unlocked before this one can be learned.
+    public Weapon prerequisite;
+
 
     [Header("Weapon Art Assets")]
-    public Sprite Artwork;
+    public Sprite cardSprite;
     public Sprite mapSprite;
 
 
     //This specifies the weapon typing for determining inheritance restrictions.
-    public enum WeaponType { Sword, Axe, Lance, Bow }
+    public enum WeaponType { None, Sword, Axe, Lance, Bow }
     [Header("Inheritability")]
     public WeaponType weaponType;
     //This is to determine if a weapon is inheritable.
@@ -108,7 +111,7 @@ public class Weapon : ScriptableObject
 
 
     //This specifies whether a weapon is ranged or not.
-    public enum Range { Melee, Ranged }
+    public enum Range { None, Melee, Ranged }
     [Header("Weapon Range")]
     public Range range;
 

@@ -79,6 +79,7 @@ public class NextGuiController : MonoBehaviour
         _infoPanel.transform.Find("Defence").Find("Image").transform.localScale = new Vector3((float)unit.DefenceFactor / 10.0f, 1, 1);
 
         _infoPanel.GetComponent<RectTransform>().SetParent(Canvas.GetComponent<RectTransform>(),false);
+        _infoPanel.SetActive(false);
     }
     private void OnUnitAdded(object sender, UnitCreatedEventArgs e)
     {

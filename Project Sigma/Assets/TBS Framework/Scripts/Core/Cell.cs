@@ -29,6 +29,13 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     /// </summary>
     public int MovementCost;
 
+    UI_Operator ui_operator;
+
+    private void Awake()
+    {
+        ui_operator = FindObjectOfType<UI_Operator>();
+    }
+
     /// <summary>
     /// CellClicked event is invoked when user clicks on the cell. 
     /// It requires a collider on the cell game object to work.
@@ -59,6 +66,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     {
         if (CellClicked != null)
             CellClicked.Invoke(this, new EventArgs());
+            ui_operator.HideCard();
     }
 
     /// <summary>

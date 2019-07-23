@@ -4,122 +4,113 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
 
-/// <summary>
-/// Base class for all units in the game.
-/// </summary>
+
+// Base class for all units in the game.
 public abstract class Unit : MonoBehaviour
 {
     Dictionary<Cell, List<Cell>> cachedPaths = null;
-    /// <summary>
-    /// UnitClicked event is invoked when user clicks the unit. 
-    /// It requires a collider on the unit game object to work.
-    /// </summary>
+    // UnitClicked event is invoked when user clicks the unit. 
+    // It requires a collider on the unit game object to work.
     public event EventHandler UnitClicked;
-    /// <summary>
-    /// UnitSelected event is invoked when user clicks on unit that belongs to him. 
-    /// It requires a collider on the unit game object to work.
-    /// </summary>
+
+    // UnitSelected event is invoked when user clicks on unit that belongs to him. 
+    // It requires a collider on the unit game object to work.
     public event EventHandler UnitSelected;
-    /// <summary>
-    /// UnitDeselected event is invoked when user click outside of currently selected unit's collider.
-    /// It requires a collider on the unit game object to work.
-    /// </summary>
+
+    // UnitDeselected event is invoked when user click outside of currently selected unit's collider.
+    // It requires a collider on the unit game object to work.
     public event EventHandler UnitDeselected;
-    /// <summary>
-    /// UnitHighlighted event is invoked when user moves cursor over the unit. 
-    /// It requires a collider on the unit game object to work.
-    /// </summary>
+
+    // UnitHighlighted event is invoked when user moves cursor over the unit. 
+    // It requires a collider on the unit game object to work.
     public event EventHandler UnitHighlighted;
-    /// <summary>
-    /// UnitDehighlighted event is invoked when cursor exits unit's collider. 
-    /// It requires a collider on the unit game object to work.
-    /// </summary>
+
+    // UnitDehighlighted event is invoked when cursor exits unit's collider. 
+    // It requires a collider on the unit game object to work.
     public event EventHandler UnitDehighlighted;
-    /// <summary>
-    /// UnitAttacked event is invoked when the unit is attacked.
-    /// </summary>
+
+    // UnitAttacked event is invoked when the unit is attacked.
     public event EventHandler<AttackEventArgs> UnitAttacked;
-    /// <summary>
-    /// UnitDestroyed event is invoked when unit's hitpoints drop below 0.
-    /// </summary>
+
+    // UnitDestroyed event is invoked when unit's hitpoints drop below 0.
     public event EventHandler<AttackEventArgs> UnitDestroyed;
-    /// <summary>
-    /// UnitMoved event is invoked when unit moves from one cell to another.
-    /// </summary>
+
+    // UnitMoved event is invoked when unit moves from one cell to another.
     public event EventHandler<MovementEventArgs> UnitMoved;
+
 
     public UnitState UnitState { get; set; }
     public void SetState(UnitState state)
     {
         UnitState.MakeTransition(state);
     }
+    // UI elements
+    UI_Operator ui_operator;
 
-    /// <summary>
-    /// A list of buffs that are applied to the unit.
-    /// </summary>
+    private void Awake()
+    {
+        ui_operator = FindObjectOfType<UI_Operator>();
+    }
+
+
+    // A list of buffs that are applied to the unit.
     public List<Buff> Buffs { get; private set; }
 
     public int TotalHitPoints { get; private set; }
     protected int TotalMovementPoints;
     protected int TotalActionPoints;
 
-    /// <summary>
-    /// Cell that the unit is currently occupying.
-    /// </summary>
+    // Cell that the unit is currently occupying.
     public Cell Cell { get; set; }
 
+    // Stats
     public Card card;
 
-    [Tooltip("This is the unit's name.")]
+    //[Tooltip("This is the unit's name.")]
     public string UnitName;
-    [Tooltip("A unit is defeated if its Hit Points reach 0.")]
+    //[Tooltip("A unit is defeated if its Hit Points reach 0.")]
     public int HitPoints;
-    [Tooltip("This is the range at which a unit is able to attack.")]
+    //[Tooltip("This is the range at which a unit is able to attack.")]
     public int AttackRange;
-    [Tooltip("The higher the Attack, the more damage is inflicted on foes.")]
+    //[Tooltip("The higher the Attack, the more damage is inflicted on foes.")]
     public int AttackFactor;
-    [Tooltip("A unit will attack twice of its speed is at least 5 more than its foe.")]
+    //[Tooltip("A unit will attack twice of its speed is at least 5 more than its foe.")]
     public int Speed;
-    [Tooltip("The higher the Defense, the less damage is taken from physical attacks.")]
+    //[Tooltip("The higher the Defense, the less damage is taken from physical attacks.")]
     public int DefenceFactor;
-    [Tooltip("The higher the Resistance, the less damage is taken from magical attacks.")]
+    //[Tooltip("The higher the Resistance, the less damage is taken from magical attacks.")]
     public int Resistance;
-    /// <summary>
-    /// Determines how far on the grid the unit can move.
-    /// </summary>
+
+    // Determines how far on the grid the unit can move.
     public int MovementPoints;
-    /// <summary>
-    /// Determines speed of movement animation.
-    /// </summary>
+
+    // Determines speed of movement animation.
     public float MovementSpeed;
-    /// <summary>
-    /// Determines how many attacks unit can perform in one turn.
-    /// </summary>
+
+    // Determines how many attacks unit can perform in one turn.
     public int ActionPoints;
     private int CounterPoints;
     public static bool Attacking;
-    /// <summary>
-    /// Indicates the player that the unit belongs to. 
-    /// Should correspoond with PlayerNumber variable on Player script.
-    /// </summary>
+
+    // Indicates the player that the unit belongs to. 
+    // Should correspoond with PlayerNumber variable on Player script.
     public int PlayerNumber;
     public static int PotentialVictor;
-    /// <summary>
-    /// Indicates if movement animation is playing.
-    /// </summary>
+
+    // Indicates if movement animation is playing.
     public bool isMoving { get; set; }
 
     private static DijkstraPathfinding _pathfinder = new DijkstraPathfinding();
     private static IPathfinding _fallbackPathfinder = new AStarPathfinding();
 
-    /// <summary>
-    /// Method called after object instantiation to initialize fields etc. 
-    /// </summary>
+
+    // Method called after object instantiation to initialize fields etc. 
     public virtual void Initialize()
     {
         Buffs = new List<Buff>();
         //Debug.Log(Environment.UserName);
         UnitState = new UnitStateNormal(this);
+        HitPoints = card.HP_ceiling;
         TotalHitPoints = HitPoints;
         if (card.moveClass == Card.MoveClass.Armor)
         {
@@ -145,6 +136,8 @@ public abstract class Unit : MonoBehaviour
     {
         if (UnitClicked != null)
             UnitClicked.Invoke(this, new EventArgs());
+            ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
+            ui_operator.ShowCard();
     }
     protected virtual void OnMouseEnter()
     {
@@ -157,19 +150,16 @@ public abstract class Unit : MonoBehaviour
             UnitDehighlighted.Invoke(this, new EventArgs());
     }
 
-    /// <summary>
-    /// Method is called at the start of each turn.
-    /// </summary>
+
+    // Method is called at the start of each turn.
     public virtual void OnTurnStart()
     {
         MovementPoints = TotalMovementPoints;
         ActionPoints = TotalActionPoints;
-
         SetState(new UnitStateMarkedAsFriendly(this));
     }
-    /// <summary>
-    /// Method is called at the end of each turn.
-    /// </summary>
+
+    // Method is called at the end of each turn.
     public virtual void OnTurnEnd()
     {
         cachedPaths = null;
@@ -179,9 +169,8 @@ public abstract class Unit : MonoBehaviour
 
         SetState(new UnitStateNormal(this));
     }
-    /// <summary>
-    /// Method is called when units HP drops below 1.
-    /// </summary>
+
+    // Method is called when units HP drops below 1.
     protected virtual void OnDestroyed()
     {
         Cell.IsTaken = false;
@@ -189,18 +178,16 @@ public abstract class Unit : MonoBehaviour
         Destroy(gameObject);
     }
 
-    /// <summary>
-    /// Method is called when unit is selected.
-    /// </summary>
+
+    // Method is called when unit is selected.
     public virtual void OnUnitSelected()
     {
         SetState(new UnitStateMarkedAsSelected(this));
         if (UnitSelected != null)
             UnitSelected.Invoke(this, new EventArgs());
     }
-    /// <summary>
-    /// Method is called when unit is deselected.
-    /// </summary>
+
+    // Method is called when unit is deselected.
     public virtual void OnUnitDeselected()
     {
         SetState(new UnitStateMarkedAsFriendly(this));
@@ -208,10 +195,9 @@ public abstract class Unit : MonoBehaviour
             UnitDeselected.Invoke(this, new EventArgs());
     }
 
-    /// <summary>
-    /// Method indicates if it is possible to attack unit given as parameter, 
-    /// from cell given as second parameter.
-    /// </summary>
+
+    // Method indicates if it is possible to attack unit given as parameter, 
+    // from cell given as second parameter.
     public virtual bool IsUnitAttackable(Unit other, Cell sourceCell)
     {
         // Change the comparator here to '<=' if you want ranged units to attack units that are closer
@@ -220,9 +206,8 @@ public abstract class Unit : MonoBehaviour
 
         return false;
     }
-    /// <summary>
-    /// Method deals damage to unit given as parameter. (In this case the target being attacked)
-    /// </summary>
+
+    // Method deals damage to unit given as parameter. (In this case the target being attacked)
     public virtual void DealDamage(Unit other)
     {
         if (isMoving)
@@ -251,9 +236,8 @@ public abstract class Unit : MonoBehaviour
         other.Defend(this, AttackFactor);
     }
 
-    /// <summary>
-    /// Attacking unit calls Defend method on defending unit. 
-    /// </summary>
+
+    // Attacking unit calls Defend method on defending unit. 
     protected virtual void Defend(Unit other, int damage)
     {
         if (ActionPoints > 0)
@@ -297,9 +281,8 @@ public abstract class Unit : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Moves the unit to destinationCell along the path.
-    /// </summary>
+
+    // Moves the unit to destinationCell along the path.
     public virtual void Move(Cell destinationCell, List<Cell> path)
     {
         if (isMoving)
@@ -341,23 +324,20 @@ public abstract class Unit : MonoBehaviour
         isMoving = false;
     }
 
-    ///<summary>
-    /// Method indicates if unit is capable of moving to cell given as parameter.
-    /// </summary>
+
+    // Method indicates if unit is capable of moving to cell given as parameter.
     public virtual bool IsCellMovableTo(Cell cell)
     {
         return !cell.IsTaken;
     }
-    /// <summary>
-    /// Method indicates if unit is capable of moving through cell given as parameter.
-    /// </summary>
+
+    // Method indicates if unit is capable of moving through cell given as parameter.
     public virtual bool IsCellTraversable(Cell cell)
     {
         return !cell.IsTaken;
     }
-    /// <summary>
-    /// Method returns all cells that the unit is capable of moving to.
-    /// </summary>
+
+    // Method returns all cells that the unit is capable of moving to.
     public HashSet<Cell> GetAvailableDestinations(List<Cell> cells)
     {
         cachedPaths = new Dictionary<Cell, List<Cell>>();
@@ -396,9 +376,8 @@ public abstract class Unit : MonoBehaviour
             return _fallbackPathfinder.FindPath(GetGraphEdges(cells), Cell, destination);
         }
     }
-    /// <summary>
-    /// Method returns graph representation of cell grid for pathfinding.
-    /// </summary>
+
+    // Method returns graph representation of cell grid for pathfinding.
     protected virtual Dictionary<Cell, Dictionary<Cell, int>> GetGraphEdges(List<Cell> cells)
     {
         Dictionary<Cell, Dictionary<Cell, int>> ret = new Dictionary<Cell, Dictionary<Cell, int>>();

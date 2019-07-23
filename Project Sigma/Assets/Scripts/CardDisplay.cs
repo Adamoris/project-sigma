@@ -22,8 +22,7 @@ public class CardDisplay : MonoBehaviour
     public TextMeshProUGUI levelText;
 
 
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
         artworkImage.sprite = card.portrait;
         affinityImage.sprite = card.affinitySprite;

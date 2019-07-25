@@ -194,9 +194,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &8751275
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -319,9 +320,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &16374777
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -444,9 +446,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &22021221
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -739,9 +742,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &53716129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1101,9 +1105,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &86355460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1305,9 +1310,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &93107845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1679,9 +1685,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &117537412
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1804,9 +1811,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &118049643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1929,9 +1937,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &118450273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2376,9 +2385,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &191155842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2738,9 +2748,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &209838034
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3343,9 +3354,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &269597127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3468,9 +3480,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 5}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &270534275
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3593,9 +3606,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &274715211
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3798,9 +3812,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &280921815
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3923,9 +3938,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &281922882
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4127,9 +4143,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 8}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &289072514
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4252,9 +4269,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 2
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &294853951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4586,9 +4604,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &327372897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4806,9 +4825,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &360633388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4931,9 +4951,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &361231456
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5293,9 +5314,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 2
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &393605836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5619,9 +5641,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &408173135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6133,9 +6156,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &436250057
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6495,9 +6519,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &467150651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6857,9 +6882,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &506972328
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6982,9 +7008,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &508122429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7107,9 +7134,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &514588633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7232,9 +7260,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &523209253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7453,9 +7482,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &555083836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7657,9 +7687,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 8}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &561074203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7861,9 +7892,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &568296033
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8065,9 +8097,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &580849966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8190,9 +8223,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 6}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &580879893
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8315,9 +8349,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 5}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &597387163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8598,9 +8633,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &624081301
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9118,9 +9154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &643112268
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9243,9 +9280,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 6}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &650770146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9447,9 +9485,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &661802552
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9715,9 +9754,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &667572081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9998,9 +10038,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &679159126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10202,9 +10243,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 6}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &691918679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10327,9 +10369,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 6}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &706138913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10531,9 +10574,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 2}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &719163548
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10656,9 +10700,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &723880427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10781,9 +10826,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &724035743
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10906,9 +10952,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &725371108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11031,9 +11078,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 2
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &727318059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11279,9 +11327,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &741148095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11483,9 +11532,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &752996366
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11740,9 +11790,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &762301391
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12181,9 +12232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 5}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &800169645
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12306,9 +12358,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &804515906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12431,9 +12484,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &811232386
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12714,9 +12768,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &820476332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12998,9 +13053,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &831379438
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13782,9 +13838,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 6}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &886625141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13907,9 +13964,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 8}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &893754827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14111,9 +14169,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &906043700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14315,9 +14374,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &912188771
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14440,9 +14500,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &937663707
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14644,9 +14705,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &946926840
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14850,9 +14912,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 4}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &961611852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15370,9 +15433,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &989370182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15495,9 +15559,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &991232286
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15857,9 +15922,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1010142006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16219,9 +16285,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1025342491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16344,9 +16411,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 2}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 2
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1032977602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16722,9 +16790,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1040249624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16847,9 +16916,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1071326809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17372,9 +17442,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1125215171
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17497,9 +17568,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1129706984
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17622,9 +17694,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1134372230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17832,9 +17905,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1151753163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17957,9 +18031,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1161905724
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18227,9 +18302,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 4}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1178371780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18352,9 +18428,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1182084249
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18477,9 +18554,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1190563795
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18602,9 +18680,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1198601987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18806,9 +18885,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1214117147
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18931,9 +19011,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1219837273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19293,9 +19374,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1260028988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19418,9 +19500,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1260375025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19701,9 +19784,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1275859503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19826,9 +19910,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1276218891
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19951,9 +20036,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1277844016
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20076,9 +20162,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1278148867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20517,9 +20604,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1313209405
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20642,9 +20730,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1322257627
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20846,9 +20935,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1330280197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20971,9 +21061,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1333753411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21254,9 +21345,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1337547640
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21458,9 +21550,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1346804201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21741,9 +21834,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1387646211
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21998,9 +22092,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1410038169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22255,9 +22350,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1420090945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22682,9 +22778,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 2}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1437250882
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23186,9 +23283,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1447228053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23311,9 +23409,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1453210059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23679,9 +23778,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 5}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1499846778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24273,9 +24373,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 7}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1549245111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24398,9 +24499,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1557598867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24523,9 +24625,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1581032123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24648,9 +24751,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1593022247
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24852,9 +24956,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1595502466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24977,9 +25082,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1606569744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25260,9 +25366,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 0}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1622657114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25385,9 +25492,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 5}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1628288014
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25510,9 +25618,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1631859051
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25635,9 +25744,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1635549269
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25839,9 +25949,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1659539562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26059,9 +26170,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 7}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1666896201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26489,9 +26601,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 2}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1687726703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26614,9 +26727,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1697840543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26896,9 +27010,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1705883431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27112,9 +27227,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1737159056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27322,9 +27438,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 3}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
-  MovementCost: 3
+  MovementCost: 9
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1756243149
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27526,9 +27643,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1760425436
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27651,9 +27769,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1763349118
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27776,9 +27895,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 5}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 5
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1767026131
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28110,9 +28230,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 1}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1788136470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28235,9 +28356,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1800846262
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28582,9 +28704,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1832551062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28707,9 +28830,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 2
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1839676210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28832,9 +28956,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1841944893
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29036,9 +29161,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1860904847
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29319,9 +29445,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 6}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1884325715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29523,9 +29650,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1899736606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29964,9 +30092,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 2}
   IsTaken: 1
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 1
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1926785003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30365,9 +30494,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 4}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1945576361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31136,9 +31266,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1972151491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31340,9 +31471,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1979911990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31544,9 +31676,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1988402085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31669,9 +31802,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 8}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1990738448
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31873,9 +32007,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2002833917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31998,9 +32133,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2031230490
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32123,9 +32259,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 7}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2031843989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32459,9 +32596,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2050459529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32584,9 +32722,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 3}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2052990007
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32867,9 +33006,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 2
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2068498619
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33071,9 +33211,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 1}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2072518631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33512,9 +33653,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2107191622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33795,9 +33937,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 2}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 0
   MovementCost: 3
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2119485589
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34466,9 +34609,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 0}
   IsTaken: 0
-  IsTakenFriendly: 0
+  occupationID: 0
   terrainType: 2
   MovementCost: 5
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2145998250
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -16,9 +16,9 @@ MonoBehaviour:
   cavalryMovement: 9
   flierMovement: 6
   infantryMovement: 6
-  forestCost: 0
-  mountainsCost: 0
-  plainsCost: 0
+  forestCost: 5
+  mountainsCost: 9
+  plainsCost: 3
   name: Sydney
   playerLevel: 1
   premiumCurrency: 0

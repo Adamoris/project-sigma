@@ -297,8 +297,10 @@ public abstract class Unit : MonoBehaviour
         MovementPoints = 0;
 
         Cell.IsTaken = false;
+        Cell.occupationID = 99;
         Cell = destinationCell;
         destinationCell.IsTaken = true;
+        destinationCell.occupationID = PlayerNumber;
 
         if (MovementSpeed > 0)
             StartCoroutine(MovementAnimation(path));
@@ -334,7 +336,7 @@ public abstract class Unit : MonoBehaviour
     // Method indicates if unit is capable of moving through cell given as parameter.
     public virtual bool IsCellTraversable(Cell cell)
     {
-        return !cell.IsTaken;
+        return !cell.IsTaken || cell.occupationID == PlayerNumber;
     }
 
     // Method returns all cells that the unit is capable of moving to.

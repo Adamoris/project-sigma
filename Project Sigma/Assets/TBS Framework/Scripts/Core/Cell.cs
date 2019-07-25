@@ -19,7 +19,8 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     /// Indicates if something is occupying the cell.
     /// </summary>
     public bool IsTaken;
-    public bool IsTakenFriendly;
+    [HideInInspector]
+    public int occupationID = 99;
 
     public enum TerrainType { Plains, Mountain, Forest, Bridge, Shallow_Water, Deep_Water, Road };
     public TerrainType terrainType;
@@ -27,13 +28,27 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     /// <summary>
     /// Cost of moving through the cell.
     /// </summary>
+    [HideInInspector]
     public int MovementCost;
 
+    public Universal reference;
     UI_Operator ui_operator;
 
     private void Awake()
     {
         ui_operator = FindObjectOfType<UI_Operator>();
+        if (terrainType == TerrainType.Plains)
+        {
+            MovementCost = reference.plainsCost;
+        }
+        else if (terrainType == TerrainType.Forest)
+        {
+            MovementCost = reference.forestCost;
+        }
+        else if (terrainType == TerrainType.Mountain)
+        {
+            MovementCost = reference.mountainsCost;
+        }
     }
 
     /// <summary>

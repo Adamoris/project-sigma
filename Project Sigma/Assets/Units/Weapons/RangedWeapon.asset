@@ -15,6 +15,7 @@ MonoBehaviour:
   name: RangedGeneric
   description: This is a template weapon representing a ranged weapon.
   mt: 10
+  damageType: 2
   prerequisite: {fileID: 0}
   cardSprite: {fileID: 0}
   mapSprite: {fileID: 0}

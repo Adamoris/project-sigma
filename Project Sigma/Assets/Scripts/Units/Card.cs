@@ -60,6 +60,14 @@ public class Card : ScriptableObject
     public WeaponType weaponType;
 
 
+    [Header("Unit's Current Power Level")]
+    //This is the currently level of the unit.
+    public int level;
+    public int merge;
+    public enum Rarity { None, one_star, two_star, three_star, four_star, five_star }
+    public Rarity rarity;
+
+
     [Header("Unit Art Assets")]
     //Artwork.
     public Sprite portrait;
@@ -123,12 +131,6 @@ public class Card : ScriptableObject
     public bool Res_bane;
 
 
-    [Header("Unit's Current Power Level")]
-    //This is the currently level of the unit.
-    public int level;
-    public int merge;
-
-
     [Header("Assist/Equipment/Special/Weapon")]
     public Assists assist;
     [Rename("Slot A")]
@@ -166,6 +168,5 @@ public class Card : ScriptableObject
     public int Def_modifier;
     [HideInInspector]
     public int Res_modifier;
-
 }
 

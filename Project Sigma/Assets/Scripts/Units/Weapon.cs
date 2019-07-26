@@ -17,6 +17,10 @@ public class Weapon : ScriptableObject
     //This is the might value of the weapon which is added on to the unit's atk stat.
     public int mt;
 
+    //This determines whether a weapon will deal magical or physical damage.
+    public enum DamageType { None, Magical, Physical}
+    public DamageType damageType;
+
     //This is for checking if a specific weapon is already unlocked before this one can be learned.
     public Weapon prerequisite;
 
@@ -40,6 +44,7 @@ public class Weapon : ScriptableObject
 
 
     [Header("Weapon Effectiveness")]
+    //This applies a damage boost against an enemy of the specified types if applicable.
     public bool armor;
     public bool cavalry;
     public bool flier;

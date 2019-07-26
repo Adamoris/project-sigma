@@ -15,7 +15,8 @@ public class MySquare : Square
 
     public override void MarkAsReachable()
     {
-        SetColor(new Color(1,0.92f,0.16f,0.5f));
+        //SetColor(new Color(1,0.92f,0.16f,0.5f));
+        SetColor(new Color32(54, 140, 235, 200));
     }
     public override void MarkAsPath()
     {

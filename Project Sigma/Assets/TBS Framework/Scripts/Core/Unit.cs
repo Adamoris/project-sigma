@@ -336,6 +336,10 @@ public abstract class Unit : MonoBehaviour
     // Method indicates if unit is capable of moving through cell given as parameter.
     public virtual bool IsCellTraversable(Cell cell)
     {
+        if (card.moveClass == Card.MoveClass.Cavalry)
+        {
+            return (!cell.IsTaken || cell.occupationID == PlayerNumber) && cell.terrainType != Cell.TerrainType.Forest;
+        }
         return !cell.IsTaken || cell.occupationID == PlayerNumber;
     }
 

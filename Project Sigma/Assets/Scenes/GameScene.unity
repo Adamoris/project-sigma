@@ -12231,7 +12231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 5}
-  IsTaken: 1
+  IsTaken: 0
   occupationID: 0
   terrainType: 1
   MovementCost: 3
@@ -18301,7 +18301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 4}
-  IsTaken: 1
+  IsTaken: 0
   occupationID: 0
   terrainType: 1
   MovementCost: 3
@@ -23777,7 +23777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 5}
-  IsTaken: 1
+  IsTaken: 0
   occupationID: 0
   terrainType: 1
   MovementCost: 3
@@ -27437,7 +27437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 3}
-  IsTaken: 1
+  IsTaken: 0
   occupationID: 0
   terrainType: 1
   MovementCost: 9

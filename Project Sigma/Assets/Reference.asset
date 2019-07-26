@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef3f32af05d945b6a706b99e861f908, type: 3}
   m_Name: Reference
   m_EditorClassIdentifier: 
-  armorMovement: 3
+  armorMovement: 5
   cavalryMovement: 9
-  flierMovement: 6
+  flierMovement: 12
   infantryMovement: 6
   forestCost: 5
   mountainsCost: 9

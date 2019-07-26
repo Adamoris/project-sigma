@@ -18,9 +18,12 @@ MonoBehaviour:
   IV: 0
   moveClass: 1
   race: 0
-  affinity: 3
+  affinity: 4
   geist: 0
   weaponType: 0
+  level: 0
+  merge: 0
+  rarity: 0
   portrait: {fileID: 21300000, guid: 552f9f8b27395473abf4e1fb4c83489c, type: 3}
   mapSprite: {fileID: 21300000, guid: 7ac8e88b820124e30b983bcb89f9c556, type: 3}
   affinitySprite: {fileID: 21300000, guid: e754778a361a84b1ea31c0789dc4c9bd, type: 3}
@@ -44,8 +47,6 @@ MonoBehaviour:
   Spd_bane: 0
   Def_bane: 0
   Res_bane: 0
-  level: 0
-  merge: 0
   assist: {fileID: 0}
   slot_A: {fileID: 0}
   slot_B: {fileID: 0}
@@ -53,7 +54,7 @@ MonoBehaviour:
   slot_D: {fileID: 0}
   special: {fileID: 0}
   weapon: {fileID: 11400000, guid: 5bbf53648ad3e471d91e252f67830ade, type: 2}
-  HP: 0
+  HP: 10
   Atk: 0
   Spd: 0
   Def: 0

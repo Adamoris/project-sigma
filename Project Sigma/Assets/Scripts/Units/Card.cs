@@ -64,7 +64,7 @@ public class Card : ScriptableObject
     //This is the currently level of the unit.
     public int level;
     public int merge;
-    public enum Rarity { None, one_star, two_star, three_star, four_star, five_star }
+    public enum Rarity { None, one_star, two_star, three_star }
     public Rarity rarity;
 
 
@@ -101,6 +101,20 @@ public class Card : ScriptableObject
     public int Def_ceiling;
     [Rename("Res")]
     public int Res_ceiling;
+
+
+    [Header("Growth Rates")]
+    //These are the stats for a neutral IV unit at level 50.
+    [Rename("HP")]
+    public int HP_rate;
+    [Rename("Atk")]
+    public int Atk_rate;
+    [Rename("Spd")]
+    public int Spd_rate;
+    [Rename("Def")]
+    public int Def_rate;
+    [Rename("Res")]
+    public int Res_rate;
 
 
     [Header("Super Boon(s)")]

@@ -7,7 +7,7 @@ public class PlayerProgress : MonoBehaviour
 {
     public int playerLevel = 1;
     public int premiumCurrencyCount;
-
+    int test;
     
 
     public void SaveProgress()
@@ -43,6 +43,15 @@ public class PlayerProgress : MonoBehaviour
     public void ChangeCurrency(int amount)
     {
         premiumCurrencyCount += amount;
+        //Debug.Log(Random.Range(1,100));
+        //Debug.Log(Mathf.Floor(0.56743f));
+        test = GetComponent<StatCalculation>().GetGrowthValue(60, 3);
+        Debug.Log(test);
+        foreach (var element in GetComponent<StatCalculation>().GenerateLevelList(test))
+        {
+            Debug.Log(element);
+        }
+        //Debug.Log(GetComponent<StatCalculation>().GenerateLevelList(test));
     }
 
     #endregion

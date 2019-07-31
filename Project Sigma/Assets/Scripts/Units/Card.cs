@@ -75,7 +75,7 @@ public class Card : ScriptableObject
     public Sprite affinitySprite;
 
 
-    [Header("Lvl. 1 Base Stats")]
+    [Header("Lvl. 1 Base Stats (at 1*)")]
     //These are the stats for a neutral IV unit at level 1.
     [Rename("HP")]
     public int HP_floor;
@@ -103,7 +103,7 @@ public class Card : ScriptableObject
     public int Res_ceiling;
 
 
-    [Header("Growth Rates")]
+    [Header("Growth Rates (%)")]
     //These are the stats for a neutral IV unit at level 50.
     [Rename("HP")]
     public int HP_rate;

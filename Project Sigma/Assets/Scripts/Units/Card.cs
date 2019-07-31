@@ -88,7 +88,7 @@ public class Card : ScriptableObject
     [Rename("Res")]
     public int Res_floor;
 
-
+    /*
     [Header("Lvl. 50 Base Stats")]
     //These are the stats for a neutral IV unit at level 50.
     [Rename("HP")]
@@ -101,7 +101,7 @@ public class Card : ScriptableObject
     public int Def_ceiling;
     [Rename("Res")]
     public int Res_ceiling;
-
+    */
 
     [Header("Growth Rates (%)")]
     //These are the stats for a neutral IV unit at level 50.
@@ -170,6 +170,13 @@ public class Card : ScriptableObject
     public int Def;
     [HideInInspector]
     public int Res;
+
+
+    public void ResetStats()
+    {
+        HP = 20;
+    }
+
 
     //These are the buff/penalty modifiers for the unit's stats.
     [HideInInspector]

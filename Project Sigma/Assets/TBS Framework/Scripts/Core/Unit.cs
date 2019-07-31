@@ -67,6 +67,7 @@ public abstract class Unit : MonoBehaviour
     public Card card;
 
     //[Tooltip("This is the unit's name.")]
+    [HideInInspector]
     public string UnitName;
     //[Tooltip("A unit is defeated if its Hit Points reach 0.")]
     public int HitPoints;
@@ -82,12 +83,15 @@ public abstract class Unit : MonoBehaviour
     public int Resistance;
 
     // Determines how far on the grid the unit can move.
+    [HideInInspector]
     public int MovementPoints;
 
     // Determines speed of movement animation.
+    [HideInInspector]
     public float MovementSpeed;
 
     // Determines how many attacks unit can perform in one turn.
+    [HideInInspector]
     public int ActionPoints;
     private int CounterPoints;
     public static bool Attacking;
@@ -110,7 +114,9 @@ public abstract class Unit : MonoBehaviour
         Buffs = new List<Buff>();
         //Debug.Log(Environment.UserName);
         UnitState = new UnitStateNormal(this);
-        HitPoints = card.HP_ceiling;
+        card.ResetStats();
+        HitPoints = card.HP;
+        Debug.Log(card.name + card.HP);
         TotalHitPoints = HitPoints;
         if (card.moveClass == Card.MoveClass.Armor)
         {

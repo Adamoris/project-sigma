@@ -27,16 +27,16 @@ MonoBehaviour:
   portrait: {fileID: 21300000, guid: b4a8e7054ac0741689f037dd08e52b3d, type: 3}
   mapSprite: {fileID: 21300000, guid: 602f694e55ac24432bf4487281e84c72, type: 3}
   affinitySprite: {fileID: 21300000, guid: 3a2b4e68008b941419a304a2a9226b62, type: 3}
-  HP_floor: 19
-  Atk_floor: 6
-  Spd_floor: 5
-  Def_floor: 8
-  Res_floor: 6
-  HP_ceiling: 45
-  Atk_ceiling: 23
-  Spd_ceiling: 22
-  Def_ceiling: 32
-  Res_ceiling: 25
+  HP_floor: 18
+  Atk_floor: 5
+  Spd_floor: 4
+  Def_floor: 7
+  Res_floor: 5
+  HP_rate: 60
+  Atk_rate: 40
+  Spd_rate: 40
+  Def_rate: 55
+  Res_rate: 45
   HP_boon: 0
   Atk_boon: 0
   Spd_boon: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   slot_D: {fileID: 0}
   special: {fileID: 0}
   weapon: {fileID: 11400000, guid: c105bb21e14a345b2be938dc02113be6, type: 2}
-  HP: 10
+  HP: 20
   Atk: 6
   Spd: 5
   Def: 8

@@ -27,16 +27,16 @@ MonoBehaviour:
   portrait: {fileID: 21300000, guid: 40edd71834cb54fbb96873ea5542ad2b, type: 3}
   mapSprite: {fileID: 21300000, guid: ecfc9018fd33249c48c3d0071af95e67, type: 3}
   affinitySprite: {fileID: 21300000, guid: 8153ed1357ba04dab85c271f24b6b973, type: 3}
-  HP_floor: 22
-  Atk_floor: 10
-  Spd_floor: 8
-  Def_floor: 9
-  Res_floor: 5
-  HP_ceiling: 48
-  Atk_ceiling: 34
-  Spd_ceiling: 34
-  Def_ceiling: 35
-  Res_ceiling: 18
+  HP_floor: 21
+  Atk_floor: 9
+  Spd_floor: 7
+  Def_floor: 8
+  Res_floor: 4
+  HP_rate: 60
+  Atk_rate: 55
+  Spd_rate: 60
+  Def_rate: 60
+  Res_rate: 30
   HP_boon: 0
   Atk_boon: 0
   Spd_boon: 0

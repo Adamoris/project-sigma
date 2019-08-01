@@ -32,11 +32,11 @@ MonoBehaviour:
   Spd_floor: 5
   Def_floor: 9
   Res_floor: 3
-  HP_ceiling: 43
-  Atk_ceiling: 36
-  Spd_ceiling: 27
-  Def_ceiling: 33
-  Res_ceiling: 18
+  HP_rate: 55
+  Atk_rate: 60
+  Spd_rate: 50
+  Def_rate: 55
+  Res_rate: 35
   HP_boon: 0
   Atk_boon: 0
   Spd_boon: 0

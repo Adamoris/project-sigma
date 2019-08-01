@@ -64,7 +64,7 @@ public class Card : ScriptableObject
     //This is the currently level of the unit.
     public int level;
     public int merge;
-    public enum Rarity { None, one_star, two_star, three_star }
+    public enum Rarity { None, Bronze, Silver, Gold }
     public Rarity rarity;
 
 
@@ -75,7 +75,7 @@ public class Card : ScriptableObject
     public Sprite affinitySprite;
 
 
-    [Header("Lvl. 1 Base Stats (at 1*)")]
+    [Header("Lvl. 1 Base Stats (Bronze)")]
     //These are the stats for a neutral IV unit at level 1.
     [Rename("HP")]
     public int HP_floor;

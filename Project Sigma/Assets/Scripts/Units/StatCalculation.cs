@@ -22,6 +22,11 @@ public class StatCalculation : MonoBehaviour
         
     }
 
+    public void RarityAdjustment(int rarity)
+    {
+
+    }
+
     public int GetGrowthValue(int growthRate, int rarity)
     {
         //Debug.Log((int)Mathf.Floor(levelingRange * 0.01f * Mathf.Floor(growthRate * (1f - rarityFactor + (rarityFactor * rarity)))));

@@ -22,7 +22,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     [HideInInspector]
     public int occupationID = 99;
 
-    public enum TerrainType { Plains, Mountain, Forest, Bridge, Shallow_Water, Deep_Water, Road };
+    public enum TerrainType { None, Plains, Mountain, Forest, Bridge, Shallow_Water, Deep_Water, Road };
     public TerrainType terrainType;
 
     /// <summary>

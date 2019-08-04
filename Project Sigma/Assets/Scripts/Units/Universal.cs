@@ -18,6 +18,12 @@ public class Universal : ScriptableObject
     public int plainsCost;
 
 
+    [Header("Terrain Sprites")]
+    public Sprite forestTile;
+    public Sprite mountainTile;
+    public Sprite plainsTile;
+
+
     [Header("Player Information")]
     public new string name;
     public int playerLevel;

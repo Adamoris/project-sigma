@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+using System;
 
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card : ScriptableObject
@@ -189,5 +191,71 @@ public class Card : ScriptableObject
     public int Def_modifier;
     [HideInInspector]
     public int Res_modifier;
+
+
+    //Stat Calculation Variables/Methods
+    private readonly float rarityFactor = 0.07f;
+    private readonly int levelingRange = 39;
+    int randomizer;
+    int[] levelList;
+
+
+    [Header("Reference Values")]
+    //These are the level lists which are stored for the individual units
+    //[HideInInspector]
+    public int[] levelListHP;
+    //[HideInInspector]
+    public int[] levelListAtk;
+    //[HideInInspector]
+    public int[] levelListSpd;
+    //[HideInInspector]
+    public int[] levelListDef;
+    //[HideInInspector]
+    public int[] levelListRes;
+
+
+    //This method combines the two methods below to both generate a growth value and its respective randomized EXP list.
+    public int[] RandomEXP(int growthRate, Rarity rarity)
+    {
+        int growthValue = GetGrowthValue(growthRate, rarity);
+        return GenerateLevelList(growthValue);
+    }
+
+    //This method is for generating the total growth value that a unit will be able to achieve.
+    public int GetGrowthValue(int growthRate, Rarity rarity)
+    {
+        //Debug.Log((int)Mathf.Floor(levelingRange * 0.01f * Mathf.Floor(growthRate * (1f - rarityFactor + (rarityFactor * rarity)))));
+        if (rarity == Rarity.Bronze)
+        {
+            return (int)Mathf.Floor(levelingRange * 0.01f * Mathf.Floor(growthRate * (1f - rarityFactor + (rarityFactor * 1))));
+        }
+        if (rarity == Rarity.Silver)
+        {
+            return (int)Mathf.Floor(levelingRange * 0.01f * Mathf.Floor(growthRate * (1f - rarityFactor + (rarityFactor * 2))));
+        }
+        if (rarity == Rarity.Gold)
+        {
+            return (int)Mathf.Floor(levelingRange * 0.01f * Mathf.Floor(growthRate * (1f - rarityFactor + (rarityFactor * 3))));
+        }
+        return 0;
+    }
+
+    //This method is for generating the list of valid levels at which to raise the stat.
+    public int[] GenerateLevelList(int growthValue)
+    {
+        levelList = new int[growthValue];
+        for (int j = 0; j < growthValue; j++)
+        {
+            randomizer = UnityEngine.Random.Range(2, levelingRange + 2);
+
+            while (levelList.Contains(randomizer))
+            {
+                randomizer = UnityEngine.Random.Range(2, levelingRange + 2);
+            }
+            levelList[j] = randomizer;
+        }
+        Array.Sort(levelList);
+        return levelList;
+    }
 }
 

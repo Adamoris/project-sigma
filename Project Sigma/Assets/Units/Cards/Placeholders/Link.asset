@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84e61b29991b446219daf86549fb1f95, type: 3}
   m_Name: Link
   m_EditorClassIdentifier: 
+  reference: {fileID: 0}
   unlocked: 0
   name: Link
   IV: 0
@@ -19,6 +20,10 @@ MonoBehaviour:
   race: 0
   affinity: 3
   geist: 0
+  weaponType: 0
+  level: 0
+  merge: 2
+  rarity: 3
   portrait: {fileID: 21300000, guid: 00d582eeb6dc54736a61e242c867e481, type: 3}
   mapSprite: {fileID: 0}
   affinitySprite: {fileID: 21300000, guid: e754778a361a84b1ea31c0789dc4c9bd, type: 3}
@@ -27,13 +32,21 @@ MonoBehaviour:
   Spd_floor: 0
   Def_floor: 0
   Res_floor: 0
-  HP_ceiling: 0
-  Atk_ceiling: 0
-  Spd_ceiling: 0
-  Def_ceiling: 0
-  Res_ceiling: 0
-  level: 0
-  merge: 2
+  HP_rate: 0
+  Atk_rate: 0
+  Spd_rate: 0
+  Def_rate: 0
+  Res_rate: 0
+  HP_boon: 0
+  Atk_boon: 0
+  Spd_boon: 0
+  Def_boon: 0
+  Res_boon: 0
+  HP_bane: 0
+  Atk_bane: 0
+  Spd_bane: 0
+  Def_bane: 0
+  Res_bane: 0
   assist: {fileID: 0}
   slot_A: {fileID: 0}
   slot_B: {fileID: 0}
@@ -46,3 +59,13 @@ MonoBehaviour:
   Spd: 27
   Def: 32
   Res: 19
+  HP_modifier: 0
+  Atk_modifier: 0
+  Spd_modifier: 0
+  Def_modifier: 0
+  Res_modifier: 0
+  levelListHP: 
+  levelListAtk: 
+  levelListSpd: 
+  levelListDef: 
+  levelListRes: 

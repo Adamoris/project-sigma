@@ -21,6 +21,9 @@ MonoBehaviour:
   affinity: 0
   geist: 0
   weaponType: 0
+  level: 0
+  merge: 9
+  rarity: 3
   portrait: {fileID: 0}
   mapSprite: {fileID: 0}
   affinitySprite: {fileID: 0}
@@ -29,11 +32,11 @@ MonoBehaviour:
   Spd_floor: 0
   Def_floor: 0
   Res_floor: 0
-  HP_ceiling: 0
-  Atk_ceiling: 0
-  Spd_ceiling: 0
-  Def_ceiling: 0
-  Res_ceiling: 0
+  HP_rate: 0
+  Atk_rate: 0
+  Spd_rate: 0
+  Def_rate: 0
+  Res_rate: 0
   HP_boon: 0
   Atk_boon: 0
   Spd_boon: 0
@@ -44,8 +47,6 @@ MonoBehaviour:
   Spd_bane: 0
   Def_bane: 0
   Res_bane: 0
-  level: 0
-  merge: 9
   assist: {fileID: 0}
   slot_A: {fileID: 0}
   slot_B: {fileID: 0}
@@ -63,3 +64,8 @@ MonoBehaviour:
   Spd_modifier: 0
   Def_modifier: 0
   Res_modifier: 0
+  levelListHP: 
+  levelListAtk: 
+  levelListSpd: 
+  levelListDef: 
+  levelListRes: 

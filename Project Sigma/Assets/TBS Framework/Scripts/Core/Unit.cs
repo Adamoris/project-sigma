@@ -116,7 +116,7 @@ public abstract class Unit : MonoBehaviour
         UnitState = new UnitStateNormal(this);
         card.ResetStats();
         HitPoints = card.HP;
-        Debug.Log(card.name + card.HP);
+        //Debug.Log(card.name + card.HP);
         TotalHitPoints = HitPoints;
         if (card.moveClass == Card.MoveClass.Armor)
         {

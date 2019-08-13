@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84e61b29991b446219daf86549fb1f95, type: 3}
   m_Name: Amadeo
   m_EditorClassIdentifier: 
-  reference: {fileID: 0}
+  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
   unlocked: 0
   name: Amadeo
   IV: 0
@@ -21,6 +21,9 @@ MonoBehaviour:
   affinity: 0
   geist: 0
   weaponType: 0
+  level: 0
+  merge: 0
+  rarity: 0
   portrait: {fileID: 0}
   mapSprite: {fileID: 0}
   affinitySprite: {fileID: 0}
@@ -29,11 +32,11 @@ MonoBehaviour:
   Spd_floor: 0
   Def_floor: 0
   Res_floor: 0
-  HP_ceiling: 0
-  Atk_ceiling: 0
-  Spd_ceiling: 0
-  Def_ceiling: 0
-  Res_ceiling: 0
+  HP_rate: 0
+  Atk_rate: 0
+  Spd_rate: 0
+  Def_rate: 0
+  Res_rate: 0
   HP_boon: 0
   Atk_boon: 0
   Spd_boon: 0
@@ -44,8 +47,6 @@ MonoBehaviour:
   Spd_bane: 0
   Def_bane: 0
   Res_bane: 0
-  level: 0
-  merge: 0
   assist: {fileID: 0}
   slot_A: {fileID: 0}
   slot_B: {fileID: 0}

@@ -155,6 +155,14 @@ public class Card : ScriptableObject
     public int Def;
     public int Res;
 
+    //These are the modifiers for the unit's stats.
+    public int modifierHP;
+    public int modifierAtk;
+    public int modifierSpd;
+    public int modifierDef;
+    public int modifierRes;
+    private int rarityModifier;
+
     //These are the level lists which are stored for the individual units
     public int[] levelListHP;
     public int[] levelListAtk;
@@ -165,7 +173,8 @@ public class Card : ScriptableObject
 
     //Stat Calculation Variables/Methods
     private readonly float rarityFactor = 0.07f;
-    private readonly int levelingRange = 39;
+    [HideInInspector]
+    public int levelingRange = 39;
     int randomizer;
     int[] levelList;
 
@@ -209,14 +218,15 @@ public class Card : ScriptableObject
     //This method is for generating the list of valid levels at which to raise the stat.
     public int[] GenerateLevelList(int growthValue)
     {
+        //growthValue -= growthValue - ;
         levelList = new int[growthValue];
         for (int j = 0; j < growthValue; j++)
         {
-            randomizer = UnityEngine.Random.Range(2, levelingRange + 2);
+            randomizer = UnityEngine.Random.Range(level + 1, levelingRange + 2);
 
             while (levelList.Contains(randomizer))
             {
-                randomizer = UnityEngine.Random.Range(2, levelingRange + 2);
+                randomizer = UnityEngine.Random.Range(level + 1, levelingRange + 2);
             }
             levelList[j] = randomizer;
         }
@@ -224,23 +234,81 @@ public class Card : ScriptableObject
         return levelList;
     }
 
-
-    //These are the buff/penalty modifiers for the unit's stats.
-    [HideInInspector]
-    public int HP_modifier;
-    [HideInInspector]
-    public int Atk_modifier;
-    [HideInInspector]
-    public int Spd_modifier;
-    [HideInInspector]
-    public int Def_modifier;
-    [HideInInspector]
-    public int Res_modifier;
-
-
+    public void RarityAdjustment(Rarity rarity)
+    {
+        switch (rarity)
+        {
+            case Rarity.Bronze:
+                rarityModifier = 0;
+                break;
+            case Rarity.Silver:
+                rarityModifier = 1;
+                break;
+            case Rarity.Gold:
+                rarityModifier = 2;
+                break;
+        }
+    }
+    
     public void ResetStats()
     {
-        HP = 20;
+        RarityAdjustment(rarity);
+        //Debug.Log(name + ": " + HP_floor + "," + rarityModifier + "," + modifierHP);
+        HP = HP_floor + rarityModifier + modifierHP;
+        Atk = Atk_floor + rarityModifier + modifierAtk;
+        Spd = Spd_floor + rarityModifier + modifierSpd;
+        Def = Def_floor + rarityModifier + modifierDef;
+        Res = Res_floor + rarityModifier + modifierRes;
+    }
+
+    public void LevelUp()
+    {
+        level++;
+        if (levelListHP.Contains(level))
+        {
+            modifierHP++;
+        }
+        if (levelListAtk.Contains(level))
+        {
+            modifierAtk++;
+        }
+        if (levelListSpd.Contains(level))
+        {
+            modifierSpd++;
+        }
+        if (levelListDef.Contains(level))
+        {
+            modifierDef++;
+        }
+        if (levelListRes.Contains(level))
+        {
+            modifierRes++;
+        }
+    }
+
+    public void LevelDown()
+    {
+        if (levelListHP.Contains(level))
+        {
+            modifierHP--;
+        }
+        if (levelListAtk.Contains(level))
+        {
+            modifierAtk--;
+        }
+        if (levelListSpd.Contains(level))
+        {
+            modifierSpd--;
+        }
+        if (levelListDef.Contains(level))
+        {
+            modifierDef--;
+        }
+        if (levelListRes.Contains(level))
+        {
+            modifierRes--;
+        }
+        level--;
     }
 
 }

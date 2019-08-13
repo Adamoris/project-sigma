@@ -40,6 +40,14 @@ public class CardStatRandomization : Editor
                 Debug.Log("EXP Spread for " + card.name + " generated.");
             }
         }
+        if (GUILayout.Button("Level-Up") && card.level <= card.levelingRange)
+        {
+            card.LevelUp();
+        }
+        if (GUILayout.Button("Level-Down") && card.level > 1)
+        {
+            card.LevelDown();
+        }
 
         //card.levelListHP = EditorGUILayout.PropertyField()
     }

@@ -46,6 +46,7 @@ public class Dialogue : MonoBehaviour
         {
             textDisplay.text = "";
             complete = true;
+            Debug.Log(complete);
         }
     }
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MyUnit : Unit
 {
     public Color PlayerColor;
-    public string UnitName;
+    public new string UnitName;
     private Transform Highlighter;
 
     private float offset = 2.45f;

@@ -64,7 +64,7 @@ public class Card : ScriptableObject
 
     [Header("Unit's Current Power Level")]
     //This is the currently level of the unit.
-    public int level;
+    public int level = 1;
     public int merge;
     public enum Rarity { None, Bronze, Silver, Gold }
     public Rarity rarity;
@@ -90,20 +90,6 @@ public class Card : ScriptableObject
     [Rename("Res")]
     public int Res_floor;
 
-    /*
-    [Header("Lvl. 50 Base Stats")]
-    //These are the stats for a neutral IV unit at level 50.
-    [Rename("HP")]
-    public int HP_ceiling;
-    [Rename("Atk")]
-    public int Atk_ceiling;
-    [Rename("Spd")]
-    public int Spd_ceiling;
-    [Rename("Def")]
-    public int Def_ceiling;
-    [Rename("Res")]
-    public int Res_ceiling;
-    */
 
     [Header("Growth Rates (%)")]
     //These are the stats for a neutral IV unit at level 50.
@@ -161,36 +147,20 @@ public class Card : ScriptableObject
     public Weapon weapon;
 
 
+    [Header("Reference Values")]
     //These are the current stats for a neutral IV unit.
-    [HideInInspector]
     public int HP;
-    [HideInInspector]
     public int Atk;
-    [HideInInspector]
     public int Spd;
-    [HideInInspector]
     public int Def;
-    [HideInInspector]
     public int Res;
 
-
-    public void ResetStats()
-    {
-        HP = 20;
-    }
-
-
-    //These are the buff/penalty modifiers for the unit's stats.
-    [HideInInspector]
-    public int HP_modifier;
-    [HideInInspector]
-    public int Atk_modifier;
-    [HideInInspector]
-    public int Spd_modifier;
-    [HideInInspector]
-    public int Def_modifier;
-    [HideInInspector]
-    public int Res_modifier;
+    //These are the level lists which are stored for the individual units
+    public int[] levelListHP;
+    public int[] levelListAtk;
+    public int[] levelListSpd;
+    public int[] levelListDef;
+    public int[] levelListRes;
 
 
     //Stat Calculation Variables/Methods
@@ -200,19 +170,15 @@ public class Card : ScriptableObject
     int[] levelList;
 
 
-    [Header("Reference Values")]
-    //These are the level lists which are stored for the individual units
-    //[HideInInspector]
-    public int[] levelListHP;
-    //[HideInInspector]
-    public int[] levelListAtk;
-    //[HideInInspector]
-    public int[] levelListSpd;
-    //[HideInInspector]
-    public int[] levelListDef;
-    //[HideInInspector]
-    public int[] levelListRes;
-
+    //This method is for generating the EXP Spread for all stats.
+    public void GenerateEXPSpread()
+    {
+        levelListHP = RandomEXP(HP_rate, rarity);
+        levelListAtk = RandomEXP(Atk_rate, rarity);
+        levelListSpd = RandomEXP(Spd_rate, rarity);
+        levelListDef = RandomEXP(Def_rate, rarity);
+        levelListRes = RandomEXP(Res_rate, rarity);
+    }
 
     //This method combines the two methods below to both generate a growth value and its respective randomized EXP list.
     public int[] RandomEXP(int growthRate, Rarity rarity)
@@ -257,5 +223,25 @@ public class Card : ScriptableObject
         Array.Sort(levelList);
         return levelList;
     }
+
+
+    //These are the buff/penalty modifiers for the unit's stats.
+    [HideInInspector]
+    public int HP_modifier;
+    [HideInInspector]
+    public int Atk_modifier;
+    [HideInInspector]
+    public int Spd_modifier;
+    [HideInInspector]
+    public int Def_modifier;
+    [HideInInspector]
+    public int Res_modifier;
+
+
+    public void ResetStats()
+    {
+        HP = 20;
+    }
+
 }
 

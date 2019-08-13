@@ -28,11 +28,8 @@ public class CardStatRandomization : Editor
                 Debug.Log(value);
             }
             */
-            card.levelListHP = card.RandomEXP(card.HP_rate, card.rarity);
-            card.levelListAtk = card.RandomEXP(card.Atk_rate, card.rarity);
-            card.levelListSpd = card.RandomEXP(card.Spd_rate, card.rarity);
-            card.levelListDef = card.RandomEXP(card.Def_rate, card.rarity);
-            card.levelListRes = card.RandomEXP(card.Res_rate, card.rarity);
+
+            card.GenerateEXPSpread();
 
             if (card.levelListHP.Length == 0)
             {

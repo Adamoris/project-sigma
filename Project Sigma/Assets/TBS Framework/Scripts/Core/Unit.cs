@@ -114,7 +114,7 @@ public abstract class Unit : MonoBehaviour
         Buffs = new List<Buff>();
         //Debug.Log(Environment.UserName);
         UnitState = new UnitStateNormal(this);
-        card.ResetStats();
+        card.UpdateStats();
         HitPoints = card.HP;
         //Debug.Log(card.name + card.HP);
         TotalHitPoints = HitPoints;

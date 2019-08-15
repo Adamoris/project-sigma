@@ -18,7 +18,7 @@ public class Card : ScriptableObject
     public new string name;
     // The IV value is an int ranging from 0-20 which
     // determines the boon/bane combination of an individual unit.
-    [Tooltip("0 = neutral" + "\n"
+    [Tooltip("0   = neutral" + "\n"
         + "1   = +HP/-Atk" + "\n"
         + "2   = +HP/-Spd" + "\n"
         + "3   = +HP/-Def" + "\n"
@@ -40,6 +40,14 @@ public class Card : ScriptableObject
         + "19 = +Res/-Spd" + "\n"
         + "20 = +Res/-Def")]
     public int IV;
+    private readonly int varianceFactor = 5;
+    private int factorHP;
+    private int factorAtk;
+    private int factorSpd;
+    private int factorDef;
+    private int factorRes;
+    private string boonKey;
+    private string baneKey;
 
     //This indicates the move type of the unit.
     public enum MoveClass { None, Armor, Cavalry, Flier, Infantry }
@@ -178,15 +186,107 @@ public class Card : ScriptableObject
     int randomizer;
     int[] levelList;
 
+    //This method is for altering growth rates to match the unit's IV.
+    public void FactorIV(int iv)
+    {
+        switch (iv)
+        {
+            case 0:
+                boonKey = "00000";
+                baneKey = "00000";
+                break;
+            case 1:
+                boonKey = "10000";
+                baneKey = "01000";
+                break;
+            case 2:
+                boonKey = "10000";
+                baneKey = "00100";
+                break;
+            case 3:
+                boonKey = "10000";
+                baneKey = "00010";
+                break;
+            case 4:
+                boonKey = "10000";
+                baneKey = "00001";
+                break;
+            case 5:
+                boonKey = "01000";
+                baneKey = "10000";
+                break;
+            case 6:
+                boonKey = "01000";
+                baneKey = "00100";
+                break;
+            case 7:
+                boonKey = "01000";
+                baneKey = "00010";
+                break;
+            case 8:
+                boonKey = "01000";
+                baneKey = "00001";
+                break;
+            case 9:
+                boonKey = "00100";
+                baneKey = "10000";
+                break;
+            case 10:
+                boonKey = "00100";
+                baneKey = "01000";
+                break;
+            case 11:
+                boonKey = "00100";
+                baneKey = "00010";
+                break;
+            case 12:
+                boonKey = "00100";
+                baneKey = "00001";
+                break;
+            case 13:
+                boonKey = "00010";
+                baneKey = "10000";
+                break;
+            case 14:
+                boonKey = "00010";
+                baneKey = "01000";
+                break;
+            case 15:
+                boonKey = "00010";
+                baneKey = "00100";
+                break;
+            case 16:
+                boonKey = "00010";
+                baneKey = "00001";
+                break;
+            case 17:
+                boonKey = "00001";
+                baneKey = "10000";
+                break;
+            case 18:
+                boonKey = "00001";
+                baneKey = "01000";
+                break;
+            case 19:
+                boonKey = "00001";
+                baneKey = "00100";
+                break;
+            case 20:
+                boonKey = "00001";
+                baneKey = "00010";
+                break;
+        }
+    }
 
     //This method is for generating the EXP Spread for all stats.
     public void GenerateEXPSpread()
     {
-        levelListHP = RandomEXP(HP_rate, rarity);
-        levelListAtk = RandomEXP(Atk_rate, rarity);
-        levelListSpd = RandomEXP(Spd_rate, rarity);
-        levelListDef = RandomEXP(Def_rate, rarity);
-        levelListRes = RandomEXP(Res_rate, rarity);
+        FactorIV(IV);
+        levelListHP = RandomEXP(HP_rate + varianceFactor * Convert.ToInt32(boonKey[0]) - varianceFactor * Convert.ToInt32(baneKey[0]), rarity);
+        levelListAtk = RandomEXP(Atk_rate + varianceFactor * Convert.ToInt32(boonKey[1]) - varianceFactor * Convert.ToInt32(baneKey[1]), rarity);
+        levelListSpd = RandomEXP(Spd_rate + varianceFactor * Convert.ToInt32(boonKey[2]) - varianceFactor * Convert.ToInt32(baneKey[2]), rarity);
+        levelListDef = RandomEXP(Def_rate + varianceFactor * Convert.ToInt32(boonKey[3]) - varianceFactor * Convert.ToInt32(baneKey[3]), rarity);
+        levelListRes = RandomEXP(Res_rate + varianceFactor * Convert.ToInt32(boonKey[4]) - varianceFactor * Convert.ToInt32(baneKey[4]), rarity);
     }
 
     //This method combines the two methods below to both generate a growth value and its respective randomized EXP list.
@@ -250,15 +350,28 @@ public class Card : ScriptableObject
         }
     }
     
-    public void ResetStats()
+    public void UpdateStats()
     {
+        FactorIV(IV);
         RarityAdjustment(rarity);
         //Debug.Log(name + ": " + HP_floor + "," + rarityModifier + "," + modifierHP);
-        HP = HP_floor + rarityModifier + modifierHP;
-        Atk = Atk_floor + rarityModifier + modifierAtk;
-        Spd = Spd_floor + rarityModifier + modifierSpd;
-        Def = Def_floor + rarityModifier + modifierDef;
-        Res = Res_floor + rarityModifier + modifierRes;
+        HP = HP_floor + rarityModifier + modifierHP + Convert.ToInt32(boonKey[0]) - Convert.ToInt32(baneKey[0]);
+        Atk = Atk_floor + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]);
+        Spd = Spd_floor + rarityModifier + modifierSpd + Convert.ToInt32(boonKey[2]) - Convert.ToInt32(baneKey[2]);
+        Def = Def_floor + rarityModifier + modifierDef + Convert.ToInt32(boonKey[3]) - Convert.ToInt32(baneKey[3]);
+        Res = Res_floor + rarityModifier + modifierRes + Convert.ToInt32(boonKey[4]) - Convert.ToInt32(baneKey[4]);
+    }
+
+    public void ResetStats()
+    {
+        //GenerateEXPSpread();
+        modifierHP = 0;
+        modifierAtk = 0;
+        modifierSpd = 0;
+        modifierDef = 0;
+        modifierRes = 0;
+        UpdateStats();
+        level = 1;
     }
 
     public void LevelUp()

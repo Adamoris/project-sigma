@@ -21,7 +21,7 @@ MonoBehaviour:
   affinity: 0
   geist: 0
   weaponType: 0
-  level: 0
+  level: 1
   merge: 9
   rarity: 3
   portrait: {fileID: 0}
@@ -59,13 +59,14 @@ MonoBehaviour:
   Spd: 99
   Def: 99
   Res: 99
-  HP_modifier: 0
-  Atk_modifier: 0
-  Spd_modifier: 0
-  Def_modifier: 0
-  Res_modifier: 0
+  modifierHP: 0
+  modifierAtk: 0
+  modifierSpd: 0
+  modifierDef: 0
+  modifierRes: 0
   levelListHP: 
   levelListAtk: 
   levelListSpd: 
   levelListDef: 
   levelListRes: 
+  levelingRange: 39

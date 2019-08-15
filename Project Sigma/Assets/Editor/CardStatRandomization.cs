@@ -42,11 +42,16 @@ public class CardStatRandomization : Editor
         }
         if (GUILayout.Button("Level-Up") && card.level <= card.levelingRange)
         {
+            //Debug.Log($"Testing: {card.name}");
             card.LevelUp();
         }
         if (GUILayout.Button("Level-Down") && card.level > 1)
         {
             card.LevelDown();
+        }
+        if (GUILayout.Button("Reset Stats"))
+        {
+            card.ResetStats();
         }
 
         //card.levelListHP = EditorGUILayout.PropertyField()

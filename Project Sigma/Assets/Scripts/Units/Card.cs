@@ -149,7 +149,7 @@ public class Card : ScriptableObject
     //Stat Calculation Variables/Methods
     private readonly float rarityFactor = 0.07f;
     [HideInInspector]
-    public int levelingRange = 39;
+    public int levelingRange = 49;
     int randomizer;
     int[] levelList;
 

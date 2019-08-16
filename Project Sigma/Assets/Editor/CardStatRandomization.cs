@@ -51,6 +51,7 @@ public class CardStatRandomization : Editor
         }
         if (GUILayout.Button("Reset Stats"))
         {
+            Debug.Log("Generate a new EXP Spread!");
             card.ResetStats();
         }
 

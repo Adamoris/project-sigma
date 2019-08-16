@@ -41,11 +41,6 @@ public class Card : ScriptableObject
         + "20 = +Res/-Def")]
     public int IV;
     private readonly int varianceFactor = 5;
-    private int factorHP;
-    private int factorAtk;
-    private int factorSpd;
-    private int factorDef;
-    private int factorRes;
     private string boonKey;
     private string baneKey;
 
@@ -111,34 +106,6 @@ public class Card : ScriptableObject
     public int Def_rate;
     [Rename("Res")]
     public int Res_rate;
-
-
-    [Header("Super Boon(s)")]
-    //These are the potential superboons of the unit.
-    [Rename("HP")]
-    public bool HP_boon;
-    [Rename("Atk")]
-    public bool Atk_boon;
-    [Rename("Spd")]
-    public bool Spd_boon;
-    [Rename("Def")]
-    public bool Def_boon;
-    [Rename("Res")]
-    public bool Res_boon;
-
-
-    [Header("Super Bane(s)")]
-    //These are the potential superbanes of the unit.
-    [Rename("HP")]
-    public bool HP_bane;
-    [Rename("Atk")]
-    public bool Atk_bane;
-    [Rename("Spd")]
-    public bool Spd_bane;
-    [Rename("Def")]
-    public bool Def_bane;
-    [Rename("Res")]
-    public bool Res_bane;
 
 
     [Header("Assist/Equipment/Special/Weapon")]
@@ -397,6 +364,7 @@ public class Card : ScriptableObject
         {
             modifierRes++;
         }
+        UpdateStats();
     }
 
     public void LevelDown()
@@ -422,6 +390,7 @@ public class Card : ScriptableObject
             modifierRes--;
         }
         level--;
+        UpdateStats();
     }
 
 }

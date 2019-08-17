@@ -17,18 +17,6 @@ public class CardStatRandomization : Editor
 
         if (GUILayout.Button("Generate EXP Spread"))
         {
-            /*
-            Debug.Log(card.HP_rate);
-            Debug.Log("Bronze: " + card.GetGrowthValue(card.HP_rate, Card.Rarity.Bronze));
-            Debug.Log("Silver: " + card.GetGrowthValue(60, Card.Rarity.Silver));
-            Debug.Log("Gold: " + card.GetGrowthValue(60, Card.Rarity.Gold));
-            int[] test = card.RandomEXP(60, Card.Rarity.Gold);
-            foreach (int value in test)
-            {
-                Debug.Log(value);
-            }
-            */
-
             card.GenerateEXPSpread();
 
             if (card.levelListHP.Length == 0)
@@ -42,7 +30,6 @@ public class CardStatRandomization : Editor
         }
         if (GUILayout.Button("Level-Up") && card.level <= card.levelingRange)
         {
-            //Debug.Log($"Testing: {card.name}");
             card.LevelUp();
         }
         if (GUILayout.Button("Level-Down") && card.level > 1)
@@ -51,10 +38,8 @@ public class CardStatRandomization : Editor
         }
         if (GUILayout.Button("Reset Stats"))
         {
-            Debug.Log("Generate a new EXP Spread!");
+            Debug.Log("Recommended: Generate a new EXP Spread!");
             card.ResetStats();
         }
-
-        //card.levelListHP = EditorGUILayout.PropertyField()
     }
 }

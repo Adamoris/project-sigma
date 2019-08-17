@@ -13,6 +13,7 @@ public class Card : ScriptableObject
     //This is for checking if a unit is unlocked by the player.
     public bool unlocked;
 
+
     [Header("Unit General Information")]
     //This is the name of the unit.
     public new string name;
@@ -266,7 +267,6 @@ public class Card : ScriptableObject
     //This method is for generating the total growth value that a unit will be able to achieve.
     public int GetGrowthValue(int growthRate, Rarity rarity)
     {
-        //Debug.Log((int)Mathf.Floor(levelingRange * 0.01f * Mathf.Floor(growthRate * (1f - rarityFactor + (rarityFactor * rarity)))));
         if (rarity == Rarity.Bronze)
         {
             return (int)Mathf.Floor(levelingRange * 0.01f * Mathf.Floor(growthRate * (1f - rarityFactor + (rarityFactor * 1))));
@@ -301,6 +301,7 @@ public class Card : ScriptableObject
         return levelList;
     }
 
+    //This method is for altering unit statlines based on unit rarity.
     public void RarityAdjustment(Rarity rarity)
     {
         switch (rarity)
@@ -316,22 +317,30 @@ public class Card : ScriptableObject
                 break;
         }
     }
-    
+
+    //This method is for updating the stats to reflect its current state (excluding alterations from combat).
     public void UpdateStats()
     {
         FactorIV(IV);
         RarityAdjustment(rarity);
         //Debug.Log(name + ": " + HP_floor + "," + rarityModifier + "," + modifierHP);
         HP = HP_floor + rarityModifier + modifierHP + Convert.ToInt32(boonKey[0]) - Convert.ToInt32(baneKey[0]);
-        Atk = Atk_floor + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]);
+        if (weapon != null)
+        {
+            Atk = Atk_floor + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]) + weapon.mt;
+        }
+        else
+        {
+            Atk = Atk_floor + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]);
+        }
         Spd = Spd_floor + rarityModifier + modifierSpd + Convert.ToInt32(boonKey[2]) - Convert.ToInt32(baneKey[2]);
         Def = Def_floor + rarityModifier + modifierDef + Convert.ToInt32(boonKey[3]) - Convert.ToInt32(baneKey[3]);
         Res = Res_floor + rarityModifier + modifierRes + Convert.ToInt32(boonKey[4]) - Convert.ToInt32(baneKey[4]);
     }
 
+    //This method is for reverting the unit to its lvl. 1 state.
     public void ResetStats()
     {
-        //GenerateEXPSpread();
         modifierHP = 0;
         modifierAtk = 0;
         modifierSpd = 0;
@@ -341,6 +350,7 @@ public class Card : ScriptableObject
         level = 1;
     }
 
+    //This method is for leveling up the unit by 1.
     public void LevelUp()
     {
         level++;
@@ -367,6 +377,7 @@ public class Card : ScriptableObject
         UpdateStats();
     }
 
+    //This method is for leveling down the unit by 1.
     public void LevelDown()
     {
         if (levelListHP.Contains(level))

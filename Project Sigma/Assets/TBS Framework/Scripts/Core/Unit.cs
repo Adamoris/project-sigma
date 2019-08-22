@@ -383,10 +383,7 @@ public abstract class Unit : MonoBehaviour
         {
             return cachedPaths[destination];
         }
-        else
-        {
-            return _fallbackPathfinder.FindPath(GetGraphEdges(cells), Cell, destination);
-        }
+        return _fallbackPathfinder.FindPath(GetGraphEdges(cells), Cell, destination);
     }
 
     // Method returns graph representation of cell grid for pathfinding.

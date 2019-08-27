@@ -13,5 +13,13 @@ MonoBehaviour:
   m_Name: New Assist
   m_EditorClassIdentifier: 
   name: 
-  effectField: 0
   description: 
+  assistType: 3
+  target: 0
+  buffAtk: 0
+  buffSpd: 0
+  buffDef: 0
+  buffRes: 0
+  negatePenalties: 0
+  assistDuration: 0
+  healAmount: 0

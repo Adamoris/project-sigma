@@ -28,7 +28,7 @@ MonoBehaviour:
   spdModifier: 0
   defModifier: 0
   resModifier: 0
-  inheritable: 1
+  inheritable: 0
   sword: 0
   axe: 0
   lance: 0

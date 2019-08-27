@@ -110,7 +110,7 @@ public class Card : ScriptableObject
 
 
     [Header("Assist/Equipment/Special/Weapon")]
-    public Assists assist;
+    public Assist assist;
     [Rename("Slot A")]
     public Equipment slot_A;
     [Rename("Slot B")]
@@ -119,7 +119,7 @@ public class Card : ScriptableObject
     public Equipment slot_C;
     [Rename("Slot D")]
     public Equipment slot_D;
-    public Specials special;
+    public Special special;
     public Weapon weapon;
 
 

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Assist", menuName = "Assist")]
-public class Assists : ScriptableObject
+[CreateAssetMenu(fileName = "New Special", menuName = "Special")]
+public class Special : ScriptableObject
 {
     //There are two kinds of abilities that a unit can have at the same time: an assist and special.
-    //Assists are abilities of the unit which affects other units.
+    //Specials are abilities that are innate to the unit and generally used in a combat sense.
     
-    [Header("Assist General Information")]
+    [Header("Special General Information")]
     //This is the name of the unit.
     public new string name;
 
@@ -16,7 +16,10 @@ public class Assists : ScriptableObject
     public enum EffectField { None, Combat, Field, Hybrid };
     public EffectField effectField;
 
-    //This is the description for what the weapon does.
+    //This is the description for what the equipment does.
     [TextArea(3, 10)]
     public string description;
+
+    //This is the cooldown value of the ability.
+    public int cd;
 }

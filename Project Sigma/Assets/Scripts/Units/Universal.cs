@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Reference", menuName = "Universal")]
+[CreateAssetMenu(fileName = "Reference", menuName = "Ruleset")]
 public class Universal : ScriptableObject
 {
     [Header("Move Class Base Stats")]

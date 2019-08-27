@@ -64,6 +64,8 @@ public class CellGrid : MonoBehaviour
     /// </summary>
     public Transform PlayersParent;
 
+    [SerializeField] Transform selectionIndicator;
+
     public List<Player> Players { get; private set; }
     public List<Cell> Cells { get; private set; }
     public List<Unit> Units { get; private set; }

@@ -31,10 +31,13 @@ public class RectangularSquareGridGenerator : ICellGridGenerator
 
                 square.transform.position = new Vector3(i*squareSize.x, 0, j*squareSize.z);
                 square.GetComponent<Cell>().OffsetCoord = new Vector2(i, j);
+                square.GetComponent<Cell>().x = i;
+                square.GetComponent<Cell>().y = j;
                 square.GetComponent<Cell>().MovementCost = 1;
                 ret.Add(square.GetComponent<Cell>());
 
                 square.transform.parent = CellsParent;
+                
             }
         }
         return ret;

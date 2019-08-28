@@ -19,6 +19,8 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     /// Indicates if something is occupying the cell.
     /// </summary>
     public bool IsTaken;
+    public int x;
+    public int y;
     [HideInInspector]
     public int occupationID = 99;
 

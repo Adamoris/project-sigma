@@ -14,5 +14,9 @@ public class CustomUnitGeneratorHelper : Editor
         {
             unitGenerator.SnapToGrid();
         }
+        if (GUILayout.Button("Update Unit Locations"))
+        {
+            unitGenerator.UpdateLocation();
+        }
     }
 }

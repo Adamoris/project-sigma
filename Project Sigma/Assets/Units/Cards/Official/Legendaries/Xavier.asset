@@ -37,16 +37,6 @@ MonoBehaviour:
   Spd_rate: 0
   Def_rate: 0
   Res_rate: 0
-  HP_boon: 0
-  Atk_boon: 0
-  Spd_boon: 0
-  Def_boon: 0
-  Res_boon: 0
-  HP_bane: 0
-  Atk_bane: 0
-  Spd_bane: 0
-  Def_bane: 0
-  Res_bane: 0
   assist: {fileID: 0}
   slot_A: {fileID: 0}
   slot_B: {fileID: 0}
@@ -59,8 +49,14 @@ MonoBehaviour:
   Spd: 0
   Def: 0
   Res: 0
-  HP_modifier: 0
-  Atk_modifier: 0
-  Spd_modifier: 0
-  Def_modifier: 0
-  Res_modifier: 0
+  modifierHP: 0
+  modifierAtk: 0
+  modifierSpd: 0
+  modifierDef: 0
+  modifierRes: 0
+  levelListHP: 
+  levelListAtk: 
+  levelListSpd: 
+  levelListDef: 
+  levelListRes: 
+  levelingRange: 49

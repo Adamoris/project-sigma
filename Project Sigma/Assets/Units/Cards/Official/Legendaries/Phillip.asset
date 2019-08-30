@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84e61b29991b446219daf86549fb1f95, type: 3}
-  m_Name: Rose
+  m_Name: Phillip
   m_EditorClassIdentifier: 
   reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
   unlocked: 0
-  name: Rose
+  name: Phillip
   IV: 0
   moveClass: 0
   race: 0
@@ -22,7 +22,7 @@ MonoBehaviour:
   geist: 0
   weaponType: 0
   level: 0
-  merge: 1
+  merge: 0
   rarity: 0
   portrait: {fileID: 0}
   mapSprite: {fileID: 0}
@@ -37,16 +37,6 @@ MonoBehaviour:
   Spd_rate: 0
   Def_rate: 0
   Res_rate: 0
-  HP_boon: 0
-  Atk_boon: 0
-  Spd_boon: 0
-  Def_boon: 0
-  Res_boon: 0
-  HP_bane: 0
-  Atk_bane: 0
-  Spd_bane: 0
-  Def_bane: 0
-  Res_bane: 0
   assist: {fileID: 0}
   slot_A: {fileID: 0}
   slot_B: {fileID: 0}
@@ -54,13 +44,19 @@ MonoBehaviour:
   slot_D: {fileID: 0}
   special: {fileID: 0}
   weapon: {fileID: 0}
-  HP: 24
-  Atk: 24
-  Spd: 24
-  Def: 24
-  Res: 24
-  HP_modifier: 0
-  Atk_modifier: 0
-  Spd_modifier: 0
-  Def_modifier: 0
-  Res_modifier: 0
+  HP: 0
+  Atk: 0
+  Spd: 0
+  Def: 0
+  Res: 0
+  modifierHP: 0
+  modifierAtk: 0
+  modifierSpd: 0
+  modifierDef: 0
+  modifierRes: 0
+  levelListHP: 
+  levelListAtk: 
+  levelListSpd: 
+  levelListDef: 
+  levelListRes: 
+  levelingRange: 49

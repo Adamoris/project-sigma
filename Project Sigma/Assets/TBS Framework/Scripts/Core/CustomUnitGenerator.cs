@@ -25,6 +25,8 @@ public class CustomUnitGenerator : MonoBehaviour, IUnitGenerator
                     cell.IsTaken = true;
                     unit.Cell = cell;
                     unit.transform.position = cell.transform.position;
+                    unit.x = cell.x;
+                    unit.y = cell.y;
                     unit.Initialize();
                     ret.Add(unit);
                 }//Unit gets snapped to the nearest cell
@@ -64,5 +66,58 @@ public class CustomUnitGenerator : MonoBehaviour, IUnitGenerator
             }//Unit gets snapped to the nearest cell
         }
     }
+    /*
+    public void UpdateLocation()
+    {
+        Debug.Log("test");
+        foreach (GameObject unit in UnitsParent)
+        {
+            Debug.Log(unit);
+            var unitPosition = unit.GetComponent<Transform>();
+            var unitCoords = unit.GetComponent<Cell>();
+            foreach (GameObject cell in CellsParent)
+            {
+                var cellPosition = cell.GetComponent<Cell>();
+                if (cellPosition.x == unitCoords.x && cellPosition.y == unitCoords.y)
+                {
+                    var updatedCell = cell.GetComponent<Transform>();
+                    if (!updatedCell.GetComponent<Cell>().IsTaken)
+                    {
+                        Vector3 offset = new Vector3(0, updatedCell.GetComponent<Cell>().GetCellDimensions().y, 0);
+                        unitPosition.localPosition = updatedCell.transform.localPosition + offset;
+                    }//Unit gets snapped to the nearest cell
+                }
+            }
+        }
+    }
+    */
+    
+    public void UpdateLocation()
+    {
+        foreach (Transform unit in UnitsParent)
+        {
+            var unitCoords = unit.GetComponent<Unit>();
+            foreach (Transform cell in CellsParent)
+            {
+                var cellPosition = cell.GetComponent<Cell>();
+                if (cellPosition.x == unitCoords.x && cellPosition.y == unitCoords.y)
+                {
+                    if (!cell.GetComponent<Cell>().IsTaken)
+                    {
+                        if (!Application.isPlaying)
+                        {
+                            Vector3 offset = new Vector3(0, cell.GetComponent<Cell>().GetCellDimensions().y, 0);
+                            unit.localPosition = cell.transform.localPosition + offset;
+                        } else
+                        {
+                            unitCoords.Teleport(cellPosition);
+                        }
+                        
+                    }//Unit gets snapped to the nearest cell
+                }
+            }
+        }
+    }
+    
 }
 

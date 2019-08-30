@@ -66,6 +66,10 @@ public abstract class Unit : MonoBehaviour
     // Stats
     public Card card;
 
+    // Position
+    public int x;
+    public int y;
+
     //[Tooltip("This is the unit's name.")]
     [HideInInspector]
     public string UnitName;
@@ -307,7 +311,8 @@ public abstract class Unit : MonoBehaviour
         Cell = destinationCell;
         destinationCell.IsTaken = true;
         destinationCell.occupationID = PlayerNumber;
-
+        x = Cell.x;
+        y = Cell.y;
         if (MovementSpeed > 0)
             StartCoroutine(MovementAnimation(path));
         else
@@ -332,6 +337,18 @@ public abstract class Unit : MonoBehaviour
         isMoving = false;
     }
 
+    // Teleports the unit to the destination.
+    public virtual void Teleport(Cell destinationCell)
+    {
+        Cell.IsTaken = false;
+        Cell.occupationID = 99;
+        Cell = destinationCell;
+        destinationCell.IsTaken = true;
+        destinationCell.occupationID = PlayerNumber;
+        x = Cell.x;
+        y = Cell.y;
+        transform.position = Cell.transform.position;
+    }
 
     // Method indicates if unit is capable of moving to cell given as parameter.
     public virtual bool IsCellMovableTo(Cell cell)

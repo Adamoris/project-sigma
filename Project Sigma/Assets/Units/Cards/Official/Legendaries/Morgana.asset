@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84e61b29991b446219daf86549fb1f95, type: 3}
-  m_Name: Ella
+  m_Name: Morgana
   m_EditorClassIdentifier: 
   reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
   unlocked: 0
-  name: Ella
+  name: Morgana
   IV: 0
   moveClass: 0
   race: 0
@@ -37,16 +37,6 @@ MonoBehaviour:
   Spd_rate: 0
   Def_rate: 0
   Res_rate: 0
-  HP_boon: 0
-  Atk_boon: 0
-  Spd_boon: 0
-  Def_boon: 0
-  Res_boon: 0
-  HP_bane: 0
-  Atk_bane: 0
-  Spd_bane: 0
-  Def_bane: 0
-  Res_bane: 0
   assist: {fileID: 0}
   slot_A: {fileID: 0}
   slot_B: {fileID: 0}
@@ -59,8 +49,14 @@ MonoBehaviour:
   Spd: 0
   Def: 0
   Res: 0
-  HP_modifier: 0
-  Atk_modifier: 0
-  Spd_modifier: 0
-  Def_modifier: 0
-  Res_modifier: 0
+  modifierHP: 0
+  modifierAtk: 0
+  modifierSpd: 0
+  modifierDef: 0
+  modifierRes: 0
+  levelListHP: 
+  levelListAtk: 
+  levelListSpd: 
+  levelListDef: 
+  levelListRes: 
+  levelingRange: 49

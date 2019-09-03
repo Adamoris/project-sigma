@@ -33,7 +33,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     [HideInInspector]
     public int MovementCost;
 
-    public Universal reference;
+    public Ruleset ruleset;
     UI_Operator ui_operator;
 
     private void Awake()
@@ -41,15 +41,15 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
         ui_operator = FindObjectOfType<UI_Operator>();
         if (terrainType == TerrainType.Plains)
         {
-            MovementCost = reference.plainsCost;
+            MovementCost = ruleset.plainsCost;
         }
         else if (terrainType == TerrainType.Forest)
         {
-            MovementCost = reference.forestCost;
+            MovementCost = ruleset.forestCost;
         }
         else if (terrainType == TerrainType.Mountain)
         {
-            MovementCost = reference.mountainsCost;
+            MovementCost = ruleset.mountainsCost;
         }
     }
 

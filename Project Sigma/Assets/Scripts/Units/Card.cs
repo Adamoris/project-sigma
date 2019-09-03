@@ -9,10 +9,11 @@ public class Card : ScriptableObject
 {
     [Header("Abstract Details")]
     //This SO holds information that is universal.
-    public Universal reference;
+    public Ruleset ruleset;
     //This is for checking if a unit is unlocked by the player.
     public bool unlocked;
-
+    //This is for checking is a unit is able to be summoned.
+    public bool summonable;
 
     [Header("Unit General Information")]
     //This is the name of the unit.
@@ -45,25 +46,41 @@ public class Card : ScriptableObject
     private string boonKey;
     private string baneKey;
 
-    //This indicates the move type of the unit.
+    //This specifies the move type of the unit.
     public enum MoveClass { None, Armor, Cavalry, Flier, Infantry }
     public MoveClass moveClass;
 
+    //This specifies the specialization of an armor unit.
+    public enum ArmorClass { }
+
+
+    //This specifies the specialization of an armor unit.
+    public enum CavalryClass { }
+
+
+    //This specifies the specialization of an armor unit.
+    public enum FlierClass { }
+
+
+    //This specifies the specialization of an armor unit.
+    public enum InfantryClass { }
+
+
     //This indicates the race of the unit.
-    public enum Race { None, Colossi, Cyren, Ent, Humans, Leviathans, Lupine, Nocturne, Quertzal, Raptors }
+    public enum Race { None, Alder, Colossi, Cyren, Humans, Leviathans, Lupine, Nocturne, Quertzal, Raptors }
     public Race race;
 
-    //This indicates the unit's affinity.
+    //This specifies the unit's affinity.
     public enum Affinity { None, Diamond, Club, Heart, Spade }
     public Affinity affinity;
 
-    //This indicates the unit's geist typing.
+    //This specifies the unit's geist typing.
     public enum Geist { None, Lunar, Solar }
     public Geist geist;
 
-    //This indicates the weapon typing of the unit.
-    public enum WeaponType { None, Sword, Axe, Lance, Dagger, Bow, Magic, Beast}
-    public WeaponType weaponType;
+    //This specifies the weapon typing of the unit.
+    //public enum WeaponType { None, Sword, Axe, Lance, Dagger, Bow, Magic, Beast}
+    //public WeaponType weaponType;
 
 
     [Header("Unit's Current Power Level")]

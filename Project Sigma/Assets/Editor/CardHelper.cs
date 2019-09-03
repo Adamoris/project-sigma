@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 [CustomEditor(typeof(Card))]
-public class CardStatRandomization : Editor
+public class CardHelper : Editor
 {
     public override void OnInspectorGUI()
     {

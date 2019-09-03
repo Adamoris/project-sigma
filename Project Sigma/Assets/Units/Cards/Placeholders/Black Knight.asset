@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84e61b29991b446219daf86549fb1f95, type: 3}
   m_Name: Black Knight
   m_EditorClassIdentifier: 
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
   unlocked: 0
   name: Black Knight
   IV: 0
   moveClass: 1
-  race: 0
+  race: 4
   affinity: 1
   geist: 0
   weaponType: 0
@@ -37,16 +37,6 @@ MonoBehaviour:
   Spd_rate: 60
   Def_rate: 60
   Res_rate: 30
-  HP_boon: 0
-  Atk_boon: 0
-  Spd_boon: 0
-  Def_boon: 0
-  Res_boon: 0
-  HP_bane: 0
-  Atk_bane: 0
-  Spd_bane: 0
-  Def_bane: 0
-  Res_bane: 0
   assist: {fileID: 0}
   slot_A: {fileID: 0}
   slot_B: {fileID: 0}
@@ -55,7 +45,7 @@ MonoBehaviour:
   special: {fileID: 0}
   weapon: {fileID: 11400000, guid: 5bbf53648ad3e471d91e252f67830ade, type: 2}
   HP: 23
-  Atk: 11
+  Atk: 21
   Spd: 9
   Def: 10
   Res: 6

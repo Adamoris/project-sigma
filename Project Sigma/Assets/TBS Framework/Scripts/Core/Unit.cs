@@ -124,19 +124,19 @@ public abstract class Unit : MonoBehaviour
         TotalHitPoints = HitPoints;
         if (card.moveClass == Card.MoveClass.Armor)
         {
-            TotalMovementPoints = card.reference.armorMovement;
+            TotalMovementPoints = card.ruleset.armorMovement;
         }
         else if (card.moveClass == Card.MoveClass.Cavalry)
         {
-            TotalMovementPoints = card.reference.cavalryMovement;
+            TotalMovementPoints = card.ruleset.cavalryMovement;
         }
         else if (card.moveClass == Card.MoveClass.Flier)
         {
-            TotalMovementPoints = card.reference.flierMovement;
+            TotalMovementPoints = card.ruleset.flierMovement;
         }
         else if (card.moveClass == Card.MoveClass.Infantry)
         {
-            TotalMovementPoints = card.reference.infantryMovement;
+            TotalMovementPoints = card.ruleset.infantryMovement;
         }
 
         TotalActionPoints = ActionPoints;

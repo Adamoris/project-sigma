@@ -340,7 +340,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &11260333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -733,7 +733,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &23326011
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &35384519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -991,7 +991,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &44321774
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &48415520
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1329,7 +1329,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &54571965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1458,7 +1458,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &55354821
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1667,7 +1667,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &64929509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1796,7 +1796,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &67352627
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1925,7 +1925,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &68524965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2054,7 +2054,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &68819049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2263,7 +2263,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &71313359
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2472,7 +2472,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &72550452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2601,7 +2601,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &79867268
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2730,7 +2730,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &87540869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2859,7 +2859,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &94768623
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3148,7 +3148,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &101231847
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3526,7 +3526,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &113254216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3655,7 +3655,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &116681405
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3864,7 +3864,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &119456236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3993,7 +3993,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &120991813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4202,7 +4202,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &122417604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4555,7 +4555,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &141271496
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4873,7 +4873,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &148550424
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5162,7 +5162,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &151921926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5371,7 +5371,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &179310548
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5580,7 +5580,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &183018386
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6258,7 +6258,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &231876892
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6467,7 +6467,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &235031623
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6596,7 +6596,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &238672636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6805,7 +6805,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &242577424
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6934,7 +6934,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &253155554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7063,7 +7063,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &253960706
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7192,7 +7192,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &259258459
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7321,7 +7321,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &259528150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7634,7 +7634,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &302822018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7843,7 +7843,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &303531142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7972,7 +7972,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &304460107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8261,7 +8261,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &316650777
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8390,7 +8390,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &318170448
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8853,7 +8853,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &319967806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9222,7 +9222,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &342212177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9351,7 +9351,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &342883518
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9480,7 +9480,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &349861139
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9689,7 +9689,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &351658709
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10218,7 +10218,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &371384623
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10427,7 +10427,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &375769686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10636,7 +10636,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &403144329
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10765,7 +10765,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &409432626
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10926,7 +10926,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &411070572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11055,7 +11055,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &412674885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11344,7 +11344,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &419871188
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11553,7 +11553,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &431740507
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11682,7 +11682,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &442927373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12291,7 +12291,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &462986909
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12500,7 +12500,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &478791063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12709,7 +12709,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &488270524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13269,7 +13269,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &521447902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13718,7 +13718,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &539841957
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13927,7 +13927,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &545867562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14056,7 +14056,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &556050853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14185,7 +14185,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &557247703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14394,7 +14394,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &560914363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14603,7 +14603,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &568188588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14732,7 +14732,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &571011452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14861,7 +14861,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &572195172
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15070,7 +15070,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &573410701
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15359,7 +15359,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &582334865
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15568,7 +15568,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &584757259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15857,7 +15857,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &603982991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16089,7 +16089,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &611352878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16538,7 +16538,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &622871473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17257,7 +17257,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &650228015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17386,7 +17386,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &651582007
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17700,7 +17700,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &665606043
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17909,7 +17909,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &673611171
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18198,7 +18198,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &680020819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18407,7 +18407,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &686224546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18616,7 +18616,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &694345141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18745,7 +18745,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &694598460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18874,7 +18874,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &699828372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19243,7 +19243,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &716721086
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19532,7 +19532,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &724218217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19661,7 +19661,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &726671596
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19790,7 +19790,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &741836765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19999,7 +19999,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &741956365
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20448,7 +20448,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &754377591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20737,7 +20737,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &765766692
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20866,7 +20866,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &768857725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20995,7 +20995,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &769639651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21124,7 +21124,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &770432493
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21253,7 +21253,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &770710454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21382,7 +21382,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &773649470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21511,7 +21511,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &774121403
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21800,7 +21800,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &791277947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22169,7 +22169,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &806699018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22378,7 +22378,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &817233158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22507,7 +22507,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &817310600
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22636,7 +22636,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &824824483
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22925,7 +22925,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &834838021
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23054,7 +23054,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &842518544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23263,7 +23263,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &856643244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23392,7 +23392,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &858738843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23521,7 +23521,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &862241244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23810,7 +23810,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &875331053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24019,7 +24019,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &880501172
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24228,7 +24228,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &886015078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24597,7 +24597,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &903813839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24806,7 +24806,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &907179036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24935,7 +24935,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &913263084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25667,7 +25667,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &951092906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25796,7 +25796,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &951148056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26165,7 +26165,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &960037544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26454,7 +26454,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &968952942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26663,7 +26663,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &970415177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26792,7 +26792,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &970733538
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27081,7 +27081,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &983077826
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27210,7 +27210,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &983798973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27494,7 +27494,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &990561394
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27703,7 +27703,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &995482684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27912,7 +27912,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1000295528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28121,7 +28121,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1005250123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28330,7 +28330,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1013259078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28539,7 +28539,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1019879734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28828,7 +28828,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1038286627
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28957,7 +28957,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1041751495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29166,7 +29166,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1051603781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29375,7 +29375,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1056983323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29739,7 +29739,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1066152083
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29874,7 +29874,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1074759919
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30003,7 +30003,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1085090140
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30132,7 +30132,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1090556545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30341,7 +30341,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1099567085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30470,7 +30470,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1100913379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30679,7 +30679,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1119677315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30888,7 +30888,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1126968170
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31177,7 +31177,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1140987015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31386,7 +31386,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1153931728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31515,7 +31515,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1158766791
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31964,7 +31964,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1177570797
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32173,7 +32173,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1202010110
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32302,7 +32302,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1217129078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32431,7 +32431,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1220312319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32560,7 +32560,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1220926161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32883,7 +32883,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1223490153
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33012,7 +33012,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1223793825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33141,7 +33141,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1226027455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33270,7 +33270,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1239276682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33572,7 +33572,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1253052390
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33781,7 +33781,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1259321246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34070,7 +34070,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1274755483
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34199,7 +34199,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1278661718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34328,7 +34328,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1280888193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34457,7 +34457,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1285426004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34826,7 +34826,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1312621240
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35195,7 +35195,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1330669538
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35324,7 +35324,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1336171992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35869,7 +35869,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1359911257
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35998,7 +35998,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1359949519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36287,7 +36287,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1368053756
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36576,7 +36576,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1381885548
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36785,7 +36785,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1384755401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36914,7 +36914,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1394070932
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37043,7 +37043,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1394610543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37172,7 +37172,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1395107192
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37541,7 +37541,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1401267507
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37910,7 +37910,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1413145659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38119,7 +38119,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1418184611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38328,7 +38328,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1436116782
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38457,7 +38457,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1438175872
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38666,7 +38666,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1440283447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39030,7 +39030,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1459712523
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39363,7 +39363,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1468694939
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39492,7 +39492,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1472190133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39701,7 +39701,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1476287146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39990,7 +39990,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1504693563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40199,7 +40199,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1518613814
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40328,7 +40328,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1524124874
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40457,7 +40457,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1527773061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40666,7 +40666,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1528006073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40875,7 +40875,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1534382413
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41004,7 +41004,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1540969108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41213,7 +41213,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1547144323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41497,7 +41497,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1555678841
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41706,7 +41706,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1568767058
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41960,7 +41960,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1588125311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42489,7 +42489,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1608452963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42618,7 +42618,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1611537393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42747,7 +42747,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1617587521
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42967,7 +42967,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1624647030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43096,7 +43096,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1626388842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43225,7 +43225,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1628476850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43674,7 +43674,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1636145488
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44043,7 +44043,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1663936543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44357,7 +44357,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1668779379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44726,7 +44726,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1686439252
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44855,7 +44855,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1687240898
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44984,7 +44984,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1688600496
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45113,7 +45113,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1690928122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45322,7 +45322,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1694368068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45771,7 +45771,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1710294428
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46186,7 +46186,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1725463656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46315,7 +46315,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1725653869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46444,7 +46444,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1728920005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46573,7 +46573,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1733710101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46782,7 +46782,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1741921300
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46991,7 +46991,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1745763902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47200,7 +47200,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1761012876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47329,7 +47329,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1766625616
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47458,7 +47458,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1769261836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47587,7 +47587,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1771261827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47716,7 +47716,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1775336019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48171,7 +48171,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1807188958
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48300,7 +48300,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1813380946
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48509,7 +48509,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1816658264
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48638,7 +48638,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1825727064
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48767,7 +48767,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1833796232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48896,7 +48896,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1840245973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49031,7 +49031,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1845692473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49160,7 +49160,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1849199534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49289,7 +49289,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1849811663
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49418,7 +49418,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1855061055
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49707,7 +49707,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1863790741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49916,7 +49916,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1866123023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50045,7 +50045,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1879458925
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50574,7 +50574,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1893423918
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50783,7 +50783,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1901614193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51312,7 +51312,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1951527845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51441,7 +51441,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1961927076
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51570,7 +51570,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1963567237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51699,7 +51699,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1966728528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51828,7 +51828,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1967817607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51957,7 +51957,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1967986641
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52161,7 +52161,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1978958973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52290,7 +52290,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1982513121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52419,7 +52419,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1983122282
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52548,7 +52548,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1989254142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52837,7 +52837,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1994254607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52966,7 +52966,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1995199455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53175,7 +53175,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2001718311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53304,7 +53304,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2002172584
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53433,7 +53433,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2004281840
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53802,7 +53802,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2014760682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54326,7 +54326,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2042838380
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54538,7 +54538,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2045644038
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54747,7 +54747,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2051515530
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54876,7 +54876,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2051706514
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55005,7 +55005,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2053948142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55134,7 +55134,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2059931797
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55263,7 +55263,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2064590896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55472,7 +55472,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2070737931
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55641,7 +55641,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2073365239
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56010,7 +56010,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2088146606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56459,7 +56459,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2114035272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56588,7 +56588,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2124514785
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56797,7 +56797,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
-  reference: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
+  ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2146782273
 SpriteRenderer:
   m_ObjectHideFlags: 0

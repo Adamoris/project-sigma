@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Reference", menuName = "Ruleset")]
-public class Universal : ScriptableObject
+[CreateAssetMenu(fileName = "Ruleset", menuName = "Ruleset")]
+public class Ruleset : ScriptableObject
 {
     [Header("Move Class Base Stats")]
     public int armorMovement;
@@ -22,6 +22,13 @@ public class Universal : ScriptableObject
     public Sprite forestTile;
     public Sprite mountainTile;
     public Sprite plainsTile;
+
+
+    [Header("Affinity Sprites")]
+    public Sprite club;
+    public Sprite spade;
+    public Sprite heart;
+    public Sprite diamond;
 
 
     [Header("Player Information")]

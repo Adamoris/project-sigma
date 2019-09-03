@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ef3f32af05d945b6a706b99e861f908, type: 3}
-  m_Name: Reference
+  m_Name: Universal Ruleset
   m_EditorClassIdentifier: 
   armorMovement: 5
   cavalryMovement: 9
@@ -22,6 +22,10 @@ MonoBehaviour:
   forestTile: {fileID: 21300000, guid: 0aa02ee71457f4ffc8c4e85b094aed03, type: 3}
   mountainTile: {fileID: 21300000, guid: 9eda58d793f38473aba6a6808ea053fc, type: 3}
   plainsTile: {fileID: 21300000, guid: d79cb80bf3d924df0813c13d047a79a3, type: 3}
+  club: {fileID: 0}
+  spade: {fileID: 0}
+  heart: {fileID: 0}
+  diamond: {fileID: 0}
   name: Sydney
   playerLevel: 1
   premiumCurrency: 0

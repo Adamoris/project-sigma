@@ -10,10 +10,11 @@ public class Card : ScriptableObject
     [Header("Abstract Details")]
     //This SO holds information that is universal.
     public Ruleset ruleset;
-    //This is for checking if a unit is unlocked by the player.
-    public bool unlocked;
     //This is for checking is a unit is able to be summoned.
     public bool summonable;
+    //This is for checking if a unit is unlocked by the player.
+    [DrawIf("summonable", true)]
+    public bool unlocked;
 
     [Header("Unit General Information")]
     //This is the name of the unit.
@@ -142,17 +143,27 @@ public class Card : ScriptableObject
 
     [Header("Reference Values")]
     //These are the current stats for a neutral IV unit.
+    [ReadOnly]
     public int HP;
+    [ReadOnly]
     public int Atk;
+    [ReadOnly]
     public int Spd;
+    [ReadOnly]
     public int Def;
+    [ReadOnly]
     public int Res;
 
     //These are the modifiers for the unit's stats.
+    [ReadOnly]
     public int modifierHP;
+    [ReadOnly]
     public int modifierAtk;
+    [ReadOnly]
     public int modifierSpd;
+    [ReadOnly]
     public int modifierDef;
+    [ReadOnly]
     public int modifierRes;
     private int rarityModifier;
 

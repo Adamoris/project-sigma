@@ -6,14 +6,23 @@ using UnityEditor;
 [CustomEditor(typeof(Card))]
 public class CardHelper : Editor
 {
+    /*
+    SerializedProperty iv;
+
+    private void OnEnable()
+    {
+        iv = serializedObject.FindProperty("IV");
+    }
+    */
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
 
         Card card = target as Card;
 
-        EditorGUILayout.Space();
-        EditorGUILayout.LabelField("Additional Tools", EditorStyles.boldLabel);
+        //EditorGUILayout.Space();
+        //EditorGUILayout.LabelField("Unit General Information", EditorStyles.boldLabel);
+        //EditorGUILayout.PropertyField(iv);
 
         if (GUILayout.Button("Generate EXP Spread"))
         {
@@ -41,5 +50,7 @@ public class CardHelper : Editor
             Debug.Log("Recommended: Generate a new EXP Spread!");
             card.ResetStats();
         }
+
+        //serializedObject.ApplyModifiedProperties();
     }
 }

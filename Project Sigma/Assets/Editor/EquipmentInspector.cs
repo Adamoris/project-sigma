@@ -6,12 +6,48 @@ using UnityEditor;
 [CustomEditor(typeof(Equipment))]
 public class EquipmentInspector : Editor
 {
+    SerializedProperty equipmentName;
+    SerializedProperty slot;
+    SerializedProperty description;
+    SerializedProperty cost;
+    SerializedProperty prerequisite;
+    SerializedProperty icon;
+
+    private void OnEnable()
+    {
+        equipmentName = serializedObject.FindProperty("name");
+        slot = serializedObject.FindProperty("slot");
+        description = serializedObject.FindProperty("description");
+        cost = serializedObject.FindProperty("cost");
+        prerequisite = serializedObject.FindProperty("prerequisite");
+        icon = serializedObject.FindProperty("icon");
+    }
+
     public override void OnInspectorGUI()
     {
-        DrawDefaultInspector();
+        EditorGUILayout.PropertyField(equipmentName, new GUIContent("Name"));
+        EditorGUILayout.PropertyField(slot);
+        EditorGUILayout.PropertyField(description);
+        EditorGUILayout.PropertyField(cost);
+        EditorGUILayout.PropertyField(prerequisite);
+
+        EditorGUILayout.PropertyField(icon);
+
         Equipment equipment = target as Equipment;
 
-        //GUILayout.Label("Inheritability");
+        switch (equipment.slot)
+        {
+            case Equipment.Slot.A:
+                break;
+            case Equipment.Slot.B:
+                break;
+            case Equipment.Slot.C:
+                break;
+            case Equipment.Slot.D:
+                break;
+        }
+
+
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Inheritability", EditorStyles.boldLabel);
         equipment.inheritable = EditorGUILayout.Toggle("Inheritable", equipment.inheritable);
@@ -38,11 +74,13 @@ public class EquipmentInspector : Editor
                 weapon.CloseCounter = EditorGUILayout.Toggle("Close Counter", weapon.CloseCounter);
                 break;
         }
-        */
+        
         //base.OnInspectorGUI();
         if (GUI.changed)
         {
             EditorUtility.SetDirty(target);
         }
+        */
+        serializedObject.ApplyModifiedProperties();
     }
 }

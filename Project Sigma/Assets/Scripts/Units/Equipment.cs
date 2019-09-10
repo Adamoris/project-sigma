@@ -30,6 +30,7 @@ public class Equipment: ScriptableObject
 
     //This is the equipment slot this object occupies.
     public enum Slot { None, A, B, C, D };
+    [Tooltip("Slot A: affects unit\nSlot B: affects others\nSlot C: combat/field\nSlot D: miscellaneous")]
     public Slot slot;
 
     //This is the description for what the equipment does.
@@ -44,7 +45,7 @@ public class Equipment: ScriptableObject
 
 
     [Header("Equipment Art Asset")]
-    public Sprite cardSprite;
+    public Sprite icon;
 
 
     [Header("Weapon Effectiveness")]
@@ -86,4 +87,23 @@ public class Equipment: ScriptableObject
     public bool magic;
     [HideInInspector]
     public bool beast;
+
+
+    [Header("Restrictions")]
+    [HideInInspector]
+    public bool restrictions;
+    [HideInInspector]
+    public bool swordRestrict;
+    [HideInInspector]
+    public bool axeRestrict;
+    [HideInInspector]
+    public bool lanceRestrict;
+    [HideInInspector]
+    public bool daggerRestrict;
+    [HideInInspector]
+    public bool bowRestrict;
+    [HideInInspector]
+    public bool magicRestrict;
+    [HideInInspector]
+    public bool beastRestrict;
 }

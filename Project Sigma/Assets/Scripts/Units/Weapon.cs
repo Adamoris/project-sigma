@@ -21,6 +21,10 @@ public class Weapon : ScriptableObject
     public enum DamageType { None, Magical, Physical}
     public DamageType damageType;
 
+    //This specifies the weapon typing for determining class/inheritance restrictions.
+    public enum WeaponType { None, Sword, Spear, Axe, Mace, Disruptor, Staff, Bow, Wand, Gauntlet, Dagger, Transformation }
+    public WeaponType weaponType;
+
     //This is for checking if a specific weapon is already unlocked before this one can be learned.
     public Weapon prerequisite;
 
@@ -29,11 +33,8 @@ public class Weapon : ScriptableObject
     public Sprite cardSprite;
     public Sprite mapSprite;
 
-
-    //This specifies the weapon typing for determining inheritance restrictions.
-    public enum WeaponType { None, Sword, Axe, Lance, Bow }
+    
     [Header("Inheritability")]
-    public WeaponType weaponType;
     //This is to determine if a weapon is inheritable.
     public bool inheritable;
 

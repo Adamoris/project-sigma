@@ -3285,6 +3285,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EndTurn
       objectReference: {fileID: 0}
+    - target: {fileID: 7605468965449477413, guid: 417f41e902db7421f9cfb5f2b38a9038,
+        type: 3}
+      propertyPath: selectionCursor
+      value: 
+      objectReference: {fileID: 1355214602}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417f41e902db7421f9cfb5f2b38a9038, type: 3}
 --- !u!1 &104594874

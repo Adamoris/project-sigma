@@ -47,24 +47,61 @@ public class Card : ScriptableObject
     private string boonKey;
     private string baneKey;
 
+    //This specifies the gender of the unit.
+    public enum Gender { None, Male, Female}
+    public Gender gender;
+
     //This specifies the move type of the unit.
     public enum MoveClass { None, Armor, Cavalry, Flier, Infantry }
+    //[HideInInspector]
     public MoveClass moveClass;
 
-    //This specifies the specialization of an armor unit.
-    public enum ArmorClass { }
+    //This specifies the damage-type of the unit.
+    public enum DamageType { None, Physical, Magic }
+    //[HideInInspector]
+    public DamageType damageType;
+
+    //This specifies the range of the unit.
+    public enum Range { None, Melee, Ranged }
+    public Range range;
+
+    //The 16 following enums specify the possible class progression paths of the unit.
+    public enum PhysicalMeleeArmor { None, Knight, Brigadier, General, Emperor, Conqueror }
+    [Rename("Class")]
+    [HideInInspector]
+    public PhysicalMeleeArmor physicalMeleeArmor;
+    public enum PhysicalRangedArmor { None, Knight, Brigadier, General, Emperor, Conqueror }
+
+    public enum MagicalMeleeArmor { None, Knight, Tactician, Grandmaster, Hierarch, Hierophant }
+
+    public enum MagicalRangedArmor { None, Knight, Tactician, Grandmaster, Hierarch, Hierophant }
 
 
-    //This specifies the specialization of an armor unit.
-    public enum CavalryClass { }
+    public enum PhysicalMeleeCavalry { None, Cavalier, Templar, Heavy_Cavalry, Dragoon }
+
+    public enum PhysicalRangedCavalry { None, Cavalier, Templar, Bow_Knight, Dragoon }
+
+    public enum MagicalMeleeCavalry { None, Cavalier, Caster, Battle_Priest, Paladin }
+
+    public enum MagicalRangedCavalry { None, Cavalier, Caster, Cleric, Paladin }
 
 
-    //This specifies the specialization of an armor unit.
-    public enum FlierClass { }
+    public enum PhysicalMeleeFlier { None, Scout, Pegasus_Knight, Falconer, Valkyrie }
+
+    public enum PhysicalRangedFlier { None, Scout, Pegasus_Knight, Sparrow, Valkyrie }
+
+    public enum MagicalMeleeFlier { None, Scout, Dragon_Knight, Raptor, Arbiter}
+
+    public enum MagicalRangedFlier { None, Scout, Dragon_Knight, Phoenix, Arbiter}
 
 
-    //This specifies the specialization of an armor unit.
-    public enum InfantryClass { }
+    public enum PhysicalMeleeInfantry { None, Soldier, Dancer, Warrior, Blademaster, Thief, Berserker, Assassin }
+
+    public enum PhysicalRangedInfantry { None, Soldier, Warrior, Archer, Scholar, Marksman, Engineer }
+
+    public enum MagicalMeleeInfantry { None, Soldier, Dancer, Healer, Mage, Druid, Monk, Shaman, Beast}
+
+    public enum MagicalRangedInfantry { None, Soldier, Dancer, Healer, Mage, Wizard, Sorcerer, Archmage, Reaper }
 
 
     //This indicates the race of the unit.
@@ -76,8 +113,8 @@ public class Card : ScriptableObject
     public Affinity affinity;
 
     //This specifies the unit's geist typing.
-    public enum Geist { None, Lunar, Solar }
-    public Geist geist;
+    //public enum Geist { None, Lunar, Solar }
+    //public Geist geist;
 
     //This specifies the weapon typing of the unit.
     //public enum WeaponType { None, Sword, Axe, Lance, Dagger, Bow, Magic, Beast}
@@ -96,53 +133,53 @@ public class Card : ScriptableObject
     //Artwork.
     public Sprite portrait;
     public Sprite mapSprite;
-    public Sprite affinitySprite;
+    //public Sprite affinitySprite;
 
 
     [Header("Lvl. 1 Base Stats (Bronze)")]
-    //These are the stats for a neutral IV unit at level 1.
+    //These are the stats for a neutral IV unit at level 1 and bronze rarity.
     [Rename("HP")]
-    public int HP_floor;
+    public int baseHP;
     [Rename("Atk")]
-    public int Atk_floor;
+    public int baseAtk;
     [Rename("Spd")]
-    public int Spd_floor;
+    public int baseSpd;
     [Rename("Def")]
-    public int Def_floor;
+    public int baseDef;
     [Rename("Res")]
-    public int Res_floor;
+    public int baseRes;
 
 
     [Header("Growth Rates (%)")]
-    //These are the stats for a neutral IV unit at level 50.
+    //These are the growth rates for the unit's stats.
     [Rename("HP")]
-    public int HP_rate;
+    public int growthHP;
     [Rename("Atk")]
-    public int Atk_rate;
+    public int growthAtk;
     [Rename("Spd")]
-    public int Spd_rate;
+    public int growthSpd;
     [Rename("Def")]
-    public int Def_rate;
+    public int growthDef;
     [Rename("Res")]
-    public int Res_rate;
+    public int growthRes;
 
 
     [Header("Assist/Equipment/Special/Weapon")]
     public Assist assist;
     [Rename("Slot A")]
-    public Equipment slot_A;
+    public Equipment slotA;
     [Rename("Slot B")]
-    public Equipment slot_B;
+    public Equipment slotB;
     [Rename("Slot C")]
-    public Equipment slot_C;
+    public Equipment slotC;
     [Rename("Slot D")]
-    public Equipment slot_D;
+    public Equipment slotD;
     public Special special;
     public Weapon weapon;
 
 
     [Header("Reference Values")]
-    //These are the current stats for a neutral IV unit.
+    //These are the current stats for the unit.
     [ReadOnly]
     public int HP;
     [ReadOnly]
@@ -177,7 +214,7 @@ public class Card : ScriptableObject
 
     //Stat Calculation Variables/Methods
     private readonly float rarityFactor = 0.07f;
-    [HideInInspector]
+    //[HideInInspector]
     public int levelingRange = 49;
     int randomizer;
     int[] levelList;
@@ -278,11 +315,11 @@ public class Card : ScriptableObject
     public void GenerateEXPSpread()
     {
         FactorIV(IV);
-        levelListHP = RandomEXP(HP_rate + varianceFactor * Convert.ToInt32(boonKey[0]) - varianceFactor * Convert.ToInt32(baneKey[0]), rarity);
-        levelListAtk = RandomEXP(Atk_rate + varianceFactor * Convert.ToInt32(boonKey[1]) - varianceFactor * Convert.ToInt32(baneKey[1]), rarity);
-        levelListSpd = RandomEXP(Spd_rate + varianceFactor * Convert.ToInt32(boonKey[2]) - varianceFactor * Convert.ToInt32(baneKey[2]), rarity);
-        levelListDef = RandomEXP(Def_rate + varianceFactor * Convert.ToInt32(boonKey[3]) - varianceFactor * Convert.ToInt32(baneKey[3]), rarity);
-        levelListRes = RandomEXP(Res_rate + varianceFactor * Convert.ToInt32(boonKey[4]) - varianceFactor * Convert.ToInt32(baneKey[4]), rarity);
+        levelListHP = RandomEXP(growthHP + varianceFactor * Convert.ToInt32(boonKey[0]) - varianceFactor * Convert.ToInt32(baneKey[0]), rarity);
+        levelListAtk = RandomEXP(growthAtk + varianceFactor * Convert.ToInt32(boonKey[1]) - varianceFactor * Convert.ToInt32(baneKey[1]), rarity);
+        levelListSpd = RandomEXP(growthSpd + varianceFactor * Convert.ToInt32(boonKey[2]) - varianceFactor * Convert.ToInt32(baneKey[2]), rarity);
+        levelListDef = RandomEXP(growthDef + varianceFactor * Convert.ToInt32(boonKey[3]) - varianceFactor * Convert.ToInt32(baneKey[3]), rarity);
+        levelListRes = RandomEXP(growthRes + varianceFactor * Convert.ToInt32(boonKey[4]) - varianceFactor * Convert.ToInt32(baneKey[4]), rarity);
     }
 
     //This method combines the two methods below to both generate a growth value and its respective randomized EXP list.
@@ -346,90 +383,100 @@ public class Card : ScriptableObject
         }
     }
 
-    //This method is for updating the stats to reflect its current state (excluding alterations from combat).
-    public void UpdateStats()
-    {
-        FactorIV(IV);
-        RarityAdjustment(rarity);
-        //Debug.Log(name + ": " + HP_floor + "," + rarityModifier + "," + modifierHP);
-        HP = HP_floor + rarityModifier + modifierHP + Convert.ToInt32(boonKey[0]) - Convert.ToInt32(baneKey[0]);
-        if (weapon != null)
-        {
-            Atk = Atk_floor + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]) + weapon.mt;
-        }
-        else
-        {
-            Atk = Atk_floor + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]);
-        }
-        Spd = Spd_floor + rarityModifier + modifierSpd + Convert.ToInt32(boonKey[2]) - Convert.ToInt32(baneKey[2]);
-        Def = Def_floor + rarityModifier + modifierDef + Convert.ToInt32(boonKey[3]) - Convert.ToInt32(baneKey[3]);
-        Res = Res_floor + rarityModifier + modifierRes + Convert.ToInt32(boonKey[4]) - Convert.ToInt32(baneKey[4]);
-    }
-
-    //This method is for reverting the unit to its lvl. 1 state.
-    public void ResetStats()
+    //This method is for updating what the stat modifiers should currently be.
+    public void CheckModifiers()
     {
         modifierHP = 0;
         modifierAtk = 0;
         modifierSpd = 0;
         modifierDef = 0;
         modifierRes = 0;
-        UpdateStats();
+        if (level > 1)
+        {
+            for (int i = 2; i < level + 1; i++)
+            {
+                if (levelListHP.Contains(i))
+                {
+                    modifierHP++;
+                }
+                if (levelListAtk.Contains(i))
+                {
+                    modifierAtk++;
+                }
+                if (levelListSpd.Contains(i))
+                {
+                    modifierSpd++;
+                }
+                if (levelListDef.Contains(i))
+                {
+                    modifierDef++;
+                }
+                if (levelListRes.Contains(i))
+                {
+                    modifierRes++;
+                }
+            }
+        }
+    }
+
+    //This method is for updating the stats to reflect its current state (excluding alterations from combat).
+    public void UpdateStats()
+    {
+        FactorIV(IV);
+        RarityAdjustment(rarity);
+        //Debug.Log(name + ": " + HP_floor + "," + rarityModifier + "," + modifierHP);
+        HP = baseHP + rarityModifier + modifierHP + Convert.ToInt32(boonKey[0]) - Convert.ToInt32(baneKey[0]);
+        if (weapon != null)
+        {
+            Atk = baseAtk + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]) + weapon.mt;
+        }
+        else
+        {
+            Atk = baseAtk + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]);
+        }
+        Spd = baseSpd + rarityModifier + modifierSpd + Convert.ToInt32(boonKey[2]) - Convert.ToInt32(baneKey[2]);
+        Def = baseDef + rarityModifier + modifierDef + Convert.ToInt32(boonKey[3]) - Convert.ToInt32(baneKey[3]);
+        Res = baseRes + rarityModifier + modifierRes + Convert.ToInt32(boonKey[4]) - Convert.ToInt32(baneKey[4]);
+    }
+
+    //This method is for reverting the unit to its lvl. 1 state.
+    public void ResetStats()
+    {
         level = 1;
+        InitializeStats();
+    }
+
+    //This method is for updating the stats without resetting the unit to lvl. 1.
+    public void InitializeStats()
+    {
+        if (level <= levelingRange + 1 && level >= 1)
+        {
+            CheckModifiers();
+            UpdateStats();
+        }
+        
     }
 
     //This method is for leveling up the unit by 1.
     public void LevelUp()
     {
-        level++;
-        if (levelListHP.Contains(level))
+        if (level <= levelingRange)
         {
-            modifierHP++;
+            level++;
+            InitializeStats();
         }
-        if (levelListAtk.Contains(level))
-        {
-            modifierAtk++;
-        }
-        if (levelListSpd.Contains(level))
-        {
-            modifierSpd++;
-        }
-        if (levelListDef.Contains(level))
-        {
-            modifierDef++;
-        }
-        if (levelListRes.Contains(level))
-        {
-            modifierRes++;
-        }
-        UpdateStats();
+        
     }
 
     //This method is for leveling down the unit by 1.
     public void LevelDown()
     {
-        if (levelListHP.Contains(level))
+        if (level > 1)
         {
-            modifierHP--;
+            level--;
+            InitializeStats();
         }
-        if (levelListAtk.Contains(level))
-        {
-            modifierAtk--;
-        }
-        if (levelListSpd.Contains(level))
-        {
-            modifierSpd--;
-        }
-        if (levelListDef.Contains(level))
-        {
-            modifierDef--;
-        }
-        if (levelListRes.Contains(level))
-        {
-            modifierRes--;
-        }
-        level--;
-        UpdateStats();
+        
     }
 
 }

@@ -25,7 +25,22 @@ public class CardDisplay : MonoBehaviour
     void Update()
     {
         artworkImage.sprite = card.portrait;
-        affinityImage.sprite = card.affinitySprite;
+        switch (card.affinity)
+        {
+            case Card.Affinity.Club:
+                affinityImage.sprite = card.ruleset.club;
+                break;
+            case Card.Affinity.Spade:
+                affinityImage.sprite = card.ruleset.spade;
+                break;
+            case Card.Affinity.Heart:
+                affinityImage.sprite = card.ruleset.heart;
+                break;
+            case Card.Affinity.Diamond:
+                affinityImage.sprite = card.ruleset.diamond;
+                break;
+        }
+
         mergeText.text = card.merge.ToString();
         nameText.text = card.name;
         hpText.text = card.HP.ToString() + "/" + card.HP.ToString();

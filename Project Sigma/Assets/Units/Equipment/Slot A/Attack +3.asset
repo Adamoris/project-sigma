@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 330a53869eea043e8913fc7185f06b91, type: 3}
-  m_Name: New Equipment
+  m_Name: Attack +3
   m_EditorClassIdentifier: 
-  name: 
-  slot: 0
+  name: Attack +3
+  slot: 1
   description: 
   cost: 0
   prerequisite: {fileID: 0}
-  cardSprite: {fileID: 0}
+  icon: {fileID: 0}
   armor: 0
   cavalry: 0
   flier: 0
@@ -36,3 +36,11 @@ MonoBehaviour:
   bow: 0
   magic: 0
   beast: 0
+  restrictions: 0
+  swordRestrict: 0
+  axeRestrict: 0
+  lanceRestrict: 0
+  daggerRestrict: 0
+  bowRestrict: 0
+  magicRestrict: 0
+  beastRestrict: 0

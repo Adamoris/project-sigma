@@ -22,10 +22,10 @@ MonoBehaviour:
   forestTile: {fileID: 21300000, guid: 0aa02ee71457f4ffc8c4e85b094aed03, type: 3}
   mountainTile: {fileID: 21300000, guid: 9eda58d793f38473aba6a6808ea053fc, type: 3}
   plainsTile: {fileID: 21300000, guid: d79cb80bf3d924df0813c13d047a79a3, type: 3}
-  club: {fileID: 0}
-  spade: {fileID: 0}
-  heart: {fileID: 0}
-  diamond: {fileID: 0}
+  club: {fileID: 21300000, guid: 30d1601db20904260b0f0c80478e2e46, type: 3}
+  spade: {fileID: 21300000, guid: e754778a361a84b1ea31c0789dc4c9bd, type: 3}
+  heart: {fileID: 21300000, guid: 3a2b4e68008b941419a304a2a9226b62, type: 3}
+  diamond: {fileID: 21300000, guid: 8153ed1357ba04dab85c271f24b6b973, type: 3}
   name: Sydney
   playerLevel: 1
   premiumCurrency: 0

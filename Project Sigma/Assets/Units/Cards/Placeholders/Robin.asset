@@ -16,12 +16,28 @@ MonoBehaviour:
   summonable: 0
   unlocked: 0
   name: Robin
+  description: 
   IV: 6
   gender: 0
   moveClass: 1
-  damageType: 0
-  range: 0
-  physicalMeleeArmor: 0
+  damageType: 2
+  range: 1
+  pma: 0
+  pra: 0
+  mma: 0
+  mra: 0
+  pmc: 0
+  prc: 0
+  mmc: 0
+  mrc: 0
+  pmf: 0
+  prf: 0
+  mmf: 0
+  mrf: 0
+  pmi: 0
+  pri: 0
+  mmi: 0
+  mri: 0
   race: 0
   affinity: 4
   level: 1
@@ -39,13 +55,13 @@ MonoBehaviour:
   growthSpd: 40
   growthDef: 60
   growthRes: 50
-  assist: {fileID: 0}
-  slotA: {fileID: 0}
-  slotB: {fileID: 0}
-  slotC: {fileID: 0}
-  slotD: {fileID: 0}
-  special: {fileID: 0}
   weapon: {fileID: 11400000, guid: 5bbf53648ad3e471d91e252f67830ade, type: 2}
+  assist: {fileID: 11400000, guid: c4abfc2129b794adbbdbf0982fc3d4a2, type: 2}
+  special: {fileID: 11400000, guid: 908c30c48072a42a8acec48022bc7bcd, type: 2}
+  slotA: {fileID: 11400000, guid: 0864ff489df8145669cb008791263f1d, type: 2}
+  slotB: {fileID: 11400000, guid: 992e7dd7ecd324381b8321c95ebdf2c2, type: 2}
+  slotC: {fileID: 11400000, guid: f7cb4b139ae864fc7a2355211dc5ff06, type: 2}
+  slotD: {fileID: 11400000, guid: 0864ff489df8145669cb008791263f1d, type: 2}
   HP: 24
   Atk: 21
   Spd: 6

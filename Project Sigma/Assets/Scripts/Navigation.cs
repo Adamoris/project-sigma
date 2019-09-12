@@ -4,39 +4,65 @@ using UnityEngine;
 
 public class Navigation : MonoBehaviour
 {
-    public CellGrid cellGrid;
-    public float stepSize = 1f;
+    public Transform CellsParent;
+    public Transform UnitsParent;
     public float keyDelay = 0.2f;
+    private int mapWidth;
+    private int mapHeight;
+
+
+    [SerializeField] int x;
+    [SerializeField] int y;
+
     float time;
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateLocation();
+        var map = CellsParent.GetComponent<RectangularSquareGridGenerator>();
+        mapWidth = map.Width;
+        mapHeight = map.Height;
     }
 
     // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
-        if (Input.GetKey(KeyCode.UpArrow) && time >= keyDelay || Input.GetKeyDown(KeyCode.UpArrow))
+        if (y < mapHeight - 1 && (Input.GetKey(KeyCode.UpArrow) && time >= keyDelay || Input.GetKeyDown(KeyCode.UpArrow)))
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y + stepSize, 0);
+            y += 1;
+            UpdateLocation();
             time = 0;
         }
-        else if (Input.GetKey(KeyCode.DownArrow) && time >= keyDelay || Input.GetKeyDown(KeyCode.DownArrow))
+        else if (y > 0 && (Input.GetKey(KeyCode.DownArrow) && time >= keyDelay || Input.GetKeyDown(KeyCode.DownArrow)))
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - stepSize, 0);
+            y -= 1;
+            UpdateLocation();
             time = 0;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) && time >= keyDelay || Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (x > 0 && (Input.GetKey(KeyCode.LeftArrow) && time >= keyDelay || Input.GetKeyDown(KeyCode.LeftArrow)))
         {
-            transform.position = new Vector3(transform.position.x - stepSize, transform.position.y, 0);
+            x -= 1;
+            UpdateLocation();
             time = 0;
         }
-        else if (Input.GetKey(KeyCode.RightArrow) && time >= keyDelay || Input.GetKeyDown(KeyCode.RightArrow))
+        else if (x < mapWidth - 1 && (Input.GetKey(KeyCode.RightArrow) && time >= keyDelay || Input.GetKeyDown(KeyCode.RightArrow)))
         {
-            transform.position = new Vector3(transform.position.x + stepSize, transform.position.y, 0);
+            x += 1;
+            UpdateLocation();
             time = 0;
+        }
+    }
+
+    void UpdateLocation()
+    {
+        foreach (Transform cell in CellsParent)
+        {
+            var cellPosition = cell.GetComponent<Cell>();
+            if (cellPosition.x == x && cellPosition.y == y)
+            {
+                transform.position = cell.transform.position;
+            }
         }
     }
 }

@@ -11,12 +11,12 @@ public class Equipment: ScriptableObject
      * Slot 1: Personal
      *  The purpose if this slot is to grant boosts that affects the unit itself 
      *  through either effect or stat buffs. 
+     *
+     * Slot 3: Others
+     *     The purpose of this slot is to buff/debuff either your allies or enemies.
      *     
      * Slot 2: Combat
      *  The purpose of this slot is to alter the dynamic of combat through various effects.
-     * 
-     * Slot 3: Others
-     *  The purpose of this slot is to buff/debuff either your allies or enemies.
      * 
      * Slot 4: Miscellaneous
      *  The purpose of this slot is to add on additional effects that are either 
@@ -44,25 +44,30 @@ public class Equipment: ScriptableObject
     public Equipment prerequisite;
 
 
-    [Header("Equipment Art Asset")]
+    [Header("Equipment Art Assets")]
     public Sprite icon;
 
 
-    [Header("Weapon Effectiveness")]
-    public bool armor;
-    public bool cavalry;
-    public bool flier;
-    public bool infantry;
+    [Header("Nullify Weapon Effectiveness")]
+    public bool armorShield;
+    public bool cavalryShield;
+    public bool flierShield;
+    public bool infantryShield;
 
 
     //These enums will be used in the sections below.
-    public enum CombatOrder { None, BeforeCombat, StartOfCombat, EndOfCombat }
+    public enum CombatOrder { None, Before, During, After }
+    [Rename("Combat Order")]
+    public CombatOrder combatOrder;
 
+    public enum Dependency { None, Unit, Ally, Foe }
+    public Dependency dependency;
+
+    public enum Target { None, Self, Foe}
+    public Target target;
 
     [Header("Stat Modifier Effect")]
-    [Rename("Combat Order")]
-    public CombatOrder combatOrder_statMod;
-    public int HPModifier;
+    public int healthModifier;
     public int atkModifier;
     public int spdModifier;
     public int defModifier;
@@ -71,39 +76,11 @@ public class Equipment: ScriptableObject
 
     [Header("Inheritability")]
     //This is to determine if a weapon is inheritable.
-    [HideInInspector]
     public bool inheritable;
-    [HideInInspector]
-    public bool sword;
-    [HideInInspector]
-    public bool axe;
-    [HideInInspector]
-    public bool lance;
-    [HideInInspector]
-    public bool dagger;
-    [HideInInspector]
-    public bool bow;
-    [HideInInspector]
-    public bool magic;
-    [HideInInspector]
-    public bool beast;
-
-
-    [Header("Restrictions")]
-    [HideInInspector]
-    public bool restrictions;
-    [HideInInspector]
-    public bool swordRestrict;
-    [HideInInspector]
-    public bool axeRestrict;
-    [HideInInspector]
-    public bool lanceRestrict;
-    [HideInInspector]
-    public bool daggerRestrict;
-    [HideInInspector]
-    public bool bowRestrict;
-    [HideInInspector]
-    public bool magicRestrict;
-    [HideInInspector]
-    public bool beastRestrict;
+    public bool meleeInherit;
+    public bool rangeInherit;
+    public bool armorInherit;
+    public bool cavalryInherit;
+    public bool flierInherit;
+    public bool infantryInherit;
 }

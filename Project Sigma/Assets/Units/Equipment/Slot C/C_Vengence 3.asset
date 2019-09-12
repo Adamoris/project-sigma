@@ -10,37 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 330a53869eea043e8913fc7185f06b91, type: 3}
-  m_Name: Attack +1
+  m_Name: C_Vengence 3
   m_EditorClassIdentifier: 
-  name: Attack +1
-  slot: 1
+  name: Vengence 3
+  slot: 0
   description: 
   cost: 0
-  prerequisite: {fileID: 0}
+  prerequisite: {fileID: 11400000, guid: c4dafaf2e18ca459fb330e5e025746ed, type: 2}
   icon: {fileID: 0}
-  armor: 0
-  cavalry: 0
-  flier: 0
-  infantry: 0
-  combatOrder_statMod: 0
-  HPModifier: 0
+  armorShield: 0
+  cavalryShield: 0
+  flierShield: 0
+  infantryShield: 0
+  combatOrder: 0
+  dependency: 0
+  target: 0
+  healthModifier: 0
   atkModifier: 0
   spdModifier: 0
   defModifier: 0
   resModifier: 0
   inheritable: 0
-  sword: 0
-  axe: 0
-  lance: 0
-  dagger: 0
-  bow: 0
-  magic: 0
-  beast: 0
-  restrictions: 0
-  swordRestrict: 0
-  axeRestrict: 0
-  lanceRestrict: 0
-  daggerRestrict: 0
-  bowRestrict: 0
-  magicRestrict: 0
-  beastRestrict: 0
+  meleeInherit: 0
+  rangeInherit: 0
+  armorInherit: 0
+  cavalryInherit: 0
+  flierInherit: 0
+  infantryInherit: 0

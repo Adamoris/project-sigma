@@ -21,6 +21,7 @@ public class CardDisplay : MonoBehaviour
     public TextMeshProUGUI resText;
     public TextMeshProUGUI levelText;
 
+    [SerializeField] float animationSpeed = 3f;
 
     void Update()
     {
@@ -49,8 +50,5 @@ public class CardDisplay : MonoBehaviour
         defText.text = card.Def.ToString();
         resText.text = card.Res.ToString();
         levelText.text = card.level.ToString();
-
-
     }
-
 }

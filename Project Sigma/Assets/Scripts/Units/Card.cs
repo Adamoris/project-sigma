@@ -13,12 +13,14 @@ public class Card : ScriptableObject
     //This is for checking is a unit is able to be summoned.
     public bool summonable;
     //This is for checking if a unit is unlocked by the player.
-    [DrawIf("summonable", true)]
     public bool unlocked;
 
     [Header("Unit General Information")]
     //This is the name of the unit.
     public new string name;
+    //This is the description for who the unit is.
+    [TextArea(3, 10)]
+    public string description;
     // The IV value is an int ranging from 0-20 which
     // determines the boon/bane combination of an individual unit.
     [Tooltip("0   = neutral" + "\n"
@@ -57,7 +59,7 @@ public class Card : ScriptableObject
     public MoveClass moveClass;
 
     //This specifies the damage-type of the unit.
-    public enum DamageType { None, Physical, Magic }
+    public enum DamageType { None, Physical, Magical }
     //[HideInInspector]
     public DamageType damageType;
 
@@ -66,43 +68,57 @@ public class Card : ScriptableObject
     public Range range;
 
     //The 16 following enums specify the possible class progression paths of the unit.
-    public enum PhysicalMeleeArmor { None, Knight, Brigadier, General, Emperor, Conqueror }
+    public enum PhysicalMeleeArmor { Knight, Brigadier, General, Emperor, Conqueror }
     [Rename("Class")]
-    [HideInInspector]
-    public PhysicalMeleeArmor physicalMeleeArmor;
-    public enum PhysicalRangedArmor { None, Knight, Brigadier, General, Emperor, Conqueror }
+    public PhysicalMeleeArmor pma;
+    public enum PhysicalRangedArmor { Knight, Brigadier, Sentinel, Emperor, Conqueror }
+    [Rename("Class")]
+    public PhysicalRangedArmor pra;
+    public enum MagicalMeleeArmor { Knight, Tactician, Grandmaster, Hierarch, Hierophant }
+    [Rename("Class")]
+    public MagicalMeleeArmor mma;
+    public enum MagicalRangedArmor { Knight, Tactician, Warlock, Hierarch, Hierophant }
+    [Rename("Class")]
+    public MagicalRangedArmor mra;
 
-    public enum MagicalMeleeArmor { None, Knight, Tactician, Grandmaster, Hierarch, Hierophant }
+    public enum PhysicalMeleeCavalry { Cavalier, Templar, Heavy_Cavalry, Dragoon }
+    [Rename("Class")]
+    public PhysicalMeleeCavalry pmc;
+    public enum PhysicalRangedCavalry { Cavalier, Templar, Bow_Knight, Dragoon }
+    [Rename("Class")]
+    public PhysicalRangedCavalry prc;
+    public enum MagicalMeleeCavalry { Cavalier, Caster, Battle_Priest, Paladin }
+    [Rename("Class")]
+    public MagicalMeleeCavalry mmc;
+    public enum MagicalRangedCavalry { Cavalier, Caster, Cleric, Paladin }
+    [Rename("Class")]
+    public MagicalRangedCavalry mrc;
 
-    public enum MagicalRangedArmor { None, Knight, Tactician, Grandmaster, Hierarch, Hierophant }
+    public enum PhysicalMeleeFlier { Scout, Pegasus_Knight, Falconer, Valkyrie }
+    [Rename("Class")]
+    public PhysicalMeleeFlier pmf;
+    public enum PhysicalRangedFlier { Scout, Pegasus_Knight, Sparrow, Valkyrie }
+    [Rename("Class")]
+    public PhysicalRangedFlier prf;
+    public enum MagicalMeleeFlier { Scout, Dragon_Knight, Raptor, Arbiter}
+    [Rename("Class")]
+    public MagicalMeleeFlier mmf;
+    public enum MagicalRangedFlier { Scout, Dragon_Knight, Phoenix, Arbiter}
+    [Rename("Class")]
+    public MagicalRangedFlier mrf;
 
-
-    public enum PhysicalMeleeCavalry { None, Cavalier, Templar, Heavy_Cavalry, Dragoon }
-
-    public enum PhysicalRangedCavalry { None, Cavalier, Templar, Bow_Knight, Dragoon }
-
-    public enum MagicalMeleeCavalry { None, Cavalier, Caster, Battle_Priest, Paladin }
-
-    public enum MagicalRangedCavalry { None, Cavalier, Caster, Cleric, Paladin }
-
-
-    public enum PhysicalMeleeFlier { None, Scout, Pegasus_Knight, Falconer, Valkyrie }
-
-    public enum PhysicalRangedFlier { None, Scout, Pegasus_Knight, Sparrow, Valkyrie }
-
-    public enum MagicalMeleeFlier { None, Scout, Dragon_Knight, Raptor, Arbiter}
-
-    public enum MagicalRangedFlier { None, Scout, Dragon_Knight, Phoenix, Arbiter}
-
-
-    public enum PhysicalMeleeInfantry { None, Soldier, Dancer, Warrior, Blademaster, Thief, Berserker, Assassin }
-
-    public enum PhysicalRangedInfantry { None, Soldier, Warrior, Archer, Scholar, Marksman, Engineer }
-
-    public enum MagicalMeleeInfantry { None, Soldier, Dancer, Healer, Mage, Druid, Monk, Shaman, Beast}
-
-    public enum MagicalRangedInfantry { None, Soldier, Dancer, Healer, Mage, Wizard, Sorcerer, Archmage, Reaper }
-
+    public enum PhysicalMeleeInfantry { Soldier, Dancer, Warrior, Blademaster, Thief, Berserker, Assassin }
+    [Rename("Class")]
+    public PhysicalMeleeInfantry pmi;
+    public enum PhysicalRangedInfantry { Soldier, Warrior, Archer, Scholar, Marksman, Engineer }
+    [Rename("Class")]
+    public PhysicalRangedInfantry pri;
+    public enum MagicalMeleeInfantry { Soldier, Dancer, Healer, Mage, Druid, Monk, Shaman, Beast}
+    [Rename("Class")]
+    public MagicalMeleeInfantry mmi;
+    public enum MagicalRangedInfantry { Soldier, Dancer, Healer, Mage, Wizard, Sorcerer, Archmage, Reaper }
+    [Rename("Class")]
+    public MagicalRangedInfantry mri;
 
     //This indicates the race of the unit.
     public enum Race { None, Alder, Colossi, Cyren, Humans, Leviathans, Lupine, Nocturne, Quertzal, Raptors }
@@ -165,7 +181,9 @@ public class Card : ScriptableObject
 
 
     [Header("Assist/Equipment/Special/Weapon")]
+    public Weapon weapon;
     public Assist assist;
+    public Special special;
     [Rename("Slot A")]
     public Equipment slotA;
     [Rename("Slot B")]
@@ -174,8 +192,7 @@ public class Card : ScriptableObject
     public Equipment slotC;
     [Rename("Slot D")]
     public Equipment slotD;
-    public Special special;
-    public Weapon weapon;
+    
 
 
     [Header("Reference Values")]
@@ -191,6 +208,7 @@ public class Card : ScriptableObject
     [ReadOnly]
     public int Res;
 
+
     //These are the modifiers for the unit's stats.
     [ReadOnly]
     public int modifierHP;
@@ -204,6 +222,7 @@ public class Card : ScriptableObject
     public int modifierRes;
     private int rarityModifier;
 
+
     //These are the level lists which are stored for the individual units
     public int[] levelListHP;
     public int[] levelListAtk;
@@ -214,7 +233,6 @@ public class Card : ScriptableObject
 
     //Stat Calculation Variables/Methods
     private readonly float rarityFactor = 0.07f;
-    //[HideInInspector]
     public int levelingRange = 49;
     int randomizer;
     int[] levelList;

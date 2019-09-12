@@ -11,6 +11,7 @@ public class NextGuiController : MonoBehaviour
 
     public GameObject InfoPanel;
     public GameObject GameOverPanel;
+    public GameObject CardDisplay;
     public Canvas Canvas;
 
     private GameObject _infoPanel;
@@ -79,7 +80,7 @@ public class NextGuiController : MonoBehaviour
         _infoPanel.transform.Find("Defence").Find("Image").transform.localScale = new Vector3((float)unit.DefenceFactor / 10.0f, 1, 1);
 
         _infoPanel.GetComponent<RectTransform>().SetParent(Canvas.GetComponent<RectTransform>(),false);
-        _infoPanel.SetActive(false);
+        //_infoPanel.SetActive(false);
     }
     private void OnUnitAdded(object sender, UnitCreatedEventArgs e)
     {

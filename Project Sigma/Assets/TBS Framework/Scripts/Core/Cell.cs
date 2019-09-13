@@ -83,7 +83,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     {
         if (CellClicked != null)
             CellClicked.Invoke(this, new EventArgs());
-            ui_operator.HideCard();
+            //ui_operator.HideCard();
     }
 
     /// <summary>

@@ -11,7 +11,7 @@ public class NextGuiController : MonoBehaviour
 
     public GameObject InfoPanel;
     public GameObject GameOverPanel;
-    public GameObject CardDisplay;
+    public Transform CardAnchor;
     public Canvas Canvas;
 
     private GameObject _infoPanel;
@@ -56,6 +56,7 @@ public class NextGuiController : MonoBehaviour
     private void OnUnitDestroyed(object sender, AttackEventArgs e)
     {
         Destroy(_infoPanel);
+        Shift(-20, 0, 0);
     }
     private void OnUnitDehighlighted(object sender, EventArgs e)
     {
@@ -63,6 +64,7 @@ public class NextGuiController : MonoBehaviour
             return;
 
         Destroy(_infoPanel);
+        Shift(-20, 0, 0);
     }
     private void OnUnitHighlighted(object sender, EventArgs e)
     {
@@ -80,7 +82,8 @@ public class NextGuiController : MonoBehaviour
         _infoPanel.transform.Find("Defence").Find("Image").transform.localScale = new Vector3((float)unit.DefenceFactor / 10.0f, 1, 1);
 
         _infoPanel.GetComponent<RectTransform>().SetParent(Canvas.GetComponent<RectTransform>(),false);
-        //_infoPanel.SetActive(false);
+        _infoPanel.SetActive(false);
+        Shift(20, 0, 0);
     }
     private void OnUnitAdded(object sender, UnitCreatedEventArgs e)
     {
@@ -102,6 +105,11 @@ public class NextGuiController : MonoBehaviour
     {
         isGameOver = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    void Shift(float x, float y, float z)
+    {
+        Vector3 temp = new Vector3(x, y, z);
+        CardAnchor.position += temp;
     }
 }
 

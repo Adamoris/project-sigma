@@ -3385,6 +3385,11 @@ PrefabInstance:
       propertyPath: CardDisplay
       value: 
       objectReference: {fileID: 631759028}
+    - target: {fileID: 7605468965519865680, guid: 417f41e902db7421f9cfb5f2b38a9038,
+        type: 3}
+      propertyPath: CardAnchor
+      value: 
+      objectReference: {fileID: 241918129}
     - target: {fileID: 7605468965449477417, guid: 417f41e902db7421f9cfb5f2b38a9038,
         type: 3}
       propertyPath: m_Camera
@@ -3408,12 +3413,17 @@ PrefabInstance:
     - target: {fileID: 1724788995627059645, guid: 417f41e902db7421f9cfb5f2b38a9038,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -281
+      value: -696.4012
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724788995627059645, guid: 417f41e902db7421f9cfb5f2b38a9038,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.1458
       objectReference: {fileID: 0}
     - target: {fileID: 1724788995627059644, guid: 417f41e902db7421f9cfb5f2b38a9038,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7605468966215529683, guid: 417f41e902db7421f9cfb5f2b38a9038,
         type: 3}
@@ -3434,6 +3444,26 @@ PrefabInstance:
         type: 3}
       propertyPath: rightPointCard
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724788995627059632, guid: 417f41e902db7421f9cfb5f2b38a9038,
+        type: 3}
+      propertyPath: leftPoint
+      value: 
+      objectReference: {fileID: 241918129}
+    - target: {fileID: 1724788995627059632, guid: 417f41e902db7421f9cfb5f2b38a9038,
+        type: 3}
+      propertyPath: rightPoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724788995627059632, guid: 417f41e902db7421f9cfb5f2b38a9038,
+        type: 3}
+      propertyPath: followPoint
+      value: 
+      objectReference: {fileID: 241918129}
+    - target: {fileID: 1724788995627059632, guid: 417f41e902db7421f9cfb5f2b38a9038,
+        type: 3}
+      propertyPath: animationSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9190309381687828849, guid: 417f41e902db7421f9cfb5f2b38a9038,
         type: 3}
@@ -6906,6 +6936,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &241918128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241918129}
+  m_Layer: 0
+  m_Name: CardAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &241918129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241918128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.01332, y: 8.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1372930443}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242577420
 GameObject:
   m_ObjectHideFlags: 0
@@ -36414,6 +36474,8 @@ GameObject:
   - component: {fileID: 1355214604}
   - component: {fileID: 1355214603}
   - component: {fileID: 1355214605}
+  - component: {fileID: 1355214606}
+  - component: {fileID: 1355214607}
   m_Layer: 0
   m_Name: Selection
   m_TagString: Untagged
@@ -36501,6 +36563,53 @@ MonoBehaviour:
   keyDelay: 0.2
   x: 8
   y: 4
+--- !u!61 &1355214606
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355214602}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.005345583, y: 0.007682085}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.82, y: 5.83}
+    newSize: {x: 5.82, y: 5.83}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.9084096, y: 4.904309}
+  m_EdgeRadius: 0
+--- !u!50 &1355214607
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355214602}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1358853184
 GameObject:
   m_ObjectHideFlags: 0
@@ -37128,6 +37237,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1372930442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1372930443}
+  m_Layer: 0
+  m_Name: UI Anchors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1372930443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372930442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -374.6337, y: -199.31886, z: 2532.496}
+  m_LocalScale: {x: 21.432135, y: 21.432135, z: 21.432135}
+  m_Children:
+  - {fileID: 241918129}
+  m_Father: {fileID: 1845325171}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1373827891
 GameObject:
   m_ObjectHideFlags: 0

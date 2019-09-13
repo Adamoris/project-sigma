@@ -65,4 +65,12 @@ public class Navigation : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other)
+        {
+            Debug.Log(other.name);
+        }
+    }
 }

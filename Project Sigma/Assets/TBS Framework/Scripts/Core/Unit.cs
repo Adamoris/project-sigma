@@ -146,13 +146,14 @@ public abstract class Unit : MonoBehaviour
     {
         if (UnitClicked != null)
             UnitClicked.Invoke(this, new EventArgs());
-            ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
-            ui_operator.ShowCard();
+            //ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
+            //ui_operator.ShowCard();
     }
     protected virtual void OnMouseEnter()
     {
         if (UnitHighlighted != null)
             UnitHighlighted.Invoke(this, new EventArgs());
+            ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
     }
     protected virtual void OnMouseExit()
     {

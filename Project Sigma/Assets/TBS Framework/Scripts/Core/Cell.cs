@@ -71,7 +71,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
 
     protected virtual void OnMouseEnter()
     {
-        if (CellHighlighted != null)
+        if (PauseMenu.GameIsPaused == false && CellHighlighted != null)
             CellHighlighted.Invoke(this, new EventArgs());
     }
     protected virtual void OnMouseExit()

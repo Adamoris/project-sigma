@@ -5,6 +5,7 @@ public class CameraRig : MonoBehaviour
 {
     public float speed = 3f;
     [SerializeField] Transform _follow;
+    [SerializeField] Transform _altFollow;
     Transform _transform;
 
     void Awake()

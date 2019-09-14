@@ -142,20 +142,23 @@ public abstract class Unit : MonoBehaviour
         TotalActionPoints = ActionPoints;
     }
 
-    protected virtual void OnMouseDown()
+    public virtual void OnMouseDown()
     {
-        if (UnitClicked != null)
+        if (PauseMenu.GameIsPaused == false && UnitClicked != null)
             UnitClicked.Invoke(this, new EventArgs());
             //ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
             //ui_operator.ShowCard();
     }
-    protected virtual void OnMouseEnter()
+    public virtual void OnMouseEnter()
     {
-        if (UnitHighlighted != null)
+        if (PauseMenu.GameIsPaused == false && UnitHighlighted != null)
+        {
             UnitHighlighted.Invoke(this, new EventArgs());
             ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
+        }
+            
     }
-    protected virtual void OnMouseExit()
+    public virtual void OnMouseExit()
     {
         if (UnitDehighlighted != null)
             UnitDehighlighted.Invoke(this, new EventArgs());

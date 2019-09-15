@@ -21,6 +21,7 @@ public class MySquare : Square
     public override void MarkAsPath()
     {
         SetColor(new Color(0,1,0,0.5f));
+        //Debug.Log("Green");
     }
     public override void MarkAsHighlighted()
     {

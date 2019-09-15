@@ -15,11 +15,16 @@ public class Weapon : ScriptableObject
     public string description;
 
     //This is the might value of the weapon which is added on to the unit's atk stat.
+    [Rename("Might")]
     public int mt;
 
     //This determines whether a weapon will deal magical or physical damage.
     public enum DamageType { None, Magical, Physical}
     public DamageType damageType;
+
+    //This specifies whether a weapon is ranged or not.
+    public enum Range { None, Melee, Ranged }
+    public Range range;
 
     //This specifies the weapon typing for determining class/inheritance restrictions.
     public enum WeaponType { None, Sword, Spear, Axe, Mace, Disruptor, Staff, Bow, Wand, Gauntlet, Dagger, Transformation }
@@ -116,10 +121,7 @@ public class Weapon : ScriptableObject
     //-----------------------------------------------------------------------------------
 
 
-    //This specifies whether a weapon is ranged or not.
-    public enum Range { None, Melee, Ranged }
-    [Header("Weapon Range")]
-    public Range range;
+    
 
     //This is for melee weapons that can retaliate against ranged attacks.
     public bool DistantCounter { get; set; }

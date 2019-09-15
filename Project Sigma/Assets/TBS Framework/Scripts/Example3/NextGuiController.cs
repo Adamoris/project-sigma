@@ -13,6 +13,7 @@ public class NextGuiController : MonoBehaviour
     public GameObject GameOverPanel;
     public Transform CardAnchor;
     public Canvas Canvas;
+    public Transform cameraPivot;
 
     private GameObject _infoPanel;
     private GameObject _gameOverPanel;
@@ -79,11 +80,19 @@ public class NextGuiController : MonoBehaviour
         _infoPanel.transform.Find("Name").GetComponent<Text>().text = unit.UnitName;
         _infoPanel.transform.Find("HitPoints").Find("Image").transform.localScale = new Vector3(hpScale,1,1);
         _infoPanel.transform.Find("Attack").Find("Image").transform.localScale = new Vector3((float)unit.AttackFactor/10.0f,1,1);
-        _infoPanel.transform.Find("Defence").Find("Image").transform.localScale = new Vector3((float)unit.DefenceFactor / 10.0f, 1, 1);
+        _infoPanel.transform.Find("Defence").Find("Image").transform.localScale = new Vector3((float)unit.Def / 10.0f, 1, 1);
 
         _infoPanel.GetComponent<RectTransform>().SetParent(Canvas.GetComponent<RectTransform>(),false);
         _infoPanel.SetActive(false);
         Shift(20, 0, 0);
+        
+    }
+    private void OnUnitClicked(object sender, EventArgs e)
+    {
+        if (isGameOver)
+            return;
+        var unit = sender as GenericUnit;
+        cameraPivot.position = unit.transform.position;
     }
     private void OnUnitAdded(object sender, UnitCreatedEventArgs e)
     {
@@ -96,6 +105,7 @@ public class NextGuiController : MonoBehaviour
         unit.GetComponent<Unit>().UnitDehighlighted += OnUnitDehighlighted;
         unit.GetComponent<Unit>().UnitDestroyed += OnUnitDestroyed;
         unit.GetComponent<Unit>().UnitAttacked += OnUnitAttacked;
+        unit.GetComponent<Unit>().UnitClicked += OnUnitClicked;
     }
     public void DismissPanel()
     {

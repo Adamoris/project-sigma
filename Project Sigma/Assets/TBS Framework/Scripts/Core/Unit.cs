@@ -74,17 +74,23 @@ public abstract class Unit : MonoBehaviour
     [HideInInspector]
     public string UnitName;
     //[Tooltip("A unit is defeated if its Hit Points reach 0.")]
+    [HideInInspector]
     public int HitPoints;
     //[Tooltip("This is the range at which a unit is able to attack.")]
+    [HideInInspector]
     public int AttackRange;
     //[Tooltip("The higher the Attack, the more damage is inflicted on foes.")]
+    [HideInInspector]
     public int AttackFactor;
     //[Tooltip("A unit will attack twice of its speed is at least 5 more than its foe.")]
-    public int Speed;
+    [HideInInspector]
+    public int Spd;
     //[Tooltip("The higher the Defense, the less damage is taken from physical attacks.")]
-    public int DefenceFactor;
+    [HideInInspector]
+    public int Def;
     //[Tooltip("The higher the Resistance, the less damage is taken from magical attacks.")]
-    public int Resistance;
+    [HideInInspector]
+    public int Res;
 
     // Determines how far on the grid the unit can move.
     [HideInInspector]
@@ -120,23 +126,37 @@ public abstract class Unit : MonoBehaviour
         UnitState = new UnitStateNormal(this);
         card.UpdateStats();
         HitPoints = card.HP;
-        //Debug.Log(card.name + card.HP);
+        AttackFactor = card.Atk;
+        Spd = card.Spd;
+        Def = card.Def;
+        Res = card.Res;
+        switch (card.range)
+        {
+            case Card.Range.Melee:
+                AttackRange = 1;
+                break;
+            case Card.Range.Ranged:
+                AttackRange = 2;
+                break;
+            case Card.Range.None:
+                AttackRange = 0;
+                break;
+        }
         TotalHitPoints = HitPoints;
-        if (card.moveClass == Card.MoveClass.Armor)
+        switch (card.moveClass)
         {
-            TotalMovementPoints = card.ruleset.armorMovement;
-        }
-        else if (card.moveClass == Card.MoveClass.Cavalry)
-        {
-            TotalMovementPoints = card.ruleset.cavalryMovement;
-        }
-        else if (card.moveClass == Card.MoveClass.Flier)
-        {
-            TotalMovementPoints = card.ruleset.flierMovement;
-        }
-        else if (card.moveClass == Card.MoveClass.Infantry)
-        {
-            TotalMovementPoints = card.ruleset.infantryMovement;
+            case Card.MoveClass.Armor:
+                TotalMovementPoints = card.ruleset.armorMovement;
+                break;
+            case Card.MoveClass.Cavalry:
+                TotalMovementPoints = card.ruleset.cavalryMovement;
+                break;
+            case Card.MoveClass.Flier:
+                TotalMovementPoints = card.ruleset.flierMovement;
+                break;
+            case Card.MoveClass.Infantry:
+                TotalMovementPoints = card.ruleset.infantryMovement;
+                break;
         }
 
         TotalActionPoints = ActionPoints;
@@ -262,7 +282,7 @@ public abstract class Unit : MonoBehaviour
         //Debug.Log(this);
         //Damage is calculated by subtracting attack factor of attacker and defence factor of defender. 
         //If result is below 1, it is set to 1. This behaviour can be overridden in derived classes.
-        HitPoints -= Mathf.Clamp(damage - DefenceFactor, 1, damage);
+        HitPoints -= Mathf.Clamp(damage - Def, 1, damage);
         //Debug.Log(this + "" + HitPoints);
         if (UnitAttacked != null)
             UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));

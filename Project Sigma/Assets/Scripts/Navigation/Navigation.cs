@@ -11,6 +11,7 @@ public class Navigation : MonoBehaviour
     private int mapHeight;
     private bool highlighted;
     private Collider2D highlightedUnit;
+    private Collider2D highlightedCell;
 
     [SerializeField] int x;
     [SerializeField] int y;
@@ -55,10 +56,20 @@ public class Navigation : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Return) && highlighted == true)
         {
-            var unit = highlightedUnit.GetComponent<GenericUnit>();
-            if (unit != null)
+            //Debug.Log("entered " + highlightedUnit);
+            //Debug.Log("entered1 " + highlightedCell);
+            
+            if (highlightedUnit != null)
             {
+                var unit = highlightedUnit.GetComponent<GenericUnit>();
                 unit.OnMouseDown();
+                highlighted = false;
+                Debug.Log(highlighted);
+            }
+            if (highlightedCell != null && highlighted == false)
+            {
+                var cell = highlightedCell.GetComponent<MySquare>();
+                cell.OnMouseDown();
             }
             
         }
@@ -80,22 +91,41 @@ public class Navigation : MonoBehaviour
     {
         
         var unit = other.GetComponent<GenericUnit>();
+        var cell = other.GetComponent<MySquare>();
+
+        //Debug.Log("unit " + unit);
+        //Debug.Log("cell " + cell);
+        //Debug.Log("test " + other);
+
         if (unit != null)
         {
             highlightedUnit = other;
             unit.OnMouseEnter();
             highlighted = true;
         }
+        if (cell != null && highlighted == false)
+        {
+            //Debug.Log("aaa");
+            highlightedCell = other;
+            cell.OnMouseEnter();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         highlightedUnit = null;
+        highlightedCell = null;
         var unit = other.GetComponent<GenericUnit>();
+        var cell = other.GetComponent<MySquare>();
         if (unit != null)
         {
             unit.OnMouseExit();
             highlighted = false;
+        }
+        if(cell != null)
+        {
+            cell.OnMouseExit();
+            //highlighted = false;
         }
     }
 }

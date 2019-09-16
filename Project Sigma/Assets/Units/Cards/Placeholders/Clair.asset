@@ -16,13 +16,29 @@ MonoBehaviour:
   summonable: 0
   unlocked: 0
   name: Clair
+  description: 
   IV: 0
-  gender: 0
+  gender: 2
   moveClass: 3
-  damageType: 0
-  range: 0
-  physicalMeleeArmor: 0
-  race: 0
+  damageType: 1
+  range: 1
+  pma: 0
+  pra: 0
+  mma: 0
+  mra: 0
+  pmc: 0
+  prc: 0
+  mmc: 0
+  mrc: 0
+  pmf: 0
+  prf: 0
+  mmf: 0
+  mrf: 0
+  pmi: 0
+  pri: 0
+  mmi: 0
+  mri: 0
+  race: 4
   affinity: 2
   level: 1
   merge: 0
@@ -39,18 +55,18 @@ MonoBehaviour:
   growthSpd: 65
   growthDef: 45
   growthRes: 55
+  weapon: {fileID: 11400000, guid: c5207959fee174f62a9e51090bf597fd, type: 2}
   assist: {fileID: 0}
+  special: {fileID: 0}
   slotA: {fileID: 0}
   slotB: {fileID: 0}
   slotC: {fileID: 0}
   slotD: {fileID: 0}
-  special: {fileID: 0}
-  weapon: {fileID: 11400000, guid: c5207959fee174f62a9e51090bf597fd, type: 2}
-  HP: 19
-  Atk: 18
-  Spd: 9
-  Def: 6
-  Res: 10
+  HP: 18
+  Atk: 17
+  Spd: 8
+  Def: 5
+  Res: 9
   modifierHP: 0
   modifierAtk: 0
   modifierSpd: 0

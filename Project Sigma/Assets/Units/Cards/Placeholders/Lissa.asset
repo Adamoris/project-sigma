@@ -16,12 +16,28 @@ MonoBehaviour:
   summonable: 0
   unlocked: 0
   name: Lissa
+  description: 
   IV: 0
   gender: 0
   moveClass: 4
-  damageType: 0
-  range: 0
-  physicalMeleeArmor: 0
+  damageType: 2
+  range: 2
+  pma: 0
+  pra: 0
+  mma: 0
+  mra: 0
+  pmc: 0
+  prc: 0
+  mmc: 0
+  mrc: 0
+  pmf: 0
+  prf: 0
+  mmf: 0
+  mrf: 0
+  pmi: 0
+  pri: 0
+  mmi: 0
+  mri: 0
   race: 0
   affinity: 3
   level: 1
@@ -39,13 +55,13 @@ MonoBehaviour:
   growthSpd: 45
   growthDef: 50
   growthRes: 50
+  weapon: {fileID: 11400000, guid: e03baf9b020d641389a7493b69e13848, type: 2}
   assist: {fileID: 0}
+  special: {fileID: 0}
   slotA: {fileID: 0}
   slotB: {fileID: 0}
   slotC: {fileID: 0}
   slotD: {fileID: 0}
-  special: {fileID: 0}
-  weapon: {fileID: 11400000, guid: e03baf9b020d641389a7493b69e13848, type: 2}
   HP: 17
   Atk: 17
   Spd: 6

@@ -5,37 +5,48 @@ using System.Linq;
 using System.Collections;
 
 
-// Base class for all units in the game.
+/// <summary>
+/// Base class for all units in the game.
+/// </summary>
 public abstract class Unit : MonoBehaviour
 {
     Dictionary<Cell, List<Cell>> cachedPaths = null;
-    // UnitClicked event is invoked when user clicks the unit. 
-    // It requires a collider on the unit game object to work.
+    /// <summary>
+    /// UnitClicked event is invoked when user clicks the unit. 
+    /// It requires a collider on the unit game object to work.
+    /// </summary>
     public event EventHandler UnitClicked;
-
-    // UnitSelected event is invoked when user clicks on unit that belongs to him. 
-    // It requires a collider on the unit game object to work.
+    /// <summary>
+    /// UnitSelected event is invoked when user clicks on unit that belongs to him. 
+    /// It requires a collider on the unit game object to work.
+    /// </summary>
     public event EventHandler UnitSelected;
-
-    // UnitDeselected event is invoked when user click outside of currently selected unit's collider.
-    // It requires a collider on the unit game object to work.
+    /// <summary>
+    /// UnitDeselected event is invoked when user click outside of currently selected unit's collider.
+    /// It requires a collider on the unit game object to work.
+    /// </summary>
     public event EventHandler UnitDeselected;
-
-    // UnitHighlighted event is invoked when user moves cursor over the unit. 
-    // It requires a collider on the unit game object to work.
+    /// <summary>
+    /// UnitHighlighted event is invoked when user moves cursor over the unit. 
+    /// It requires a collider on the unit game object to work.
+    /// </summary>
     public event EventHandler UnitHighlighted;
-
-    // UnitDehighlighted event is invoked when cursor exits unit's collider. 
-    // It requires a collider on the unit game object to work.
+    /// <summary>
+    /// UnitDehighlighted event is invoked when cursor exits unit's collider. 
+    /// It requires a collider on the unit game object to work.
+    /// </summary>
     public event EventHandler UnitDehighlighted;
-
-    // UnitAttacked event is invoked when the unit is attacked.
+    /// <summary>
+    /// UnitAttacked event is invoked when the unit is attacked.
+    /// </summary>
     public event EventHandler<AttackEventArgs> UnitAttacked;
-
-    // UnitDestroyed event is invoked when unit's hitpoints drop below 0.
+    /// <summary>
+    /// UnitDestroyed event is invoked when unit's hitpoints drop below 0.
+    /// </summary>
     public event EventHandler<AttackEventArgs> UnitDestroyed;
-
-    // UnitMoved event is invoked when unit moves from one cell to another.
+    /// <summary>
+    /// UnitMoved event is invoked when unit moves from one cell to another.
+    /// </summary>
     public event EventHandler<MovementEventArgs> UnitMoved;
 
 
@@ -103,13 +114,13 @@ public abstract class Unit : MonoBehaviour
     // Determines how many attacks unit can perform in one turn.
     [HideInInspector]
     public int ActionPoints;
-    private int CounterPoints;
-    public static bool Attacking;
+    //private int CounterPoints;
+    //public static bool Attacking;
 
     // Indicates the player that the unit belongs to. 
     // Should correspoond with PlayerNumber variable on Player script.
     public int PlayerNumber;
-    public static int PotentialVictor;
+    //public static int PotentialVictor;
 
     // Indicates if movement animation is playing.
     public bool isMoving { get; set; }
@@ -270,7 +281,27 @@ public abstract class Unit : MonoBehaviour
         other.Defend(this, AttackFactor);
     }
 
+    /// <summary>
+    /// Attacking unit calls Defend method on defending unit. 
+    /// </summary>
+    protected virtual void Defend(Unit other, int damage)
+    {
+        MarkAsDefending(other);
+        //Damage is calculated by subtracting attack factor of attacker and defence factor of defender. 
+        //If result is below 1, it is set to 1. This behaviour can be overridden in derived classes.
+        HitPoints -= Mathf.Clamp(damage - Def, 1, damage);
+        if (UnitAttacked != null)
+            UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));
 
+        if (HitPoints <= 0)
+        {
+            if (UnitDestroyed != null)
+                UnitDestroyed.Invoke(this, new AttackEventArgs(other, this, damage));
+            OnDestroyed();
+        }
+    }
+
+    /*
     // Attacking unit calls Defend method on defending unit. 
     protected virtual void Defend(Unit other, int damage)
     {
@@ -314,7 +345,7 @@ public abstract class Unit : MonoBehaviour
             OnDestroyed();
         }
     }
-
+    */
 
     // Moves the unit to destinationCell along the path.
     public virtual void Move(Cell destinationCell, List<Cell> path)

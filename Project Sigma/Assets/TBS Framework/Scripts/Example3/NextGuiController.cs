@@ -65,7 +65,7 @@ public class NextGuiController : MonoBehaviour
             return;
 
         Destroy(_infoPanel);
-        Shift(-20, 0, 0);
+        //Shift(-20, 0, 0);
     }
     private void OnUnitHighlighted(object sender, EventArgs e)
     {
@@ -84,7 +84,7 @@ public class NextGuiController : MonoBehaviour
 
         _infoPanel.GetComponent<RectTransform>().SetParent(Canvas.GetComponent<RectTransform>(),false);
         _infoPanel.SetActive(false);
-        Shift(20, 0, 0);
+        //Shift(20, 0, 0);
         
     }
     private void OnUnitClicked(object sender, EventArgs e)
@@ -93,6 +93,14 @@ public class NextGuiController : MonoBehaviour
             return;
         var unit = sender as GenericUnit;
         cameraPivot.position = unit.transform.position;
+        Shift(20, 0, 0);
+    }
+    private void OnUnitDeselected(object sender, EventArgs e)
+    {
+        if (isGameOver)
+            return;
+        var unit = sender as GenericUnit;
+        Shift(-20, 0, 0);
     }
     private void OnUnitAdded(object sender, UnitCreatedEventArgs e)
     {
@@ -106,6 +114,7 @@ public class NextGuiController : MonoBehaviour
         unit.GetComponent<Unit>().UnitDestroyed += OnUnitDestroyed;
         unit.GetComponent<Unit>().UnitAttacked += OnUnitAttacked;
         unit.GetComponent<Unit>().UnitClicked += OnUnitClicked;
+        unit.GetComponent<Unit>().UnitDeselected += OnUnitDeselected;
     }
     public void DismissPanel()
     {

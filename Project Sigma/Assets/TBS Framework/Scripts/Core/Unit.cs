@@ -136,6 +136,7 @@ public abstract class Unit : MonoBehaviour
         //Debug.Log(Environment.UserName);
         UnitState = new UnitStateNormal(this);
         card.UpdateStats();
+        UnitName = card.name;
         HitPoints = card.HP;
         AttackFactor = card.Atk;
         Spd = card.Spd;
@@ -274,12 +275,14 @@ public abstract class Unit : MonoBehaviour
         }  
     }
 
+    /*
     public IEnumerator Retaliate(Unit other)
     {
         yield return new WaitForSeconds(0.5f);
         MarkAsAttacking(other);
         other.Defend(this, AttackFactor);
     }
+    */
 
     /// <summary>
     /// Attacking unit calls Defend method on defending unit. 
@@ -289,7 +292,19 @@ public abstract class Unit : MonoBehaviour
         MarkAsDefending(other);
         //Damage is calculated by subtracting attack factor of attacker and defence factor of defender. 
         //If result is below 1, it is set to 1. This behaviour can be overridden in derived classes.
-        HitPoints -= Mathf.Clamp(damage - Def, 1, damage);
+        Debug.Log(this);
+        Debug.Log(other);
+        if (other.card.weapon.damageType == Weapon.DamageType.Physical)
+        {
+            var lastHP = HitPoints;
+            HitPoints -= Mathf.Clamp(damage - Def, 1, damage);
+            Debug.Log(other.name + " dealt " + (lastHP - HitPoints) + " damage to " + name + ".");
+            lastHP = HitPoints;
+        } else if (other.card.weapon.damageType == Weapon.DamageType.Magical)
+        {
+            HitPoints -= Mathf.Clamp(damage - Res, 1, damage);
+        }
+        
         if (UnitAttacked != null)
             UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));
 

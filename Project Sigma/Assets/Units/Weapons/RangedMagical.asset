@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d854d572ef49452187015bf6ae0faba, type: 3}
-  m_Name: RangedWeapon
+  m_Name: RangedMagical
   m_EditorClassIdentifier: 
-  name: RangedGeneric
+  name: RangedMagic
   description: This is a template weapon representing a ranged weapon.
   mt: 10
-  damageType: 2
+  damageType: 1
+  range: 2
+  weaponType: 0
   prerequisite: {fileID: 0}
   cardSprite: {fileID: 0}
   mapSprite: {fileID: 0}
-  weaponType: 0
   inheritable: 0
   equipmentEffect: {fileID: 0}
   armor: 0
@@ -42,4 +43,3 @@ MonoBehaviour:
   combatOrder_EEEP: 0
   includeTarget_EEEP: 0
   range_EEEP: 0
-  range: 2

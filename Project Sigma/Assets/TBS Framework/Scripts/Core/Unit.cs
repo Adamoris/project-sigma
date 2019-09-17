@@ -292,25 +292,29 @@ public abstract class Unit : MonoBehaviour
         MarkAsDefending(other);
         //Damage is calculated by subtracting attack factor of attacker and defence factor of defender. 
         //If result is below 1, it is set to 1. This behaviour can be overridden in derived classes.
-        Debug.Log(this);
-        Debug.Log(other);
         if (other.card.weapon.damageType == Weapon.DamageType.Physical)
         {
             var lastHP = HitPoints;
             HitPoints -= Mathf.Clamp(damage - Def, 1, damage);
-            Debug.Log(other.name + " dealt " + (lastHP - HitPoints) + " damage to " + name + ".");
+            Debug.Log(other.card.name + " dealt " + (lastHP - HitPoints) + " physical damage to " + card.name + ".");
             lastHP = HitPoints;
         } else if (other.card.weapon.damageType == Weapon.DamageType.Magical)
         {
+            var lastHP = HitPoints;
             HitPoints -= Mathf.Clamp(damage - Res, 1, damage);
+            Debug.Log(other.card.name + " dealt " + (lastHP - HitPoints) + " magical damage to " + card.name + ".");
+            lastHP = HitPoints;
         }
-        
+
         if (UnitAttacked != null)
+        {
             UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));
+        }
 
         if (HitPoints <= 0)
         {
             if (UnitDestroyed != null)
+                Debug.Log(this.card.name + " has been defeated.");
                 UnitDestroyed.Invoke(this, new AttackEventArgs(other, this, damage));
             OnDestroyed();
         }
@@ -367,8 +371,16 @@ public abstract class Unit : MonoBehaviour
     {
         if (isMoving)
             return;
-
-        var totalMovementCost = path.Sum(h => h.MovementCost);
+        var totalMovementCost = 0;
+        if (this.card.moveClass == Card.MoveClass.Flier)
+        {
+            totalMovementCost = path.Sum(h => h.FlierMovementCost);
+        }
+        else
+        {
+            totalMovementCost = path.Sum(h => h.MovementCost);
+        }
+        
         if (MovementPoints < totalMovementCost)
             return;
 
@@ -447,12 +459,23 @@ public abstract class Unit : MonoBehaviour
             if (!IsCellMovableTo(key))
                 continue;
             var path = paths[key];
-
-            var pathCost = path.Sum(c => c.MovementCost);
-            if (pathCost <= MovementPoints)
+            if (this.card.moveClass == Card.MoveClass.Flier)
             {
-                cachedPaths.Add(key, path);
+                var pathCost = path.Sum(c => c.FlierMovementCost);
+                if (pathCost <= MovementPoints)
+                {
+                    cachedPaths.Add(key, path);
+                }
             }
+            else
+            {
+                var pathCost = path.Sum(c => c.MovementCost);
+                if (pathCost <= MovementPoints)
+                {
+                    cachedPaths.Add(key, path);
+                }
+            }
+            
         }
         return new HashSet<Cell>(cachedPaths.Keys);
     }
@@ -484,7 +507,15 @@ public abstract class Unit : MonoBehaviour
                 ret[cell] = new Dictionary<Cell, int>();
                 foreach (var neighbour in cell.GetNeighbours(cells).FindAll(IsCellTraversable))
                 {
-                    ret[cell][neighbour] = neighbour.MovementCost;
+                    if (this.card.moveClass == Card.MoveClass.Flier)
+                    {
+                        ret[cell][neighbour] = neighbour.FlierMovementCost;
+                    }
+                    else
+                    {
+                        ret[cell][neighbour] = neighbour.MovementCost;
+                    }
+                    
                 }
             }
         }

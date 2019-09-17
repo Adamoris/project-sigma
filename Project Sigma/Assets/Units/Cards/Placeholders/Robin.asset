@@ -55,7 +55,7 @@ MonoBehaviour:
   growthSpd: 40
   growthDef: 60
   growthRes: 50
-  weapon: {fileID: 11400000, guid: 5bbf53648ad3e471d91e252f67830ade, type: 2}
+  weapon: {fileID: 11400000, guid: 7ee1001dc02fa4af794a7fd3e3b05fdc, type: 2}
   assist: {fileID: 11400000, guid: c4abfc2129b794adbbdbf0982fc3d4a2, type: 2}
   special: {fileID: 11400000, guid: 908c30c48072a42a8acec48022bc7bcd, type: 2}
   slotA: {fileID: 11400000, guid: 0864ff489df8145669cb008791263f1d, type: 2}

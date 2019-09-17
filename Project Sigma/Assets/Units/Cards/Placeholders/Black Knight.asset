@@ -16,12 +16,28 @@ MonoBehaviour:
   summonable: 0
   unlocked: 0
   name: Black Knight
+  description: 
   IV: 0
   gender: 0
   moveClass: 1
   damageType: 1
   range: 1
-  physicalMeleeArmor: 0
+  pma: 0
+  pra: 0
+  mma: 0
+  mra: 0
+  pmc: 0
+  prc: 0
+  mmc: 0
+  mrc: 0
+  pmf: 0
+  prf: 0
+  mmf: 0
+  mrf: 0
+  pmi: 0
+  pri: 0
+  mmi: 0
+  mri: 0
   race: 4
   affinity: 1
   level: 1
@@ -39,13 +55,13 @@ MonoBehaviour:
   growthSpd: 60
   growthDef: 60
   growthRes: 30
+  weapon: {fileID: 11400000, guid: c5207959fee174f62a9e51090bf597fd, type: 2}
   assist: {fileID: 0}
+  special: {fileID: 0}
   slotA: {fileID: 0}
   slotB: {fileID: 0}
   slotC: {fileID: 0}
   slotD: {fileID: 0}
-  special: {fileID: 0}
-  weapon: {fileID: 11400000, guid: 5bbf53648ad3e471d91e252f67830ade, type: 2}
   HP: 22
   Atk: 20
   Spd: 8

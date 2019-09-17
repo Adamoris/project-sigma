@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   armorMovement: 5
   cavalryMovement: 9
-  flierMovement: 12
+  flierMovement: 6
   infantryMovement: 6
   forestCost: 5
   mountainsCost: 9

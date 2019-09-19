@@ -67,6 +67,9 @@ public class Card : ScriptableObject
     public enum Range { None, Melee, Ranged }
     public Range range;
 
+    //This specifies how far a ranged unit can reach (default is 2).
+    public int rangeFactor = 2;
+
     //The 16 following enums specify the possible class progression paths of the unit.
     public enum PhysicalMeleeArmor { Knight, Brigadier, General, Emperor, Conqueror }
     [Rename("Class")]

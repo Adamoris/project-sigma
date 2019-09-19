@@ -14,6 +14,11 @@ public class MyOtherHexagon : Hexagon
     {
         SetColor(new Color(1, 0.92f, 0.016f, 1));
     }
+    public override void MarkAsAttackable()
+    {
+        //throw new System.NotImplementedException();
+        SetColor(new Color32(252, 36, 3, 200));
+    }
     public override void MarkAsPath()
     {
         SetColor(new Color(0,1,0,1));

@@ -70,7 +70,7 @@ public class GuiController : MonoBehaviour
     private void OnUnitHighlighted(object sender, EventArgs e)
     {
         var unit = sender as MyUnit;
-        StatsText.text = unit.UnitName + "\nHit Points: " + unit.HitPoints +"/"+unit.TotalHitPoints + "\nAttack: " + unit.AttackFactor + "\nDefence: " + unit.Def + "\nRange: " + unit.AttackRange;
+        StatsText.text = unit.UnitName + "\nHit Points: " + unit.HitPoints +"/"+unit.TotalHitPoints + "\nAttack: " + unit.Atk + "\nDefence: " + unit.Def + "\nRange: " + unit.AttackRange;
         UnitImage.color = unit.PlayerColor;
 
     }

@@ -11,6 +11,7 @@ using System.Collections;
 public abstract class Unit : MonoBehaviour
 {
     Dictionary<Cell, List<Cell>> cachedPaths = null;
+    Dictionary<Cell, List<Cell>> cachedAttackTiles = null;
     /// <summary>
     /// UnitClicked event is invoked when user clicks the unit. 
     /// It requires a collider on the unit game object to work.
@@ -80,6 +81,8 @@ public abstract class Unit : MonoBehaviour
     // Position
     public int x;
     public int y;
+    [HideInInspector]
+    public bool moved;
 
     //[Tooltip("This is the unit's name.")]
     [HideInInspector]
@@ -92,7 +95,7 @@ public abstract class Unit : MonoBehaviour
     public int AttackRange;
     //[Tooltip("The higher the Attack, the more damage is inflicted on foes.")]
     [HideInInspector]
-    public int AttackFactor;
+    public int Atk;
     //[Tooltip("A unit will attack twice of its speed is at least 5 more than its foe.")]
     [HideInInspector]
     public int Spd;
@@ -138,7 +141,7 @@ public abstract class Unit : MonoBehaviour
         card.UpdateStats();
         UnitName = card.name;
         HitPoints = card.HP;
-        AttackFactor = card.Atk;
+        Atk = card.Atk;
         Spd = card.Spd;
         Def = card.Def;
         Res = card.Res;
@@ -148,7 +151,7 @@ public abstract class Unit : MonoBehaviour
                 AttackRange = 1;
                 break;
             case Card.Range.Ranged:
-                AttackRange = 2;
+                AttackRange = card.rangeFactor;
                 break;
             case Card.Range.None:
                 AttackRange = 0;
@@ -178,7 +181,7 @@ public abstract class Unit : MonoBehaviour
     {
         if (PauseMenu.GameIsPaused == false && UnitClicked != null)
             UnitClicked.Invoke(this, new EventArgs());
-            //ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
+            ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
             //ui_operator.ShowCard();
     }
     public virtual void OnMouseEnter()
@@ -186,7 +189,7 @@ public abstract class Unit : MonoBehaviour
         if (PauseMenu.GameIsPaused == false && UnitHighlighted != null)
         {
             UnitHighlighted.Invoke(this, new EventArgs());
-            ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
+            //ui_operator.cardDisplay.GetComponent<CardDisplay>().card = card;
         }
             
     }
@@ -246,6 +249,11 @@ public abstract class Unit : MonoBehaviour
     // from cell given as second parameter.
     public virtual bool IsUnitAttackable(Unit other, Cell sourceCell)
     {
+        if (card.range == Card.Range.Ranged)
+        {
+            if (sourceCell.GetDistance(other.Cell) <= AttackRange && sourceCell.GetDistance(other.Cell) != 1)
+                return true;
+        }
         // Change the comparator here to '<=' if you want ranged units to attack units that are closer
         if (sourceCell.GetDistance(other.Cell) == AttackRange)
             return true;
@@ -265,7 +273,7 @@ public abstract class Unit : MonoBehaviour
 
         MarkAsAttacking(other);
         ActionPoints--;
-        other.Defend(this, AttackFactor);
+        other.Defend(this, Atk);
         //Debug.Log("attack: " + this);		
         //Debug.Log("attack: " + other);
         if (ActionPoints == 0)
@@ -280,7 +288,7 @@ public abstract class Unit : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         MarkAsAttacking(other);
-        other.Defend(this, AttackFactor);
+        other.Defend(this, Atk);
     }
     */
 
@@ -372,9 +380,9 @@ public abstract class Unit : MonoBehaviour
         if (isMoving)
             return;
         var totalMovementCost = 0;
-        if (this.card.moveClass == Card.MoveClass.Flier)
+        if (card.moveClass == Card.MoveClass.Flier || card.moveClass == Card.MoveClass.Armor)
         {
-            totalMovementCost = path.Sum(h => h.FlierMovementCost);
+            totalMovementCost = path.Sum(h => h.BypassMovementCost);
         }
         else
         {
@@ -401,7 +409,9 @@ public abstract class Unit : MonoBehaviour
             transform.position = Cell.transform.position;
 
         if (UnitMoved != null)
-            UnitMoved.Invoke(this, new MovementEventArgs(Cell, destinationCell, path));    
+            UnitMoved.Invoke(this, new MovementEventArgs(Cell, destinationCell, path));
+
+        moved = true;
     }
     protected virtual IEnumerator MovementAnimation(List<Cell> path)
     {
@@ -441,9 +451,16 @@ public abstract class Unit : MonoBehaviour
     // Method indicates if unit is capable of moving through cell given as parameter.
     public virtual bool IsCellTraversable(Cell cell)
     {
-        if (card.moveClass == Card.MoveClass.Cavalry)
+        switch (card.moveClass)
         {
-            return (!cell.IsTaken || cell.occupationID == PlayerNumber) && cell.terrainType != Cell.TerrainType.Forest;
+            case Card.MoveClass.Armor:
+                return (!cell.IsTaken || cell.occupationID == PlayerNumber) && cell.terrainType != Cell.TerrainType.Mountain;
+            case Card.MoveClass.Cavalry:
+                return (!cell.IsTaken || cell.occupationID == PlayerNumber) && cell.terrainType != Cell.TerrainType.Forest && cell.terrainType != Cell.TerrainType.Mountain;
+            case Card.MoveClass.Flier:
+                return !cell.IsTaken || cell.occupationID == PlayerNumber;
+            case Card.MoveClass.Infantry:
+                return (!cell.IsTaken || cell.occupationID == PlayerNumber) && cell.terrainType != Cell.TerrainType.Mountain;
         }
         return !cell.IsTaken || cell.occupationID == PlayerNumber;
     }
@@ -452,16 +469,16 @@ public abstract class Unit : MonoBehaviour
     public HashSet<Cell> GetAvailableDestinations(List<Cell> cells)
     {
         cachedPaths = new Dictionary<Cell, List<Cell>>();
-        
+
         var paths = cachePaths(cells);
         foreach (var key in paths.Keys)
         {
             if (!IsCellMovableTo(key))
                 continue;
             var path = paths[key];
-            if (this.card.moveClass == Card.MoveClass.Flier)
+            if (card.moveClass == Card.MoveClass.Flier || card.moveClass == Card.MoveClass.Armor)
             {
-                var pathCost = path.Sum(c => c.FlierMovementCost);
+                var pathCost = path.Sum(c => c.BypassMovementCost);
                 if (pathCost <= MovementPoints)
                 {
                     cachedPaths.Add(key, path);
@@ -478,6 +495,60 @@ public abstract class Unit : MonoBehaviour
             
         }
         return new HashSet<Cell>(cachedPaths.Keys);
+    }
+
+    //Method returns all cells that the unit is capable of attacking (assuming full movement).
+    public HashSet<Cell> GetAvailableAttackTiles(List<Cell> cells)
+    {
+        cachedAttackTiles = new Dictionary<Cell, List<Cell>>();
+
+        var tiles = cachePaths(cells);
+        foreach (var key in tiles.Keys)
+        {
+            if (!IsCellMovableTo(key))
+                continue;
+            var tile = tiles[key];
+            if (card.moveClass == Card.MoveClass.Flier || card.moveClass == Card.MoveClass.Armor)
+            {
+                var pathCost = tile.Sum(c => c.BypassMovementCost);
+                switch (card.range)
+                {
+                    case Card.Range.Melee:
+                        if (pathCost == MovementPoints + card.ruleset.plainsCost)
+                        {
+                            cachedAttackTiles.Add(key, tile);
+                        }
+                        break;
+                    case Card.Range.Ranged:
+                        if (pathCost > MovementPoints && pathCost < MovementPoints + card.ruleset.plainsCost * (card.rangeFactor + 1))
+                        {
+                            cachedAttackTiles.Add(key, tile);
+                        }
+                        break;
+                }
+            }
+            else
+            {
+                var pathCost = tile.Sum(c => c.MovementCost);
+                switch (card.range)
+                {
+                    case Card.Range.Melee:
+                        if (pathCost > MovementPoints && pathCost <= MovementPoints + card.ruleset.forestCost)
+                        {
+                            cachedAttackTiles.Add(key, tile);
+                        }
+                        break;
+                    case Card.Range.Ranged:
+                        if (pathCost > MovementPoints && pathCost < MovementPoints + card.ruleset.plainsCost * (card.rangeFactor + 1))
+                        {
+                            cachedAttackTiles.Add(key, tile);
+                        }
+                        break;
+                }
+                
+            }
+        }
+        return new HashSet<Cell>(cachedAttackTiles.Keys);
     }
 
     private Dictionary<Cell, List<Cell>> cachePaths(List<Cell> cells)
@@ -507,9 +578,9 @@ public abstract class Unit : MonoBehaviour
                 ret[cell] = new Dictionary<Cell, int>();
                 foreach (var neighbour in cell.GetNeighbours(cells).FindAll(IsCellTraversable))
                 {
-                    if (this.card.moveClass == Card.MoveClass.Flier)
+                    if (card.moveClass == Card.MoveClass.Flier || card.moveClass == Card.MoveClass.Armor)
                     {
-                        ret[cell][neighbour] = neighbour.FlierMovementCost;
+                        ret[cell][neighbour] = neighbour.BypassMovementCost;
                     }
                     else
                     {

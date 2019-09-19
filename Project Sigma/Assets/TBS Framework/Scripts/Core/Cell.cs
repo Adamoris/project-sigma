@@ -33,7 +33,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     [HideInInspector]
     public int MovementCost;
     [HideInInspector]
-    public int FlierMovementCost;
+    public int BypassMovementCost;
 
     public Ruleset ruleset;
     UI_Operator ui_operator;
@@ -41,7 +41,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     private void Awake()
     {
         ui_operator = FindObjectOfType<UI_Operator>();
-        FlierMovementCost = ruleset.plainsCost;
+        BypassMovementCost = ruleset.plainsCost;
         switch (terrainType)
         {
             case TerrainType.Plains:
@@ -109,6 +109,10 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     ///  Method marks the cell to give user an indication that selected unit can reach it.
     /// </summary>
     public abstract void MarkAsReachable();
+    /// <summary>
+    ///  Method marks the cell to give user an indication that selected unit can attack it.
+    /// </summary>
+    public abstract void MarkAsAttackable();
     /// <summary>
     /// Method marks the cell as a part of a path.
     /// </summary>

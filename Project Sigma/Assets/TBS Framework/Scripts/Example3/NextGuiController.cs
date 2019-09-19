@@ -79,7 +79,7 @@ public class NextGuiController : MonoBehaviour
 
         _infoPanel.transform.Find("Name").GetComponent<Text>().text = unit.UnitName;
         _infoPanel.transform.Find("HitPoints").Find("Image").transform.localScale = new Vector3(hpScale,1,1);
-        _infoPanel.transform.Find("Attack").Find("Image").transform.localScale = new Vector3((float)unit.AttackFactor/10.0f,1,1);
+        _infoPanel.transform.Find("Attack").Find("Image").transform.localScale = new Vector3((float)unit.Atk/10.0f,1,1);
         _infoPanel.transform.Find("Defence").Find("Image").transform.localScale = new Vector3((float)unit.Def / 10.0f, 1, 1);
 
         _infoPanel.GetComponent<RectTransform>().SetParent(Canvas.GetComponent<RectTransform>(),false);

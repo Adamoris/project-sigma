@@ -22,6 +22,7 @@ MonoBehaviour:
   moveClass: 3
   damageType: 1
   range: 1
+  rangeFactor: 2
   pma: 0
   pra: 0
   mma: 0

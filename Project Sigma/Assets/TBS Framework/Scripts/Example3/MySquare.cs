@@ -18,6 +18,11 @@ public class MySquare : Square
         //SetColor(new Color(1,0.92f,0.16f,0.5f));
         SetColor(new Color32(54, 140, 235, 200));
     }
+    public override void MarkAsAttackable()
+    {
+        //throw new System.NotImplementedException();
+        SetColor(new Color32(252,36,3, 200));
+    }
     public override void MarkAsPath()
     {
         SetColor(new Color(0,1,0,0.5f));

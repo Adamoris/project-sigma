@@ -5,6 +5,7 @@ class CellGridStateUnitSelected : CellGridState
 {
     private Unit _unit;
     private HashSet<Cell> _pathsInRange;
+    private HashSet<Cell> _attackInRange;
     private List<Unit> _unitsInRange;
 
     private Cell _unitCell;
@@ -15,6 +16,7 @@ class CellGridStateUnitSelected : CellGridState
     {
         _unit = unit;
         _pathsInRange = new HashSet<Cell>();
+        _attackInRange = new HashSet<Cell>();
         _currentPath = new List<Cell>();
         _unitsInRange = new List<Unit>();
     }
@@ -60,6 +62,13 @@ class CellGridStateUnitSelected : CellGridState
             else
                 _cell.UnMark();
         }
+        foreach (var _cell in _cellGrid.Cells)
+        {
+            if (_attackInRange.Contains(_cell) && !_unit.moved)
+            {
+                _cell.MarkAsAttackable();
+            }
+        }
     }
     public override void OnCellSelected(Cell cell)
     {
@@ -81,6 +90,7 @@ class CellGridStateUnitSelected : CellGridState
         _unitCell = _unit.Cell;
 
         _pathsInRange = _unit.GetAvailableDestinations(_cellGrid.Cells);
+        _attackInRange = _unit.GetAvailableAttackTiles(_cellGrid.Cells);
         var cellsNotInRange = _cellGrid.Cells.Except(_pathsInRange);
 
         foreach (var cell in cellsNotInRange)
@@ -90,6 +100,13 @@ class CellGridStateUnitSelected : CellGridState
         foreach (var cell in _pathsInRange)
         {
             cell.MarkAsReachable();
+        }
+        foreach (var cell in _attackInRange)
+        {
+            if (!_unit.moved)
+            {
+                cell.MarkAsAttackable();
+            }
         }
 
         if (_unit.ActionPoints <= 0) return;

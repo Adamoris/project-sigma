@@ -152,6 +152,10 @@ public class CardHelper : Editor
         EditorGUILayout.PropertyField(moveClass);
         EditorGUILayout.PropertyField(damageType);
         EditorGUILayout.PropertyField(range);
+        if (card.range == Card.Range.Ranged)
+        {
+            card.rangeFactor = EditorGUILayout.IntField("Range Factor", card.rangeFactor);
+        }
         
         if (card.damageType == Card.DamageType.Physical && card.range == Card.Range.Melee && card.moveClass == Card.MoveClass.Armor)
         {

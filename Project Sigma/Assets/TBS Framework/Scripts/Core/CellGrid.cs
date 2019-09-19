@@ -206,6 +206,7 @@ public class CellGrid : MonoBehaviour
             TurnEnded.Invoke(this, new EventArgs());
 
         Units.FindAll(u => u.PlayerNumber.Equals(CurrentPlayerNumber)).ForEach(u => { u.OnTurnStart(); });
+        Units.FindAll(v => v.moved = false);
         Players.Find(p => p.PlayerNumber.Equals(CurrentPlayerNumber)).Play(this);     
     }
 }

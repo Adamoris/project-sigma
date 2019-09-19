@@ -22,6 +22,11 @@ class SampleSquare : Square
         GetComponent<Renderer>().material.color = Color.yellow;
     }
 
+    public override void MarkAsAttackable()
+    {
+        GetComponent<Renderer>().material.color = Color.red;
+    }
+
     public override void UnMark()
     {
         GetComponent<Renderer>().material.color = Color.white;

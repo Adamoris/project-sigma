@@ -27,6 +27,11 @@ class MyHexagon : Hexagon
     {
         SetColor(hexagonRenderer, Color.yellow);
     }
+    public override void MarkAsAttackable()
+    {
+        //throw new System.NotImplementedException();
+        SetColor(hexagonRenderer, Color.red);
+    }
     public override void MarkAsPath()
     {
         SetColor(hexagonRenderer, Color.green);;

@@ -58,7 +58,7 @@ public class GuiController : MonoBehaviour
         if (!(CellGrid.CurrentPlayer is HumanPlayer)) return;
         OnUnitDehighlighted(sender, new EventArgs());
 
-        if ((sender as Unit).HitPoints <= 0) return;
+        if ((sender as Unit).HP <= 0) return;
 
         OnUnitHighlighted(sender, e);
     }
@@ -70,7 +70,7 @@ public class GuiController : MonoBehaviour
     private void OnUnitHighlighted(object sender, EventArgs e)
     {
         var unit = sender as MyUnit;
-        StatsText.text = unit.UnitName + "\nHit Points: " + unit.HitPoints +"/"+unit.TotalHitPoints + "\nAttack: " + unit.Atk + "\nDefence: " + unit.Def + "\nRange: " + unit.AttackRange;
+        StatsText.text = unit.UnitName + "\nHit Points: " + unit.HP +"/"+unit.TotalHP + "\nAttack: " + unit.Atk + "\nDefence: " + unit.Def + "\nRange: " + unit.AttackRange;
         UnitImage.color = unit.PlayerColor;
 
     }

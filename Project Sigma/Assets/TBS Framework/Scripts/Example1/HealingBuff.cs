@@ -13,7 +13,7 @@ class HealingBuff : Buff
     public int Duration { get; set; }
     public void Apply(Unit unit)
     {
-        AddHitPoints(unit, _healingFactor);
+        AddHP(unit, _healingFactor);
     }
     public void Undo(Unit unit)
     {
@@ -25,9 +25,9 @@ class HealingBuff : Buff
         return new HealingBuff(Duration, _healingFactor);
     }
 
-    private void AddHitPoints(Unit unit, int amount)
+    private void AddHP(Unit unit, int amount)
     {
-        unit.HitPoints = Mathf.Clamp(unit.HitPoints + amount, 0, unit.TotalHitPoints);
+        unit.HP = Mathf.Clamp(unit.HP + amount, 0, unit.TotalHP);
     }
 }
 

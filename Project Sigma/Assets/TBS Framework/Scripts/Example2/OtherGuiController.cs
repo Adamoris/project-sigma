@@ -32,7 +32,7 @@ class OtherGuiController : MonoBehaviour
 
         OnUnitDehighlighted(sender, e);
 
-        if ((sender as Unit).HitPoints <= 0) return;
+        if ((sender as Unit).HP <= 0) return;
 
         OnUnitHighlighted(sender, e);
     }
@@ -80,7 +80,7 @@ class OtherGuiController : MonoBehaviour
         var defence = (sender as Unit).Def;
         var range = (sender as Unit).AttackRange;
 
-        float hpScale = (float)((float)(sender as Unit).HitPoints / (float)(sender as Unit).TotalHitPoints);
+        float hpScale = (float)((float)(sender as Unit).HP / (float)(sender as Unit).TotalHP);
 
         Image fullHpBar = Instantiate(FullHPBar);
         Image emptyHpBar = Instantiate(EmptyHPBar);

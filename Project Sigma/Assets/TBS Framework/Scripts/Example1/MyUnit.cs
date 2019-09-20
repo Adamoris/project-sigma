@@ -103,9 +103,9 @@ public class MyUnit : Unit
     {
         if (GetComponentInChildren<Image>() != null)
         {
-            GetComponentInChildren<Image>().transform.localScale = new Vector3((float)((float)HitPoints / (float)TotalHitPoints), 1, 1);
+            GetComponentInChildren<Image>().transform.localScale = new Vector3((float)((float)HP / (float)TotalHP), 1, 1);
             GetComponentInChildren<Image>().color = Color.Lerp(Color.red, Color.green,
-                (float)((float)HitPoints / (float)TotalHitPoints));
+                (float)((float)HP / (float)TotalHP));
         }
     }
     private void SetColor(Color color)

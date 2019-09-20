@@ -42,7 +42,7 @@ public abstract class Unit : MonoBehaviour
     /// </summary>
     public event EventHandler<AttackEventArgs> UnitAttacked;
     /// <summary>
-    /// UnitDestroyed event is invoked when unit's hitpoints drop below 0.
+    /// UnitDestroyed event is invoked when unit's HP drop below 0.
     /// </summary>
     public event EventHandler<AttackEventArgs> UnitDestroyed;
     /// <summary>
@@ -68,9 +68,10 @@ public abstract class Unit : MonoBehaviour
     // A list of buffs that are applied to the unit.
     public List<Buff> Buffs { get; private set; }
 
-    public int TotalHitPoints { get; private set; }
+    public int TotalHP { get; private set; }
     protected int TotalMovementPoints;
     protected int TotalActionPoints;
+    protected int TotalCounterPoints;
 
     // Cell that the unit is currently occupying.
     public Cell Cell { get; set; }
@@ -88,22 +89,22 @@ public abstract class Unit : MonoBehaviour
     [HideInInspector]
     public string UnitName;
     //[Tooltip("A unit is defeated if its Hit Points reach 0.")]
-    [HideInInspector]
-    public int HitPoints;
+    [ReadOnly]
+    public int HP;
     //[Tooltip("This is the range at which a unit is able to attack.")]
     [HideInInspector]
     public int AttackRange;
     //[Tooltip("The higher the Attack, the more damage is inflicted on foes.")]
-    [HideInInspector]
+    [ReadOnly]
     public int Atk;
     //[Tooltip("A unit will attack twice of its speed is at least 5 more than its foe.")]
-    [HideInInspector]
+    [ReadOnly]
     public int Spd;
     //[Tooltip("The higher the Defense, the less damage is taken from physical attacks.")]
-    [HideInInspector]
+    [ReadOnly]
     public int Def;
     //[Tooltip("The higher the Resistance, the less damage is taken from magical attacks.")]
-    [HideInInspector]
+    [ReadOnly]
     public int Res;
 
     // Determines how far on the grid the unit can move.
@@ -117,7 +118,10 @@ public abstract class Unit : MonoBehaviour
     // Determines how many attacks unit can perform in one turn.
     [HideInInspector]
     public int ActionPoints;
-    //private int CounterPoints;
+
+    // Determines how many times the unit can counterattack during a combat interaction.
+    [HideInInspector]
+    public int CounterPoints = 1;
     //public static bool Attacking;
 
     // Indicates the player that the unit belongs to. 
@@ -140,7 +144,7 @@ public abstract class Unit : MonoBehaviour
         UnitState = new UnitStateNormal(this);
         card.UpdateStats();
         UnitName = card.name;
-        HitPoints = card.HP;
+        HP = card.HP;
         Atk = card.Atk;
         Spd = card.Spd;
         Def = card.Def;
@@ -157,7 +161,7 @@ public abstract class Unit : MonoBehaviour
                 AttackRange = 0;
                 break;
         }
-        TotalHitPoints = HitPoints;
+        TotalHP = HP;
         switch (card.moveClass)
         {
             case Card.MoveClass.Armor:
@@ -175,6 +179,7 @@ public abstract class Unit : MonoBehaviour
         }
 
         TotalActionPoints = ActionPoints;
+        TotalCounterPoints = CounterPoints;
     }
 
     public virtual void OnMouseDown()
@@ -205,6 +210,7 @@ public abstract class Unit : MonoBehaviour
     {
         MovementPoints = TotalMovementPoints;
         ActionPoints = TotalActionPoints;
+        CounterPoints = TotalCounterPoints;
         SetState(new UnitStateMarkedAsFriendly(this));
     }
 
@@ -274,13 +280,21 @@ public abstract class Unit : MonoBehaviour
         MarkAsAttacking(other);
         ActionPoints--;
         other.Defend(this, Atk);
-        //Debug.Log("attack: " + this);		
+        //Debug.Log("attack: " + this);
         //Debug.Log("attack: " + other);
         if (ActionPoints == 0)
         {
             SetState(new UnitStateMarkedAsFinished(this));
             MovementPoints = 0;
         }  
+    }
+
+    public virtual void CounterAttack(Unit other)
+    {
+        MarkAsAttacking(other);
+        CounterPoints--;
+        other.Defend(this, Atk);
+
     }
 
     /*
@@ -302,16 +316,16 @@ public abstract class Unit : MonoBehaviour
         //If result is below 1, it is set to 1. This behaviour can be overridden in derived classes.
         if (other.card.weapon.damageType == Weapon.DamageType.Physical)
         {
-            var lastHP = HitPoints;
-            HitPoints -= Mathf.Clamp(damage - Def, 1, damage);
-            Debug.Log(other.card.name + " dealt " + (lastHP - HitPoints) + " physical damage to " + card.name + ".");
-            lastHP = HitPoints;
+            var lastHP = HP;
+            HP -= Mathf.Clamp(damage - Def, 1, damage);
+            Debug.Log(other.card.name + " dealt " + (lastHP - HP) + " physical damage to " + card.name + ".");
+            lastHP = HP;
         } else if (other.card.weapon.damageType == Weapon.DamageType.Magical)
         {
-            var lastHP = HitPoints;
-            HitPoints -= Mathf.Clamp(damage - Res, 1, damage);
-            Debug.Log(other.card.name + " dealt " + (lastHP - HitPoints) + " magical damage to " + card.name + ".");
-            lastHP = HitPoints;
+            var lastHP = HP;
+            HP -= Mathf.Clamp(damage - Res, 1, damage);
+            Debug.Log(other.card.name + " dealt " + (lastHP - HP) + " magical damage to " + card.name + ".");
+            lastHP = HP;
         }
 
         if (UnitAttacked != null)
@@ -319,12 +333,16 @@ public abstract class Unit : MonoBehaviour
             UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));
         }
 
-        if (HitPoints <= 0)
+        if (HP <= 0)
         {
             if (UnitDestroyed != null)
                 Debug.Log(this.card.name + " has been defeated.");
                 UnitDestroyed.Invoke(this, new AttackEventArgs(other, this, damage));
             OnDestroyed();
+        }
+        if (CounterPoints > 0)
+        {
+            CounterAttack(other);
         }
     }
 
@@ -340,11 +358,11 @@ public abstract class Unit : MonoBehaviour
         //Debug.Log(this);
         //Damage is calculated by subtracting attack factor of attacker and defence factor of defender. 
         //If result is below 1, it is set to 1. This behaviour can be overridden in derived classes.
-        HitPoints -= Mathf.Clamp(damage - Def, 1, damage);
-        //Debug.Log(this + "" + HitPoints);
+        HP -= Mathf.Clamp(damage - Def, 1, damage);
+        //Debug.Log(this + "" + HP);
         if (UnitAttacked != null)
             UnitAttacked.Invoke(this, new AttackEventArgs(other, this, damage));
-            if (HitPoints > 0)
+            if (HP > 0)
             {
                 //Debug.Log(this + "aaa" + ActionPoints);		
                 if (!IsUnitAttackable(other, Cell))
@@ -362,7 +380,7 @@ public abstract class Unit : MonoBehaviour
                 }
             }
 
-        if (HitPoints <= 0)
+        if (HP <= 0)
         {
             if (UnitDestroyed != null)
                 //Debug.Log("Potential victor: " + other.PlayerNumber);		
@@ -514,6 +532,7 @@ public abstract class Unit : MonoBehaviour
                 switch (card.range)
                 {
                     case Card.Range.Melee:
+                        Debug.Log(pathCost);
                         if (pathCost == MovementPoints + card.ruleset.plainsCost)
                         {
                             cachedAttackTiles.Add(key, tile);
@@ -541,6 +560,8 @@ public abstract class Unit : MonoBehaviour
                     case Card.Range.Ranged:
                         if (pathCost > MovementPoints && pathCost < MovementPoints + card.ruleset.plainsCost * (card.rangeFactor + 1))
                         {
+                            //Debug.Log(Cell.GetDistance(key));
+                            //Debug.Log("a" + (pathCost - MovementPoints));
                             cachedAttackTiles.Add(key, tile);
                         }
                         break;

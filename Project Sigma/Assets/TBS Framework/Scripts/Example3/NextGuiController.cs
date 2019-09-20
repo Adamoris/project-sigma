@@ -50,7 +50,7 @@ public class NextGuiController : MonoBehaviour
 
         OnUnitDehighlighted(sender, e);
 
-        if ((sender as Unit).HitPoints <= 0) return;
+        if ((sender as Unit).HP <= 0) return;
 
         OnUnitHighlighted(sender, e);
     }
@@ -75,7 +75,7 @@ public class NextGuiController : MonoBehaviour
         var unit = sender as GenericUnit;
         _infoPanel = Instantiate(InfoPanel);
 
-        float hpScale = (float)((float)(unit).HitPoints / (float)(unit).TotalHitPoints);
+        float hpScale = (float)((float)(unit).HP / (float)(unit).TotalHP);
 
         _infoPanel.transform.Find("Name").GetComponent<Text>().text = unit.UnitName;
         _infoPanel.transform.Find("HitPoints").Find("Image").transform.localScale = new Vector3(hpScale,1,1);
@@ -93,14 +93,14 @@ public class NextGuiController : MonoBehaviour
             return;
         var unit = sender as GenericUnit;
         cameraPivot.position = unit.transform.position;
-        Shift(20, 0, 0);
+        //Shift(20, 0, 0);
     }
     private void OnUnitDeselected(object sender, EventArgs e)
     {
         if (isGameOver)
             return;
         var unit = sender as GenericUnit;
-        Shift(-20, 0, 0);
+        //Shift(-20, 0, 0);
     }
     private void OnUnitAdded(object sender, UnitCreatedEventArgs e)
     {

@@ -340,6 +340,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &11260333
 SpriteRenderer:
@@ -733,6 +734,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &23326011
 SpriteRenderer:
@@ -862,6 +864,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &35384519
 SpriteRenderer:
@@ -991,6 +994,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &44321774
 SpriteRenderer:
@@ -1120,6 +1124,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &48415520
 SpriteRenderer:
@@ -1329,6 +1334,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &54571965
 SpriteRenderer:
@@ -1458,6 +1464,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &55354821
 SpriteRenderer:
@@ -1667,6 +1674,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &64929509
 SpriteRenderer:
@@ -1796,6 +1804,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &67352627
 SpriteRenderer:
@@ -1925,6 +1934,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &68524965
 SpriteRenderer:
@@ -2054,6 +2064,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &68819049
 SpriteRenderer:
@@ -2263,6 +2274,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &71313359
 SpriteRenderer:
@@ -2472,6 +2484,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &72550452
 SpriteRenderer:
@@ -2601,6 +2614,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &79867268
 SpriteRenderer:
@@ -2721,8 +2735,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &81212280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2741,8 +2753,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2840,6 +2850,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &87540869
 SpriteRenderer:
@@ -2969,6 +2980,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &94768623
 SpriteRenderer:
@@ -3258,6 +3270,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &101231847
 SpriteRenderer:
@@ -3751,6 +3764,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &113254216
 SpriteRenderer:
@@ -3880,6 +3894,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &116681405
 SpriteRenderer:
@@ -4089,6 +4104,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &119456236
 SpriteRenderer:
@@ -4218,6 +4234,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &120991813
 SpriteRenderer:
@@ -4427,6 +4444,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &122417604
 SpriteRenderer:
@@ -4780,6 +4798,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &141271496
 SpriteRenderer:
@@ -5098,6 +5117,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &148550424
 SpriteRenderer:
@@ -5387,6 +5407,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &151921926
 SpriteRenderer:
@@ -5596,6 +5617,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &179310548
 SpriteRenderer:
@@ -5805,6 +5827,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &183018386
 SpriteRenderer:
@@ -6483,6 +6506,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &231876892
 SpriteRenderer:
@@ -6692,6 +6716,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &235031623
 SpriteRenderer:
@@ -6821,6 +6846,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &238672636
 SpriteRenderer:
@@ -7060,6 +7086,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &242577424
 SpriteRenderer:
@@ -7189,6 +7216,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &253155554
 SpriteRenderer:
@@ -7318,6 +7346,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &253960706
 SpriteRenderer:
@@ -7447,6 +7476,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &259258459
 SpriteRenderer:
@@ -7576,6 +7606,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &259528150
 SpriteRenderer:
@@ -7681,8 +7712,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -7756,8 +7785,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: c0fd9110149ff430092b422c29d1f5ed, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -7964,6 +7991,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &302822018
 SpriteRenderer:
@@ -8173,6 +8201,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &303531142
 SpriteRenderer:
@@ -8302,6 +8331,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &304460107
 SpriteRenderer:
@@ -8591,6 +8621,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &316650777
 SpriteRenderer:
@@ -8720,6 +8751,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &318170448
 SpriteRenderer:
@@ -9183,6 +9215,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &319967806
 SpriteRenderer:
@@ -9552,6 +9585,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &342212177
 SpriteRenderer:
@@ -9681,6 +9715,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &342883518
 SpriteRenderer:
@@ -9810,6 +9845,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &349861139
 SpriteRenderer:
@@ -10019,6 +10055,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &351658709
 SpriteRenderer:
@@ -10642,6 +10679,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &371384623
 SpriteRenderer:
@@ -10851,6 +10889,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &375769686
 SpriteRenderer:
@@ -11060,6 +11099,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &403144329
 SpriteRenderer:
@@ -11189,6 +11229,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &409432626
 SpriteRenderer:
@@ -11350,6 +11391,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &411070572
 SpriteRenderer:
@@ -11479,6 +11521,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &412674885
 SpriteRenderer:
@@ -11768,6 +11811,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &419871188
 SpriteRenderer:
@@ -11873,8 +11917,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -12052,6 +12094,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &431740507
 SpriteRenderer:
@@ -12181,6 +12224,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &442927373
 SpriteRenderer:
@@ -12790,6 +12834,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &462986909
 SpriteRenderer:
@@ -12999,6 +13044,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &478791063
 SpriteRenderer:
@@ -13208,6 +13254,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &488270524
 SpriteRenderer:
@@ -13768,6 +13815,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &521447902
 SpriteRenderer:
@@ -14217,6 +14265,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &539841957
 SpriteRenderer:
@@ -14426,6 +14475,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &545867562
 SpriteRenderer:
@@ -14555,6 +14605,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &556050853
 SpriteRenderer:
@@ -14684,6 +14735,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &557247703
 SpriteRenderer:
@@ -14893,6 +14945,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &560914363
 SpriteRenderer:
@@ -15102,6 +15155,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &568188588
 SpriteRenderer:
@@ -15231,6 +15285,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &571011452
 SpriteRenderer:
@@ -15360,6 +15415,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &572195172
 SpriteRenderer:
@@ -15569,6 +15625,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &573410701
 SpriteRenderer:
@@ -15834,8 +15891,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -15933,6 +15988,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &582334865
 SpriteRenderer:
@@ -16142,6 +16198,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &584757259
 SpriteRenderer:
@@ -16431,6 +16488,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &603982991
 SpriteRenderer:
@@ -16564,8 +16622,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -16663,6 +16719,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &611352878
 SpriteRenderer:
@@ -17112,6 +17169,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &622871473
 SpriteRenderer:
@@ -17856,6 +17914,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &650228015
 SpriteRenderer:
@@ -17985,6 +18044,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &651582007
 SpriteRenderer:
@@ -18299,6 +18359,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &665606043
 SpriteRenderer:
@@ -18508,6 +18569,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &673611171
 SpriteRenderer:
@@ -18797,6 +18859,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &680020819
 SpriteRenderer:
@@ -19006,6 +19069,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &686224546
 SpriteRenderer:
@@ -19215,6 +19279,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &694345141
 SpriteRenderer:
@@ -19344,6 +19409,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &694598460
 SpriteRenderer:
@@ -19473,6 +19539,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &699828372
 SpriteRenderer:
@@ -19842,6 +19909,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &716721086
 SpriteRenderer:
@@ -20131,6 +20199,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &724218217
 SpriteRenderer:
@@ -20260,6 +20329,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &726671596
 SpriteRenderer:
@@ -20389,6 +20459,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &741836765
 SpriteRenderer:
@@ -20598,6 +20669,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &741956365
 SpriteRenderer:
@@ -21047,6 +21119,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &754377591
 SpriteRenderer:
@@ -21336,6 +21409,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &765766692
 SpriteRenderer:
@@ -21465,6 +21539,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &768857725
 SpriteRenderer:
@@ -21594,6 +21669,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &769639651
 SpriteRenderer:
@@ -21723,6 +21799,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &770432493
 SpriteRenderer:
@@ -21852,6 +21929,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &770710454
 SpriteRenderer:
@@ -21981,6 +22059,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &773649470
 SpriteRenderer:
@@ -22110,6 +22189,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &774121403
 SpriteRenderer:
@@ -22399,6 +22479,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &791277947
 SpriteRenderer:
@@ -22768,6 +22849,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &806699018
 SpriteRenderer:
@@ -22977,6 +23059,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &817233158
 SpriteRenderer:
@@ -23106,6 +23189,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &817310600
 SpriteRenderer:
@@ -23235,6 +23319,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &824824483
 SpriteRenderer:
@@ -23524,6 +23609,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &834838021
 SpriteRenderer:
@@ -23653,6 +23739,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &842518544
 SpriteRenderer:
@@ -23862,6 +23949,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &856643244
 SpriteRenderer:
@@ -23991,6 +24079,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &858738843
 SpriteRenderer:
@@ -24120,6 +24209,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &862241244
 SpriteRenderer:
@@ -24409,6 +24499,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &875331053
 SpriteRenderer:
@@ -24618,6 +24709,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &880501172
 SpriteRenderer:
@@ -24827,6 +24919,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &886015078
 SpriteRenderer:
@@ -25196,6 +25289,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &903813839
 SpriteRenderer:
@@ -25405,6 +25499,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &907179036
 SpriteRenderer:
@@ -25534,6 +25629,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &913263084
 SpriteRenderer:
@@ -26167,8 +26263,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -26266,6 +26360,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &951092906
 SpriteRenderer:
@@ -26395,6 +26490,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &951148056
 SpriteRenderer:
@@ -26764,6 +26860,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &960037544
 SpriteRenderer:
@@ -27053,6 +27150,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &968952942
 SpriteRenderer:
@@ -27262,6 +27360,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &970415177
 SpriteRenderer:
@@ -27391,6 +27490,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &970733538
 SpriteRenderer:
@@ -27680,6 +27780,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &983077826
 SpriteRenderer:
@@ -27809,6 +27910,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &983798973
 SpriteRenderer:
@@ -27914,8 +28016,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: c0fd9110149ff430092b422c29d1f5ed, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -28093,6 +28193,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &990561394
 SpriteRenderer:
@@ -28302,6 +28403,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &995482684
 SpriteRenderer:
@@ -28511,6 +28613,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1000295528
 SpriteRenderer:
@@ -28720,6 +28823,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1005250123
 SpriteRenderer:
@@ -28929,6 +29033,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1013259078
 SpriteRenderer:
@@ -29138,6 +29243,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1019879734
 SpriteRenderer:
@@ -29427,6 +29533,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1038286627
 SpriteRenderer:
@@ -29556,6 +29663,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1041751495
 SpriteRenderer:
@@ -29765,6 +29873,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1051603781
 SpriteRenderer:
@@ -29974,6 +30083,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1056983323
 SpriteRenderer:
@@ -30159,8 +30269,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: c61687ddde890440fb4a79cff0d4e0ec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -30338,6 +30446,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1066152083
 SpriteRenderer:
@@ -30473,6 +30582,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1074759919
 SpriteRenderer:
@@ -30602,6 +30712,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1085090140
 SpriteRenderer:
@@ -30731,6 +30842,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1090556545
 SpriteRenderer:
@@ -30940,6 +31052,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1099567085
 SpriteRenderer:
@@ -31069,6 +31182,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1100913379
 SpriteRenderer:
@@ -31278,6 +31392,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1119677315
 SpriteRenderer:
@@ -31487,6 +31602,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1126968170
 SpriteRenderer:
@@ -31776,6 +31892,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1140987015
 SpriteRenderer:
@@ -31985,6 +32102,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1153931728
 SpriteRenderer:
@@ -32114,6 +32232,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1158766791
 SpriteRenderer:
@@ -32299,8 +32418,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Keyboard
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32720,6 +32837,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1177570797
 SpriteRenderer:
@@ -32825,8 +32943,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -33004,6 +33120,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1202010110
 SpriteRenderer:
@@ -33133,6 +33250,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1217129078
 SpriteRenderer:
@@ -33262,6 +33380,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1220312319
 SpriteRenderer:
@@ -33391,6 +33510,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1220926161
 SpriteRenderer:
@@ -33714,6 +33834,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1223490153
 SpriteRenderer:
@@ -33843,6 +33964,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1223793825
 SpriteRenderer:
@@ -33972,6 +34094,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1226027455
 SpriteRenderer:
@@ -34101,6 +34224,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1239276682
 SpriteRenderer:
@@ -34403,6 +34527,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1253052390
 SpriteRenderer:
@@ -34612,6 +34737,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1259321246
 SpriteRenderer:
@@ -34901,6 +35027,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1274755483
 SpriteRenderer:
@@ -35030,6 +35157,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1278661718
 SpriteRenderer:
@@ -35159,6 +35287,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1280888193
 SpriteRenderer:
@@ -35296,8 +35425,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.Scrollbar+ScrollEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1283655164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35316,8 +35443,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -35415,6 +35540,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1285426004
 SpriteRenderer:
@@ -35784,6 +35910,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1312621240
 SpriteRenderer:
@@ -36153,6 +36280,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1330669538
 SpriteRenderer:
@@ -36282,6 +36410,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1336171992
 SpriteRenderer:
@@ -36878,6 +37007,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1359911257
 SpriteRenderer:
@@ -37007,6 +37137,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1359949519
 SpriteRenderer:
@@ -37296,6 +37427,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1368053756
 SpriteRenderer:
@@ -37542,8 +37674,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
 --- !u!1 &1381695861
 GameObject:
@@ -37704,6 +37834,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1381885548
 SpriteRenderer:
@@ -37913,6 +38044,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1384755401
 SpriteRenderer:
@@ -38042,6 +38174,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1394070932
 SpriteRenderer:
@@ -38171,6 +38304,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1394610543
 SpriteRenderer:
@@ -38300,6 +38434,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1395107192
 SpriteRenderer:
@@ -38669,6 +38804,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1401267507
 SpriteRenderer:
@@ -39038,6 +39174,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1413145659
 SpriteRenderer:
@@ -39247,6 +39384,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1418184611
 SpriteRenderer:
@@ -39456,6 +39594,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1436116782
 SpriteRenderer:
@@ -39585,6 +39724,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1438175872
 SpriteRenderer:
@@ -39794,6 +39934,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1440283447
 SpriteRenderer:
@@ -39899,8 +40040,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 374088092d5054169ac7e062901fb561, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -40158,6 +40297,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1459712523
 SpriteRenderer:
@@ -40491,6 +40631,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1468694939
 SpriteRenderer:
@@ -40620,6 +40761,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1472190133
 SpriteRenderer:
@@ -40829,6 +40971,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1476287146
 SpriteRenderer:
@@ -41118,6 +41261,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1504693563
 SpriteRenderer:
@@ -41327,6 +41471,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1518613814
 SpriteRenderer:
@@ -41456,6 +41601,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1524124874
 SpriteRenderer:
@@ -41585,6 +41731,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1527773061
 SpriteRenderer:
@@ -41794,6 +41941,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1528006073
 SpriteRenderer:
@@ -42015,6 +42163,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1534382413
 SpriteRenderer:
@@ -42144,6 +42293,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1540969108
 SpriteRenderer:
@@ -42353,6 +42503,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1547144323
 SpriteRenderer:
@@ -42458,8 +42609,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 2c4046bf897f14ebf9508b31efcae8e1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -42637,6 +42786,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1555678841
 SpriteRenderer:
@@ -42846,6 +42996,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1568767058
 SpriteRenderer:
@@ -42974,7 +43125,7 @@ PrefabInstance:
     - target: {fileID: 114376497909483486, guid: 6476cbfb50e7a284b96af2ae792f3076,
         type: 3}
       propertyPath: CounterPoints
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114376497909483486, guid: 6476cbfb50e7a284b96af2ae792f3076,
         type: 3}
@@ -43100,6 +43251,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1588125311
 SpriteRenderer:
@@ -43629,6 +43781,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1608452963
 SpriteRenderer:
@@ -43758,6 +43911,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1611537393
 SpriteRenderer:
@@ -43887,6 +44041,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1617587521
 SpriteRenderer:
@@ -44107,6 +44262,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1624647030
 SpriteRenderer:
@@ -44236,6 +44392,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1626388842
 SpriteRenderer:
@@ -44365,6 +44522,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1628476850
 SpriteRenderer:
@@ -44814,6 +44972,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1636145488
 SpriteRenderer:
@@ -45183,6 +45342,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1663936543
 SpriteRenderer:
@@ -45291,7 +45451,7 @@ PrefabInstance:
     - target: {fileID: 114376497909483486, guid: 6476cbfb50e7a284b96af2ae792f3076,
         type: 3}
       propertyPath: CounterPoints
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114376497909483486, guid: 6476cbfb50e7a284b96af2ae792f3076,
         type: 3}
@@ -45497,6 +45657,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1668779379
 SpriteRenderer:
@@ -45866,6 +46027,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1686439252
 SpriteRenderer:
@@ -45995,6 +46157,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1687240898
 SpriteRenderer:
@@ -46124,6 +46287,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1688600496
 SpriteRenderer:
@@ -46253,6 +46417,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1690928122
 SpriteRenderer:
@@ -46462,6 +46627,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1694368068
 SpriteRenderer:
@@ -46911,6 +47077,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1710294428
 SpriteRenderer:
@@ -47328,6 +47495,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1725463656
 SpriteRenderer:
@@ -47457,6 +47625,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1725653869
 SpriteRenderer:
@@ -47586,6 +47755,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1728920005
 SpriteRenderer:
@@ -47715,6 +47885,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1733710101
 SpriteRenderer:
@@ -47924,6 +48095,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1741921300
 SpriteRenderer:
@@ -48133,6 +48305,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1745763902
 SpriteRenderer:
@@ -48342,6 +48515,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1761012876
 SpriteRenderer:
@@ -48449,8 +48623,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -48561,6 +48733,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1766625616
 SpriteRenderer:
@@ -48696,6 +48869,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1769261836
 SpriteRenderer:
@@ -48825,6 +48999,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1771261827
 SpriteRenderer:
@@ -48954,6 +49129,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1775336019
 SpriteRenderer:
@@ -49429,6 +49605,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1807188958
 SpriteRenderer:
@@ -49558,6 +49735,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1813380946
 SpriteRenderer:
@@ -49767,6 +49945,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1816658264
 SpriteRenderer:
@@ -49896,6 +50075,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1825727064
 SpriteRenderer:
@@ -50025,6 +50205,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1833796232
 SpriteRenderer:
@@ -50154,6 +50335,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1840245973
 SpriteRenderer:
@@ -50289,6 +50471,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1845692473
 SpriteRenderer:
@@ -50418,6 +50601,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1849199534
 SpriteRenderer:
@@ -50547,6 +50731,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1849811663
 SpriteRenderer:
@@ -50676,6 +50861,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1855061055
 SpriteRenderer:
@@ -50781,8 +50967,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Option A
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -51122,6 +51306,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1863790741
 SpriteRenderer:
@@ -51331,6 +51516,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1866123023
 SpriteRenderer:
@@ -51460,6 +51646,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1879458925
 SpriteRenderer:
@@ -51989,6 +52176,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1893423918
 SpriteRenderer:
@@ -52198,6 +52386,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1901614193
 SpriteRenderer:
@@ -52727,6 +52916,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1951527845
 SpriteRenderer:
@@ -52892,6 +53082,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1961927076
 SpriteRenderer:
@@ -53021,6 +53212,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1963567237
 SpriteRenderer:
@@ -53150,6 +53342,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1966728528
 SpriteRenderer:
@@ -53279,6 +53472,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1967817607
 SpriteRenderer:
@@ -53408,6 +53602,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 3
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1967986641
 SpriteRenderer:
@@ -53513,8 +53708,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 7f734fe678d57439dab2e84884664245, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -53612,6 +53805,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1978958973
 SpriteRenderer:
@@ -53741,6 +53935,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1982513121
 SpriteRenderer:
@@ -53870,6 +54065,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1983122282
 SpriteRenderer:
@@ -53999,6 +54195,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1989254142
 SpriteRenderer:
@@ -54288,6 +54485,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1994254607
 SpriteRenderer:
@@ -54417,6 +54615,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &1995199455
 SpriteRenderer:
@@ -54626,6 +54825,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2001718311
 SpriteRenderer:
@@ -54755,6 +54955,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2002172584
 SpriteRenderer:
@@ -54884,6 +55085,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2004281840
 SpriteRenderer:
@@ -55253,6 +55455,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2014760682
 SpriteRenderer:
@@ -55435,8 +55638,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: TMPro.TMP_Dropdown+DropdownEvent, Unity.TextMeshPro, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &2019237000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55455,8 +55656,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -55850,8 +56049,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -55949,6 +56146,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2042838380
 SpriteRenderer:
@@ -56161,6 +56359,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2045644038
 SpriteRenderer:
@@ -56370,6 +56569,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2051515530
 SpriteRenderer:
@@ -56499,6 +56699,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2051706514
 SpriteRenderer:
@@ -56628,6 +56829,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2053948142
 SpriteRenderer:
@@ -56757,6 +56959,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2059931797
 SpriteRenderer:
@@ -56886,6 +57089,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2064590896
 SpriteRenderer:
@@ -57095,6 +57299,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2070737931
 SpriteRenderer:
@@ -57264,6 +57469,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 2
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2073365239
 SpriteRenderer:
@@ -57633,6 +57839,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2088146606
 SpriteRenderer:
@@ -58082,6 +58289,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2114035272
 SpriteRenderer:
@@ -58211,6 +58419,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2124514785
 SpriteRenderer:
@@ -58420,6 +58629,7 @@ MonoBehaviour:
   occupationID: 0
   terrainType: 1
   MovementCost: 1
+  BypassMovementCost: 0
   ruleset: {fileID: 11400000, guid: 74e11b7be5bea4d8a99e8616fff2ab84, type: 2}
 --- !u!212 &2146782273
 SpriteRenderer:

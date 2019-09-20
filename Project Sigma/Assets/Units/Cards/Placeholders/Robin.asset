@@ -18,10 +18,11 @@ MonoBehaviour:
   name: Robin
   description: 
   IV: 6
-  gender: 0
+  gender: 1
   moveClass: 1
   damageType: 2
   range: 1
+  rangeFactor: 2
   pma: 0
   pra: 0
   mma: 0
@@ -38,7 +39,7 @@ MonoBehaviour:
   pri: 0
   mmi: 0
   mri: 0
-  race: 0
+  race: 5
   affinity: 4
   level: 1
   merge: 0

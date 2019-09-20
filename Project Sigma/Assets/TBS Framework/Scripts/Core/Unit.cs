@@ -121,7 +121,7 @@ public abstract class Unit : MonoBehaviour
 
     // Determines how many times the unit can counterattack during a combat interaction.
     [HideInInspector]
-    public int CounterPoints = 1;
+    public int CounterPoints;
     //public static bool Attacking;
 
     // Indicates the player that the unit belongs to. 
@@ -179,7 +179,7 @@ public abstract class Unit : MonoBehaviour
         }
 
         TotalActionPoints = ActionPoints;
-        TotalCounterPoints = CounterPoints;
+        //TotalCounterPoints = CounterPoints;
     }
 
     public virtual void OnMouseDown()
@@ -210,7 +210,8 @@ public abstract class Unit : MonoBehaviour
     {
         MovementPoints = TotalMovementPoints;
         ActionPoints = TotalActionPoints;
-        CounterPoints = TotalCounterPoints;
+        CounterPoints = 0;
+        //CounterPoints = TotalCounterPoints;
         SetState(new UnitStateMarkedAsFriendly(this));
     }
 
@@ -279,6 +280,16 @@ public abstract class Unit : MonoBehaviour
 
         MarkAsAttacking(other);
         ActionPoints--;
+        if (card.range == other.card.range)
+        {
+            //Debug.Log("a");
+            other.CounterPoints++;
+        }
+        if (Spd >= other.Spd + 5)
+        {
+            //Debug.Log("b");
+            CounterPoints++;
+        }
         other.Defend(this, Atk);
         //Debug.Log("attack: " + this);
         //Debug.Log("attack: " + other);
@@ -340,8 +351,9 @@ public abstract class Unit : MonoBehaviour
                 UnitDestroyed.Invoke(this, new AttackEventArgs(other, this, damage));
             OnDestroyed();
         }
-        if (CounterPoints > 0)
+        if (CounterPoints > 0 && (card.range == other.card.range))
         {
+            //Debug.Log(name + CounterPoints + " " + other.CounterPoints);
             CounterAttack(other);
         }
     }

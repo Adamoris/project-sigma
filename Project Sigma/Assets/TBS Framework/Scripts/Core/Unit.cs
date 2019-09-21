@@ -291,6 +291,10 @@ public abstract class Unit : MonoBehaviour
             CounterPoints++;
         }
         other.Defend(this, Atk);
+        if (CounterPoints > 0 && other.HP > 0)
+        {
+            other.Defend(this, Atk);
+        }
         //Debug.Log("attack: " + this);
         //Debug.Log("attack: " + other);
         if (ActionPoints == 0)
@@ -323,7 +327,7 @@ public abstract class Unit : MonoBehaviour
     protected virtual void Defend(Unit other, int damage)
     {
         MarkAsDefending(other);
-        //Damage is calculated by subtracting attack factor of attacker and defence factor of defender. 
+        //Damage is calculated by subtracting attack factor of attacker and defence/resistance factor of target. 
         //If result is below 1, it is set to 1. This behaviour can be overridden in derived classes.
         if (other.card.weapon.damageType == Weapon.DamageType.Physical)
         {
@@ -351,7 +355,7 @@ public abstract class Unit : MonoBehaviour
                 UnitDestroyed.Invoke(this, new AttackEventArgs(other, this, damage));
             OnDestroyed();
         }
-        if (CounterPoints > 0 && (card.range == other.card.range))
+        if (HP > 0 && CounterPoints > 0 && (card.range == other.card.range))
         {
             //Debug.Log(name + CounterPoints + " " + other.CounterPoints);
             CounterAttack(other);

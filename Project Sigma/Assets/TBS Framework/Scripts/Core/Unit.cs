@@ -328,13 +328,13 @@ public abstract class Unit : MonoBehaviour
         if (other.card.weapon.damageType == Weapon.DamageType.Physical)
         {
             var lastHP = HP;
-            HP -= Mathf.Clamp(damage - Def, 1, damage);
+            HP -= Mathf.Clamp(damage - Def, 0, damage);
             Debug.Log(other.card.name + " dealt " + (lastHP - HP) + " physical damage to " + card.name + ".");
             lastHP = HP;
         } else if (other.card.weapon.damageType == Weapon.DamageType.Magical)
         {
             var lastHP = HP;
-            HP -= Mathf.Clamp(damage - Res, 1, damage);
+            HP -= Mathf.Clamp(damage - Res, 0, damage);
             Debug.Log(other.card.name + " dealt " + (lastHP - HP) + " magical damage to " + card.name + ".");
             lastHP = HP;
         }

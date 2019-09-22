@@ -282,12 +282,14 @@ public abstract class Unit : MonoBehaviour
         ActionPoints--;
         if (card.range == other.card.range)
         {
-            //Debug.Log("a");
+            other.CounterPoints++;
+        }
+        if (other.Spd >= Spd + 5)
+        {
             other.CounterPoints++;
         }
         if (Spd >= other.Spd + 5)
         {
-            //Debug.Log("b");
             CounterPoints++;
         }
         other.Defend(this, Atk);
@@ -295,8 +297,10 @@ public abstract class Unit : MonoBehaviour
         {
             other.Defend(this, Atk);
         }
-        //Debug.Log("attack: " + this);
-        //Debug.Log("attack: " + other);
+        if (other.CounterPoints > 0 && HP > 0)
+        {
+            Defend(other, other.Atk);
+        }
         if (ActionPoints == 0)
         {
             SetState(new UnitStateMarkedAsFinished(this));

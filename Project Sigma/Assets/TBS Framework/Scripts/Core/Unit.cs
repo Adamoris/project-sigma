@@ -280,7 +280,8 @@ public abstract class Unit : MonoBehaviour
 
         MarkAsAttacking(other);
         ActionPoints--;
-        if (card.range == other.card.range)
+        if (card.range == other.card.range || (card.range == Card.Range.Melee && other.card.slotA.counter == Equipment.Counter.Melee)
+            || (card.range == Card.Range.Ranged && other.card.slotA.counter == Equipment.Counter.Ranged))
         {
             other.CounterPoints++;
         }

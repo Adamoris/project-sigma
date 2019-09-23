@@ -13,6 +13,7 @@ public class EquipmentInspector : Editor
     SerializedProperty prerequisite;
     SerializedProperty icon;
     SerializedProperty combatOrder;
+    SerializedProperty counter;
 
     private void OnEnable()
     {
@@ -23,6 +24,7 @@ public class EquipmentInspector : Editor
         prerequisite = serializedObject.FindProperty("prerequisite");
         icon = serializedObject.FindProperty("icon");
         combatOrder = serializedObject.FindProperty("combatOrder");
+        counter = serializedObject.FindProperty("counter");
     }
 
     public override void OnInspectorGUI()
@@ -60,6 +62,9 @@ public class EquipmentInspector : Editor
             case Equipment.Slot.A:
                 StatModifiers();
                 NullifyWeaponEffectiveness();
+                EditorGUILayout.Space();
+                EditorGUILayout.LabelField("Combat Interactions", EditorStyles.boldLabel);
+                EditorGUILayout.PropertyField(counter);
                 break;
             case Equipment.Slot.B:
                 StatModifiers();

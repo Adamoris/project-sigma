@@ -59,7 +59,7 @@ MonoBehaviour:
   weapon: {fileID: 11400000, guid: 7ee1001dc02fa4af794a7fd3e3b05fdc, type: 2}
   assist: {fileID: 11400000, guid: c4abfc2129b794adbbdbf0982fc3d4a2, type: 2}
   special: {fileID: 11400000, guid: 908c30c48072a42a8acec48022bc7bcd, type: 2}
-  slotA: {fileID: 11400000, guid: 0864ff489df8145669cb008791263f1d, type: 2}
+  slotA: {fileID: 11400000, guid: 88b537593a7b047638b3b2a9d9964fbd, type: 2}
   slotB: {fileID: 11400000, guid: 992e7dd7ecd324381b8321c95ebdf2c2, type: 2}
   slotC: {fileID: 11400000, guid: f7cb4b139ae864fc7a2355211dc5ff06, type: 2}
   slotD: {fileID: 11400000, guid: 0864ff489df8145669cb008791263f1d, type: 2}

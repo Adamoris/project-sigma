@@ -57,14 +57,16 @@ public class Equipment: ScriptableObject
 
     //These enums will be used in the sections below.
     public enum CombatOrder { None, Before, During, After }
-    [Rename("Combat Order")]
     public CombatOrder combatOrder;
 
     public enum Dependency { None, Unit, Ally, Foe }
     public Dependency dependency;
 
-    public enum Target { None, Self, Foe}
+    public enum Target { None, Self, Foe }
     public Target target;
+
+    public enum Counter { None, Melee, Ranged }
+    public Counter counter;
 
     [Header("Stat Modifier Effect")]
     public int healthModifier;

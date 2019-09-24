@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Attack +1
   slot: 1
-  description: 
+  description: Grants Atk+1.
   cost: 0
   prerequisite: {fileID: 0}
   icon: {fileID: 0}
@@ -25,8 +25,9 @@ MonoBehaviour:
   combatOrder: 0
   dependency: 0
   target: 0
+  counter: 0
   healthModifier: 0
-  atkModifier: 0
+  atkModifier: 1
   spdModifier: 0
   defModifier: 0
   resModifier: 0

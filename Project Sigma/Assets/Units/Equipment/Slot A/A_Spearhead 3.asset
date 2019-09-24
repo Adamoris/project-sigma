@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 330a53869eea043e8913fc7185f06b91, type: 3}
-  m_Name: A_Attack +3
+  m_Name: A_Spearhead 3
   m_EditorClassIdentifier: 
-  name: Attack +3
+  name: Spearhead 3
   slot: 1
-  description: Grants Atk+3.
+  description: Grants Atk/Spd+5. Inflicts Def/Res-5.
   cost: 0
   prerequisite: {fileID: 0}
   icon: {fileID: 0}
@@ -27,10 +27,10 @@ MonoBehaviour:
   target: 0
   counter: 0
   healthModifier: 0
-  atkModifier: 3
-  spdModifier: 0
-  defModifier: 0
-  resModifier: 0
+  atkModifier: 5
+  spdModifier: 5
+  defModifier: -5
+  resModifier: -5
   inheritable: 0
   meleeInherit: 0
   rangeInherit: 0

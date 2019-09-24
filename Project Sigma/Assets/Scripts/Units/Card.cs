@@ -440,17 +440,31 @@ public class Card : ScriptableObject
         }
     }
 
+    //This method is for checking the equipment that the unit has.
+    public void CheckEquipment()
+    {
+        if (slotA != null)
+        {
+            modifierHP += slotA.healthModifier;
+            modifierAtk += slotA.atkModifier;
+            modifierSpd += slotA.spdModifier;
+            modifierDef += slotA.defModifier;
+            modifierRes += slotA.resModifier;
+        }
+    }
+
     //This method is for updating the stats to reflect its current state (excluding alterations from combat).
     public void UpdateStats()
     {
         FactorIV(IV);
         RarityAdjustment(rarity);
+        CheckEquipment();
         int[] mergeArray = MergeValues(merge);
         //Debug.Log(name + ": " + HP_floor + "," + rarityModifier + "," + modifierHP);
         HP = baseHP + rarityModifier + modifierHP + Convert.ToInt32(boonKey[0]) - Convert.ToInt32(baneKey[0]) + mergeArray[0];
         if (weapon != null)
         {
-            Atk = baseAtk + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]) + weapon.mt + mergeArray[1];
+            Atk = baseAtk + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]) + mergeArray[1] + weapon.mt;
         }
         else
         {

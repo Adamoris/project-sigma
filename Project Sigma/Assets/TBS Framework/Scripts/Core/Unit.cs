@@ -135,6 +135,10 @@ public abstract class Unit : MonoBehaviour
     private static DijkstraPathfinding _pathfinder = new DijkstraPathfinding();
     private static IPathfinding _fallbackPathfinder = new AStarPathfinding();
 
+    private void Start()
+    {
+        card.InitializeStats();
+    }
 
     // Method called after object instantiation to initialize fields etc. 
     public virtual void Initialize()

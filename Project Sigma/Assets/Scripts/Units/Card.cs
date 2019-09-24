@@ -445,19 +445,20 @@ public class Card : ScriptableObject
     {
         FactorIV(IV);
         RarityAdjustment(rarity);
+        int[] mergeArray = MergeValues(merge);
         //Debug.Log(name + ": " + HP_floor + "," + rarityModifier + "," + modifierHP);
-        HP = baseHP + rarityModifier + modifierHP + Convert.ToInt32(boonKey[0]) - Convert.ToInt32(baneKey[0]);
+        HP = baseHP + rarityModifier + modifierHP + Convert.ToInt32(boonKey[0]) - Convert.ToInt32(baneKey[0]) + mergeArray[0];
         if (weapon != null)
         {
-            Atk = baseAtk + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]) + weapon.mt;
+            Atk = baseAtk + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]) + weapon.mt + mergeArray[1];
         }
         else
         {
-            Atk = baseAtk + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]);
+            Atk = baseAtk + rarityModifier + modifierAtk + Convert.ToInt32(boonKey[1]) - Convert.ToInt32(baneKey[1]) + mergeArray[1];
         }
-        Spd = baseSpd + rarityModifier + modifierSpd + Convert.ToInt32(boonKey[2]) - Convert.ToInt32(baneKey[2]);
-        Def = baseDef + rarityModifier + modifierDef + Convert.ToInt32(boonKey[3]) - Convert.ToInt32(baneKey[3]);
-        Res = baseRes + rarityModifier + modifierRes + Convert.ToInt32(boonKey[4]) - Convert.ToInt32(baneKey[4]);
+        Spd = baseSpd + rarityModifier + modifierSpd + Convert.ToInt32(boonKey[2]) - Convert.ToInt32(baneKey[2]) + mergeArray[2];
+        Def = baseDef + rarityModifier + modifierDef + Convert.ToInt32(boonKey[3]) - Convert.ToInt32(baneKey[3]) + mergeArray[3];
+        Res = baseRes + rarityModifier + modifierRes + Convert.ToInt32(boonKey[4]) - Convert.ToInt32(baneKey[4]) + mergeArray[4];
     }
 
     //This method is for reverting the unit to its lvl. 1 state.
@@ -476,6 +477,26 @@ public class Card : ScriptableObject
             UpdateStats();
         }
         
+    }
+
+    public int[] MergeValues(int mergeLevel)
+    {
+        int[] mergeArray = new int[5];
+        for (int i = 0; i < mergeLevel; i++)
+        {
+            if ((i + 1) % 2 == 0)
+            {
+                mergeArray[1]++;
+                mergeArray[2]++;
+            }
+            else if ((i + 1) % 2 == 1)
+            {
+                mergeArray[0]++;
+                mergeArray[3]++;
+                mergeArray[4]++;
+            }
+        }
+        return mergeArray;
     }
 
     //This method is for leveling up the unit by 1.

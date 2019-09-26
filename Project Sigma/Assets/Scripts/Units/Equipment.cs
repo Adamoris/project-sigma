@@ -56,6 +56,9 @@ public class Equipment: ScriptableObject
 
 
     //These enums will be used in the sections below.
+    public enum StatModifyType { None, Persistent, Field, Combat}
+    public StatModifyType statModifyType;
+
     public enum CombatOrder { None, Before, During, After }
     public CombatOrder combatOrder;
 

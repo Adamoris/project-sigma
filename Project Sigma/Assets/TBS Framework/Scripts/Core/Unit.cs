@@ -284,8 +284,8 @@ public abstract class Unit : MonoBehaviour
 
         MarkAsAttacking(other);
         ActionPoints--;
-        if (card.range == other.card.range || (card.range == Card.Range.Melee && (other.card.slotA.counter == Equipment.Counter.Melee || other.card.weapon.CloseCounter))
-            || (card.range == Card.Range.Ranged && (other.card.slotA.counter == Equipment.Counter.Ranged || other.card.weapon.DistantCounter)))
+        if (card.range == other.card.range || (card.range == Card.Range.Melee && (other.card.slotA != null && other.card.slotA.counter == Equipment.Counter.Melee || other.card.weapon != null && other.card.weapon.CloseCounter))
+            || (card.range == Card.Range.Ranged && (other.card.slotA != null && other.card.slotA.counter == Equipment.Counter.Ranged || other.card.weapon != null && other.card.weapon.DistantCounter)))
         {
             other.CounterPoints++;
         }

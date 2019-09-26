@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A_Shield of Spades
   m_EditorClassIdentifier: 
   name: 
-  slot: 0
+  slot: 1
   description: 
   cost: 0
   prerequisite: {fileID: 0}
@@ -22,9 +22,11 @@ MonoBehaviour:
   cavalryShield: 0
   flierShield: 0
   infantryShield: 0
+  statModifyType: 0
   combatOrder: 0
   dependency: 0
   target: 0
+  counter: 0
   healthModifier: 0
   atkModifier: 0
   spdModifier: 0

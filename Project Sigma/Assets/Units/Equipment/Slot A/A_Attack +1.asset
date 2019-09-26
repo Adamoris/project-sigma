@@ -22,6 +22,7 @@ MonoBehaviour:
   cavalryShield: 0
   flierShield: 0
   infantryShield: 0
+  statModifyType: 0
   combatOrder: 0
   dependency: 0
   target: 0

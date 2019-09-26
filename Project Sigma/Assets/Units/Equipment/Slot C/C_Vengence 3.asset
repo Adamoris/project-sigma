@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: C_Vengence 3
   m_EditorClassIdentifier: 
   name: Vengence 3
-  slot: 0
+  slot: 3
   description: 
   cost: 0
   prerequisite: {fileID: 11400000, guid: c4dafaf2e18ca459fb330e5e025746ed, type: 2}
@@ -22,9 +22,11 @@ MonoBehaviour:
   cavalryShield: 0
   flierShield: 0
   infantryShield: 0
+  statModifyType: 0
   combatOrder: 0
   dependency: 0
   target: 0
+  counter: 0
   healthModifier: 0
   atkModifier: 0
   spdModifier: 0

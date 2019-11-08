@@ -18,6 +18,9 @@ public class Assist : ScriptableObject
 
     //This is the skill cost needed to acquire the assist skill.
     public int acquisitionCost;
+    public bool cooldown;
+    [DrawIf("cooldown", true)]
+    public int cd;
     public Assist prerequisite;
 
     //This specifies whether the ability is utilized within a combat interaction or outside of it (or both in the case of hybrid).

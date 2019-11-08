@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Ruleset", menuName = "Ruleset")]
 public class Ruleset : ScriptableObject
 {
-    [Header("Move Class Base Stats")]
+    [Header("Class Base Movement")]
     public int armorMovement;
     public int cavalryMovement;
     public int flierMovement;

@@ -62,6 +62,9 @@ public class Equipment: ScriptableObject
     public enum CombatOrder { None, Before, During, After }
     public CombatOrder combatOrder;
 
+    public enum Comparator { None, Less, Greater, LessEqual, GreaterEqual }
+    public Comparator healthComparator;
+
     public enum Dependency { None, Unit, Ally, Foe }
     public Dependency dependency;
 

@@ -103,6 +103,7 @@ public class EquipmentInspector : Editor
         {
             EditorGUILayout.Space();
             EditorGUILayout.LabelField("Effect Requirements", EditorStyles.boldLabel);
+
         }
 
         /*

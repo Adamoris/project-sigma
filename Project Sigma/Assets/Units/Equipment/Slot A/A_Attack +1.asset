@@ -24,6 +24,7 @@ MonoBehaviour:
   infantryShield: 0
   statModifyType: 0
   combatOrder: 0
+  healthComparator: 0
   dependency: 0
   target: 0
   counter: 0

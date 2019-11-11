@@ -6,10 +6,8 @@ using UnityEditor;
 [CustomEditor(typeof(Equipment))]
 public class EquipmentInspector : Editor
 {
-    SerializedProperty equipmentName;
     SerializedProperty slot;
     SerializedProperty description;
-    SerializedProperty cost;
     SerializedProperty prerequisite;
     SerializedProperty icon;
     SerializedProperty combatOrder;
@@ -17,10 +15,8 @@ public class EquipmentInspector : Editor
 
     private void OnEnable()
     {
-        equipmentName = serializedObject.FindProperty("name");
         slot = serializedObject.FindProperty("slot");
         description = serializedObject.FindProperty("description");
-        cost = serializedObject.FindProperty("cost");
         prerequisite = serializedObject.FindProperty("prerequisite");
         icon = serializedObject.FindProperty("icon");
         combatOrder = serializedObject.FindProperty("combatOrder");
@@ -29,16 +25,21 @@ public class EquipmentInspector : Editor
 
     public override void OnInspectorGUI()
     {
-        EditorGUILayout.PropertyField(equipmentName, new GUIContent("Name"));
+        Equipment equipment = target as Equipment;
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Equipment General Information", EditorStyles.boldLabel);
+        equipment.name = EditorGUILayout.TextField("Name", equipment.name);
         EditorGUILayout.PropertyField(slot);
         EditorGUILayout.PropertyField(description);
-        EditorGUILayout.PropertyField(cost);
+        equipment.cost = EditorGUILayout.IntField("Aquisition Cost", equipment.cost);
         EditorGUILayout.PropertyField(prerequisite);
         EditorGUILayout.PropertyField(combatOrder);
 
         EditorGUILayout.PropertyField(icon);
 
-        Equipment equipment = target as Equipment;
+        
+
         if (equipment.slot != Equipment.Slot.D)
         {
             EditorGUILayout.Space();

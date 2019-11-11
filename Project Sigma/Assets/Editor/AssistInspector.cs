@@ -6,11 +6,35 @@ using UnityEditor;
 [CustomEditor(typeof(Assist))]
 public class AssistInspector : Editor
 {
+    SerializedProperty description;
+    SerializedProperty prerequisite;
+    SerializedProperty assistType;
+
+    private void OnEnable()
+    {
+        description = serializedObject.FindProperty("description");
+        prerequisite = serializedObject.FindProperty("prerequisite");
+        assistType = serializedObject.FindProperty("assistType");
+    }
+
     public override void OnInspectorGUI()
     {
-        base.OnInspectorGUI();
-        
+        //base.OnInspectorGUI();
+
         Assist assist = target as Assist;
+
+        assist.name = EditorGUILayout.TextField("Name", assist.name);
+        EditorGUILayout.PropertyField(description);
+        assist.cost = EditorGUILayout.IntField(new GUIContent("Acquisition Cost",
+            "This is the skill cost needed to aquire this assist skill."), assist.cost);
+        assist.cooldown = EditorGUILayout.Toggle(new GUIContent("Cooldown",
+            "Assist Skill is assumed to have a cooldown of 0 if this is not checked."), assist.cooldown);
+        if (assist.cooldown == true)
+        {
+            assist.cd = EditorGUILayout.IntField("  Value: ", assist.cd);
+        }
+        EditorGUILayout.PropertyField(prerequisite);
+        EditorGUILayout.PropertyField(assistType);
 
         switch (assist.assistType)
         {
@@ -72,5 +96,6 @@ public class AssistInspector : Editor
             assist.movementModifier = EditorGUILayout.IntField("Movement Modifier", assist.movementModifier);
             assist.countdownAcceleration = EditorGUILayout.IntField("CD Acceleration Modifier", assist.countdownAcceleration);
         }
+        serializedObject.ApplyModifiedProperties();
     }
 }

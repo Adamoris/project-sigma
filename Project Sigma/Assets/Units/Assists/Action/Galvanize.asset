@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Galvanize
   description: Target can act again and penalties are negated. Cannot be used on unit
-    with a similar assist skill.
-  acquisitionCost: 0
+    with a refresher skill.
+  cost: 0
+  cooldown: 0
+  cd: 0
   prerequisite: {fileID: 0}
   assistType: 1
   target: 0
